@@ -1,6 +1,6 @@
 #include "iClickerEmulator.h"
 
-iClickerEmulator::iClickerEmulator(uint8_t _cepin, uint8_t _cspin, uint8_t _irqpin)
+iClickerEmulator::iClickerEmulator(uint16_t _cepin, uint16_t _cspin, uint16_t _irqpin)
 : _radio(_cepin, _cspin), _irqpin(_irqpin)
 {
     pinMode(_irqpin, OUTPUT);

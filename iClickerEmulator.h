@@ -1,7 +1,7 @@
 #ifndef I_CLICKER_EMULATOR_H
 #define I_CLICKER_EMULATOR_H
 
-#include "RF24/RF24.h"
+#include "RF24.h"
 #include "Arduino.h"
 
 
@@ -15,7 +15,7 @@
 class iClickerEmulator
 {
 public:
-    iClickerEmulator(uint8_t _cepin, uint8_t _cspin, uint8_t _irqpin);
+    iClickerEmulator(uint16_t _cepin, uint16_t _cspin, uint16_t _irqpin);
 
     bool beginRecv();
 
@@ -23,7 +23,7 @@ public:
 
 private:
     RF24 _radio;
-    const uint8_t _irqpin;
+    const uint16_t _irqpin;
 };
 
 #endif
