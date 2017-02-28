@@ -16,14 +16,14 @@ bool iClickerEmulator::beginRecv()
     _radio.setAddressWidth(3); // Set the mac address width
     _radio.setChannel(CHANNEL); // Set to the correct channel
     _radio.setPALevel(RF24_PA_MAX); // Max out power
-    _radio.seDataRate(RF24_1MBPS); // Set data rate 1mbps
+    _radio.setDataRate(RF24_1MBPS); // Set data rate 1mbps
 
     _radio.openReadingPipe(1, clickerMasterMAC); // Open reading pipe on pipe 1
     _radio.startListening(); // Start listening
 
     // WTF is flush_rx private?!?!
-    tmp uint8_t[32];
-    while(_radio.availible())
+    uint8_t tmp[32];
+    while(_radio.available())
         _radio.read(tmp, sizeof(tmp));
 
 

@@ -1,7 +1,7 @@
 #ifndef I_CLICKER_EMULATOR_H
 #define I_CLICKER_EMULATOR_H
 
-#include "RF24.h"
+#include "RF24/RF24.h"
 #include "Arduino.h"
 
 
@@ -24,6 +24,6 @@ public:
 private:
     RF24 _radio;
     const uint8_t _irqpin;
-}
+};
 
 #endif
