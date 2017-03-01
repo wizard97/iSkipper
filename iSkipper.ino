@@ -9,7 +9,7 @@ iClickerEmulator iSkip(CE, CSN, IRQ);
 void setup()
 {
   Serial.begin(115200); 
-  iSkip.beginRecv();
+  iSkip.begin();
 }
 
 
