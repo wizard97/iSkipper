@@ -12,12 +12,7 @@
 #define CHANNEL 47
 
 
-typedef struct iClickerPacket
-{
-    uint8_t mac[MAC_SIZE];  //iClicker mac address
-    uint8_t data[DATA_SIZE];  //iClicker payload
-} iClickerPacket_t;
-
+#define NUM_ICLICKER_ANSWERS 10
 
 typedef enum iClickerAnswer
 {
@@ -33,6 +28,14 @@ typedef enum iClickerAnswer
     CHOICE_J = '0',
 
 } iClickerAnswer_t;
+
+
+typedef struct iClickerPacket
+{
+    uint8_t mac[MAC_SIZE];  //iClicker mac address
+    uint8_t data[DATA_SIZE];  //iClicker payload
+} iClickerPacket_t;
+
 
 
 class iClickerEmulator
@@ -55,7 +58,7 @@ protected:
     bool beginRecv();
 
     // tx related stuff
-    bool beginTrans();
+    bool beginTrans(const uint8_t *mac);
 
 private:
     RF24 _radio;

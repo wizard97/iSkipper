@@ -25,7 +25,8 @@ bool iClickerEmulator::begin()
     _radio.setPALevel(RF24_PA_MAX); // Max out power
     _radio.setDataRate(RF24_1MBPS); // Set data rate 1mbps
 
-    beginTrans(); //Init the transmit functionality
+
+    beginTrans(clickerMyMAC); //Init the transmit functionality
     beginRecv(); // Init the recv functionality
 
     startListening(); //default to listening
@@ -71,10 +72,12 @@ bool iClickerEmulator::beginRecv()
 }
 
 
-bool iClickerEmulator::beginTrans()
+bool iClickerEmulator::beginTrans(const uint8_t *mac)
 {
+    _radio.stopListening(); //make sure not listening
+
     _radio.setRetries(0, 0); //No retries
-    _radio.openWritingPipe(clickerMyMAC); // Open reading pipe on pipe ,
+    _radio.openWritingPipe(mac); // Open reading pipe on pipe ,
     _radio.flush_tx();  // flush tx buffer
 
     return true;
@@ -91,7 +94,6 @@ bool iClickerEmulator::send(iClickerAnswer_t c)
     memcpy(&packet[1], clickerMyMAC, MAC_SIZE);
 
     _radio.stopListening(); //stop listening
-    _rxlisten = false;
 
     _radio.writeFast(packet, sizeof(packet));
 
@@ -102,3 +104,23 @@ bool iClickerEmulator::send(iClickerAnswer_t c)
 
     return ret;
 }
+
+/*
+bool iClickerEmulator::sendRand(uint16_t count)
+{
+    bool rx_restore = isListening();
+
+    uint8_t packet[PACKET_SIZE] = {random(0, 256), random(0, 256), random(0, 256), random(CHOICE_A, CHOICE_F) }; //make a bogus packet
+
+    beginTrans(packet); //will only take first 3 bytes
+
+    _radio.writeFast(packet, sizeof(packet));
+
+    bool ret = _radio.txStandBy();
+
+    if (rx_restore)
+        startListening();
+
+    return ret;
+}
+*/
