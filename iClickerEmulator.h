@@ -32,7 +32,13 @@ public:
     const uint8_t clickerMyMAC[MAC_SIZE] = { 0xab, 0xcd, 0xef }; //eventually should add a setter for this
 
 protected:
+    // Rx related stuff
+    void startListening();
+    void stopListening();
+    bool isListening();
     bool beginRecv();
+
+    // tx related stuff
     bool beginTrans();
 
 private:

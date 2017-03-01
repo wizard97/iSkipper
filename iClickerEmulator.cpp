@@ -28,18 +28,38 @@ bool iClickerEmulator::begin()
     beginTrans(); //Init the transmit functionality
     beginRecv(); // Init the recv functionality
 
-    _radio.startListening(); // Put it back into listen mode
-    _rxlisten = true;
+    startListening(); //default to listening
 
     return true;
 }
 
 
 
+void iClickerEmulator::startListening()
+{
+    _radio.startListening(); // Put it back into listen mode
+    _rxlisten = true;
+}
+
+
+void iClickerEmulator::stopListening()
+{
+    _radio.stopListening(); // Put it back into listen mode
+    _rxlisten = false;
+}
+
+
+bool iClickerEmulator::isListening()
+{
+    return _rxlisten;
+}
+
+
 bool iClickerEmulator::beginRecv()
 {
-    // Don't think i need this
-    //_radio.maskIRQ(1, 1, 0); //Mask all interrupts except RX_DR. Do I need this?
+    //_radio.maskIRQ(1, 1, 0); //Mask all interrupts except RX_DR. Don't think i need this
+
+    // Spoof iclicker recever mac address
     _radio.openReadingPipe(1, clickerMasterMAC); // Open reading pipe on pipe 1
 
     // WTF is flush_rx private()?!?! I shouldn't have to do this!
@@ -54,7 +74,7 @@ bool iClickerEmulator::beginRecv()
 bool iClickerEmulator::beginTrans()
 {
     _radio.setRetries(0, 0); //No retries
-    _radio.openWritingPipe(clickerMyMAC); // Open reading pipe on pipe 0
+    _radio.openWritingPipe(clickerMyMAC); // Open reading pipe on pipe ,
     _radio.flush_tx();  // flush tx buffer
 
     return true;
@@ -64,7 +84,7 @@ bool iClickerEmulator::beginTrans()
 // Send an iclicker packet, send ascii
 bool iClickerEmulator::send(char c)
 {
-    bool rx_restore = _rxlisten;
+    bool rx_restore = isListening();
 
     uint8_t packet[PACKET_SIZE];
     packet[0] = (uint8_t)c;
@@ -77,10 +97,8 @@ bool iClickerEmulator::send(char c)
 
     bool ret = _radio.txStandBy();
 
-    if (rx_restore) {
-        _radio.startListening();
-        _rxlisten = true;
-    }
+    if (rx_restore)
+        startListening();
 
     return ret;
 }
