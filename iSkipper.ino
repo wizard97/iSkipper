@@ -15,5 +15,6 @@ void setup()
 
 void loop()
 {
-
+  iSkip.send(CHOICE_A);
+  delay(1000);
 }

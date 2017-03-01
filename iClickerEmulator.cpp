@@ -82,7 +82,7 @@ bool iClickerEmulator::beginTrans()
 
 
 // Send an iclicker packet, send ascii
-bool iClickerEmulator::send(char c)
+bool iClickerEmulator::send(iClickerAnswer_t c)
 {
     bool rx_restore = isListening();
 
