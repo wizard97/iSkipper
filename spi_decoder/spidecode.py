@@ -20,7 +20,8 @@ def main():
             mosi_bin = '{0:08b}'.format(mosi)
             write = (mosi_bin[0] == '1')
             addr = int(mosi_bin[1:], 2)
-            print('%s\t0x%02x\t0x%02x\t0x%02x' % ('W' if write else 'R', addr, mosi, miso))
+            print('%s\t0x%02x\t0x%02x\t0x%02x' %
+                  ('W' if write else 'R', addr, mosi, miso))
 
 if __name__ == '__main__':
     main()
