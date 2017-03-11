@@ -29,7 +29,7 @@ def main():
             dt = time - last_time
             last_time = time
             mosi, miso = [
-                int(s[s.find("(") + 1:s.find(")")], 0) for s in map(str.strip, row[2].split(';'))]
+                int(s[s.find("(0x") + 1:s.find(")", s.find("(0x"))], 0) for s in map(str.strip, row[2].split(';'))]
 
             addr = last_addr + 1
             write = last_write
