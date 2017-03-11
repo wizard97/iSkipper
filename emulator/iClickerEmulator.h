@@ -4,10 +4,13 @@
 #include "RFM69.h"
 #include "Arduino.h"
 
+#define NODE_ID 0
+#define REG_SYNC_VAL_2 0x01
+
 class iClickerEmulator
 {
 public:
-    iClickerEmulator(uint8_t _cepin, uint8_t _cspin, uint8_t _irqpin);
+    iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
 
 private:
     RF24 _radio;
