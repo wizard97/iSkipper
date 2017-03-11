@@ -22,6 +22,7 @@ def main():
     last_time = float('-inf')  # force a NSS toggle on the first packet
     last_addr = 0
     last_write = 0
+    fifo = False
     with open(args.datacsv, newline='') as csvfile:
         reader = csv.reader(csvfile)
         for row in itertools.islice(reader, 1, None):
@@ -31,17 +32,24 @@ def main():
             mosi, miso = [
                 int(s[s.find("(0x") + 1:s.find(")", s.find("(0x"))], 0) for s in map(str.strip, row[2].split(';'))]
 
-            addr = last_addr + 1
+            addr = last_addr if fifo else last_addr + 1
             write = last_write
             if dt > NSS_TOGGLE_DELAY:
-                print('****************************')
                 mosi_bin = '{0:08b}'.format(mosi)
                 write = (mosi_bin[0] == '1')
                 last_write = write
                 addr = int(mosi_bin[1:], 2)
+
+                if addr == FIFO_REG:
+                    print('FIFO ================== FIFO')
+                    fifo = True
+                else:
+                    print('****************************')
+                    fifo = False
+
                 # We didn't actually write anything this time
                 # It will write to the same address next time
-                last_addr = addr - 1
+                last_addr = addr if fifo else addr - 1
                 print('%s\t0x%02x\t\t0x%02x' %
                       ('W' if write else 'R', addr, miso))
             else:
