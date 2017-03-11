@@ -1,4 +1,6 @@
 # iSkipper
-Obviously not to actually be used in class...
+Reverse engineering the overly priced iClicker2
 
-Already done, but crappy code and not al functionality: http://www.taylorkillian.com/2012/11/turning-point-clicker-emulation-with.html
+Uses same radio as RFM69W at 915 MHz.
+
+Obviously not to actually be used in class...
