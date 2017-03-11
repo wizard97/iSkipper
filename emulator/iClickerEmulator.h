@@ -1,7 +1,7 @@
 #ifndef I_CLICKER_EMULATOR_H
 #define I_CLICKER_EMULATOR_H
 
-#include "RF24.h"
+#include "RFM69.h"
 #include "Arduino.h"
 
 class iClickerEmulator
