@@ -6,10 +6,18 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define KNRM  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KBLU  "\x1B[34m"
+#define KMAG  "\x1B[35m"
+#define KCYN  "\x1B[36m"
+#define KWHT  "\x1B[37m"
 
 void encode(uint8_t *addr, uint8_t *ret);
 void decode(uint8_t *addr, uint8_t *ret);
-bool valid_addr(uint8_t addr[4]);
+bool valid_id(uint8_t addr[4]);
 
 int main(int argc, char **argv)
 {
@@ -26,17 +34,19 @@ int main(int argc, char **argv)
     uint8_t addr[] = { inb[3], inb[2], inb[1], inb[0] };
 
 
-    printf("Input: %#x %#x %#x %#x\n", addr[0], addr[1], addr[2], addr[3]);
+    printf("%sInput: %#x %#x %#x %#x\n", KBLU, addr[0], addr[1], addr[2], addr[3]);
 
     if (!strcmp(argv[1], "-o")) {
+        if (!valid_id(addr))
+            printf("%sNOTE: THIS IS NOT A VALID ICLICKER ID!!\n", KRED);
         encode(addr, tmp);
-        printf("Encoded: %#x %#x %#x %#x\n", tmp[0], tmp[1], tmp[2], tmp[3]);
+        printf("%sEncoded: %#x %#x %#x %#x\n",KGRN, tmp[0], tmp[1], tmp[2], tmp[3]);
     } else if (!strcmp(argv[1], "-f")) {
         decode(addr, tmp);
-        printf("Decoded: %#x %#x %#x %#x\n", tmp[0], tmp[1], tmp[2], tmp[3]);
+        printf("%sDecoded: %#x %#x %#x %#x\n", KGRN, tmp[0], tmp[1], tmp[2], tmp[3]);
     }
 
-    printf("\n");
+    printf("%s", KNRM);
     return 0;
 }
 
@@ -60,7 +70,7 @@ void decode(uint8_t *addr, uint8_t *ret)
 }
 
 
-bool valid_addr(uint8_t addr[4])
+bool valid_id(uint8_t addr[4])
 {
     return (addr[0]^addr[1]^addr[2]) == addr[3];
 }
