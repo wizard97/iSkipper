@@ -4,6 +4,14 @@
 #include "RFM69.h"
 #include "Arduino.h"
 
+
+#define ANSWER_A 0xb2
+#define ANSWER_B 0xb6
+#define ANSWER_C 0xbe
+#define ANSWER_D 0xbf
+#define ANSWER_E 0xbb
+
+
 #define NODE_ID 0
 #define REG_SYNC_VAL_2 0x01
 
