@@ -20,7 +20,7 @@ RegInfo = collections.namedtuple(
 
 def load_register_data():
     reg_data = {}
-    with open(REG_DATA_FILE, newline='') as csvfile:
+    with open(REG_DATA_FILE) as csvfile:
         reader = csv.reader(csvfile)
         for row in itertools.islice(reader, 1, None):
             raw_address = row[0]
@@ -62,7 +62,7 @@ def main():
     last_addr = 0
     last_write = 0
     fifo = False
-    with open(args.datacsv, newline='') as csvfile:
+    with open(args.datacsv) as csvfile:
         reader = csv.reader(csvfile)
         for row in itertools.islice(reader, 1, None):
             time = float(row[0])
