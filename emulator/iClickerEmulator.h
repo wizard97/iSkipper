@@ -1,7 +1,7 @@
 #ifndef I_CLICKER_EMULATOR_H
 #define I_CLICKER_EMULATOR_H
 
-#include "RFM69.h"
+#include "iClickerRadio.h"
 #include "Arduino.h"
 
 
@@ -15,6 +15,7 @@
 #define NODE_ID 0
 #define REG_SYNC_VAL_2 0x01
 
+
 class iClickerEmulator
 {
 public:
@@ -27,8 +28,8 @@ public:
     static bool valid_id(uint8_t *id);
 
 private:
-    RFM69 _radio;
+    iClickerRadio _radio;
     const uint8_t _irqpin;
-}
+};
 
 #endif
