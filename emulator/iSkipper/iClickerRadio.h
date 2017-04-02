@@ -1,6 +1,8 @@
 #ifndef I_CLICKER_RADIO_H
 #define I_CLICKER_RADIO_H
 
+#include "RFM69.h"
+
 // This is the bitrate of the iclicker
 #define RF_BITRATEMSB_152381          0x00
 #define RF_BITRATELSB_152381          0xD2

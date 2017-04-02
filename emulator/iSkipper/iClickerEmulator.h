@@ -20,6 +20,8 @@ class iClickerEmulator
 {
 public:
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
+    bool begin();
+    
     //encodes iclicker id for transmission
     static void id_encode(uint8_t *id, uint8_t *ret);
     // decodes a transmitted id
@@ -29,7 +31,6 @@ public:
 
 private:
     iClickerRadio _radio;
-    const uint8_t _irqpin;
 };
 
 #endif

@@ -1,7 +1,9 @@
+#include <SPI.h>
+#include "iClickerRadio.h"
+#include "RFM69registers.h"
 
-iClickerRadio::iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS,
-    uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM)
-: RFM69W(slaveSelectPin, interruptPin, isRFM69HW, interruptNum)
+iClickerRadio::iClickerRadio(uint8_t slaveSelectPin, uint8_t interruptPin, bool isRFM69HW, uint8_t interruptNum)
+: RFM69(slaveSelectPin, interruptPin, isRFM69HW, interruptNum)
 {
 
 }
@@ -24,11 +26,14 @@ bool iClickerRadio::begin()
       //RegAfcCtrl is set to 0x40?, iclicker bug
 
       /* 0x0D */ {REG_LISTEN1, RF_LISTEN1_RESOL_IDLE_4100 | RF_LISTEN1_RESOL_RX_4100 | RF_LISTEN1_CRITERIA_RSSI | RF_LISTEN1_END_01 },
+
       ///* 0x10 */ {REG_VERSION, RF_VERSION_VER_21}, read only?
 
       /* 0x12 */ {REG_PARAMP, RF_PARAMP_10 },
       /* 0x13 */  { REG_OCP, RF_OCP_ON | RF_OCP_TRIM_100 }, // over current protection (default is 95mA)
-      /* 0x18 */ {REG_LNA, RF_LNA_ZIN_200 | RF_LNA_CURRENTGAIN | RF_LNA_GAINSELECT_MAX },
+
+      // This is what LNA should be to match the iclicker, but I think the default is better
+      ///* 0x18 */ {REG_LNA, RF_LNA_ZIN_200 | RF_LNA_CURRENTGAIN | RF_LNA_GAINSELECT_MAX },
 
       // RXBW defaults are { REG_RXBW, RF_RXBW_DCCFREQ_010 | RF_RXBW_MANT_24 | RF_RXBW_EXP_5} (RxBw: 10.4KHz)
       /* 0x19 */ { REG_RXBW, RF_RXBW_DCCFREQ_010 | RF_RXBW_MANT_16 | RF_RXBW_EXP_0 }, // (BitRate < 2 * RxBw)
@@ -87,6 +92,6 @@ bool iClickerRadio::begin()
     attachInterrupt(_interruptNum, RFM69::isr0, RISING);
 
     selfPointer = this;
-    _address = nodeID;
+    //_address = nodeID;
     return true;
 }
