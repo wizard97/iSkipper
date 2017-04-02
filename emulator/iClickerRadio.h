@@ -20,7 +20,8 @@
 class iClickerRadio : public RFM69
 {
 public:
-    iClickerRadio();
+    iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS,
+        uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
 
     bool begin();
 };
