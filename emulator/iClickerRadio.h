@@ -9,12 +9,15 @@
 #define RF_FDEVMSB_222833              0x0E
 #define RF_FDEVLSB_222833               0x45
 
+//sync bytes
 #define RF_SYNC_BYTE1_VALUE_IC          0x85
 #define RF_SYNC_BYTE2_VALUE_IC          0x85
 #define RF_SYNC_BYTE3_VALUE_IC          0x85
 
+//packet length
 #define PAYLOAD_LENGTH_IC               0x05
 
+// threshold for triggerins fifo transmit interrupt
 #define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
 
 class iClickerRadio : public RFM69
