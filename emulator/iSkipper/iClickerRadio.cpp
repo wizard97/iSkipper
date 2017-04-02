@@ -92,6 +92,7 @@ bool iClickerRadio::begin()
     attachInterrupt(_interruptNum, RFM69::isr0, RISING);
 
     selfPointer = this;
-    //_address = nodeID;
+    _address = 0;
+    
     return true;
 }
