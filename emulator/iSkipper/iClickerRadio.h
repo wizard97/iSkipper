@@ -164,70 +164,17 @@ typedef struct iClickerAnswerPacket
     uint8_t answer;
 } iClickerAnswerPacket_t;
 
-class iClickerRadio
+class iClickerRadio : protected RFM69
 {
 public:
-    // need to make public and static for isr
-    static volatile uint8_t DATA[RF69_MAX_DATA_LEN]; // recv/xmit buf, including header & crc bytes
-    static volatile uint8_t DATALEN;
-    //static volatile uint8_t SENDERID;
-    //static volatile uint8_t TARGETID; // should match _address
-    //static volatile uint8_t PAYLOADLEN;
-    static volatile uint8_t ACK_REQUESTED;
-    static volatile uint8_t ACK_RECEIVED; // should be polled immediately after sending a packet with ACK request
-    static volatile int16_t RSSI; // most accurate RSSI during reception (closest to the reception)
-    static volatile uint8_t _mode; // should be protected?
+
 
     iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS, uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
 
-    bool initialize(uint8_t freqBand, uint8_t ID, uint8_t networkID=1);
-    bool canSend();
-    virtual void send(uint8_t toAddress, const void* buffer, uint8_t bufferSize);
-    virtual bool receiveDone();
-    uint32_t getFrequency();
-    void setFrequency(uint32_t freqHz);
-    void setCS(uint8_t newSPISlaveSelect);
-    int16_t readRSSI(bool forceTrigger=false);
-    void promiscuous(bool onOff=true);
-    virtual void setHighPower(bool onOFF=true); // has to be called after initialize() for RFM69HW
-    virtual void setPowerLevel(uint8_t level); // reduce/increase transmit power level
-    void sleep();
-    uint8_t readTemperature(uint8_t calFactor=0); // get CMOS temperature (8bit)
-    void rcCalibration(); // calibrate the internal RC oscillator for use in wide temperature variations - see datasheet section [4.3.5. RC Timer Accuracy]
+    virtual bool initialize(uint8_t freqBand, uint8_t ID, uint8_t networkID=1);
 
-    // allow hacking registers by making these public
-    uint8_t readReg(uint8_t addr);
-    void writeReg(uint8_t addr, uint8_t val);
-    void readAllRegs();
 
 protected:
-
-    static void isr0();
-    void virtual interruptHandler();
-    virtual void interruptHook(uint8_t CTLbyte) {};
-    static volatile bool _inISR;
-    void encrypt(const char* key);
-
-    static RFM69* selfPointer;
-    uint8_t _slaveSelectPin;
-    uint8_t _interruptPin;
-    uint8_t _interruptNum;
-    uint8_t _address;
-    bool _promiscuousMode;
-    uint8_t _powerLevel;
-    bool _isRFM69HW;
-#if defined (SPCR) && defined (SPSR)
-    uint8_t _SPCR;
-    uint8_t _SPSR;
-#endif
-
-    virtual void receiveBegin();
-    virtual void setMode(uint8_t mode);
-    virtual void setHighPowerRegs(bool onOff);
-    virtual void select();
-    virtual void unselect();
-    inline void maybeInterrupts();
-
 
     iClickerChannel::iClickerChannel_t *_chan;
     bool _clickerMode;
