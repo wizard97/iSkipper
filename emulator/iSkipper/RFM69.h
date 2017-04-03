@@ -1,8 +1,33 @@
-#ifndef I_CLICKER_RADIO_H
-#define I_CLICKER_RADIO_H
+// Improved by Aaron Wisner, without all the built in packet packing crap
 
-#include <RingBufCPP.h>
-#include <Arduino.h>
+// **********************************************************************************
+// Driver definition for HopeRF RFM69W/RFM69HW/RFM69CW/RFM69HCW, Semtech SX1231/1231H
+// **********************************************************************************
+// Copyright Felix Rusu 2016, http://www.LowPowerLab.com/contact
+// **********************************************************************************
+// License
+// **********************************************************************************
+// This program is free software; you can redistribute it
+// and/or modify it under the terms of the GNU General
+// Public License as published by the Free Software
+// Foundation; either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will
+// be useful, but WITHOUT ANY WARRANTY; without even the
+// implied warranty of MERCHANTABILITY or FITNESS FOR A
+// PARTICULAR PURPOSE. See the GNU General Public
+// License for more details.
+//
+// Licence can be viewed at
+// http://www.gnu.org/licenses/gpl-3.0.txt
+//
+// Please maintain this license information along with authorship
+// and copyright notices in any redistribution of this code
+// **********************************************************************************
+#ifndef RFM69_h
+#define RFM69_h
+#include <Arduino.h>            // assumes Arduino IDE v1.0 or greater
 
 #define RF69_MAX_DATA_LEN       61 // to take advantage of the built in AES/CRC we want to limit the frame size to the internal FIFO size (66 bytes - 3 bytes overhead - 2 bytes crc)
 #define RF69_SPI_CS             SS // SS is the SPI slave select pin, for instance D10 on ATmega328
@@ -34,6 +59,9 @@
 #define RF69_MODE_TX            4 // TX MODE
 
 // available frequency bands
+#define RF69_315MHZ            31 // non trivial values to avoid misconfiguration
+#define RF69_433MHZ            43
+#define RF69_868MHZ            86
 #define RF69_915MHZ            91
 
 #define null                  0
@@ -43,144 +71,24 @@
 #define RF69_TX_LIMIT_MS   1000
 #define RF69_FSTEP  61.03515625 // == FXOSC / 2^19 = 32MHz / 2^19 (p13 in datasheet)
 
+// TWS: define CTLbyte bits
+#define RFM69_CTL_SENDACK   0x80
+#define RFM69_CTL_REQACK    0x40
 
 
-// Can buffer up to 20 packets
-#define PACKET_BUF_SIZE 20
 
-// This is the bitrate of the iclicker (152381 bits/s)
-#define RF_BITRATEMSB_152381          0x00
-#define RF_BITRATELSB_152381          0xD2
-
-// frequency dev (222833 Hz)
-#define RF_FDEVMSB_222833              0x0E
-#define RF_FDEVLSB_222833               0x45
-
-//sync bytes
-#define RF_SYNC_BYTE1_VALUE_IC          0x85
-#define RF_SYNC_BYTE2_VALUE_IC          0x85
-#define RF_SYNC_BYTE3_VALUE_IC          0x85
-
-//packet length
-#define PAYLOAD_LENGTH_SEND               0x05
-#define PAYLOAD_LENGTH_RECV               0x07
-
-// threshold for triggerins fifo transmit interrupt
-#define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
-
-#define ANSWER_A 0xB2
-#define ANSWER_B 0xB6
-#define ANSWER_C 0xBE
-#define ANSWER_D 0xBF
-#define ANSWER_E 0xBB
-#define ANSWER_PING 0xB3 //pings reciever
-
-//RegSyncValue1-8 for sending is:
-// 0x85, 0x85, 0x85, 0, 0...
-
-//RegSyncValue1-8 for recving is:
-// encoded_id[0], encoded_id[1], encoded_id[2], 0, 0...
-
-// Note: sending packets are 5 bytes
-//  Recieving packets from base are 7 bytes
-namespace iClickerChannels
-{
-    typdef struct iClickerChannel
-    {
-        uint8_t send[3];
-        uint8_t recv[3];
-    } iClickerChannel_t;
-    // MSB to LSB RegFrf
-
-    // Channel AA (Tx: RF_FRFMSB_917, Rx: ~903)
-    const iClickerChannel_t AA =
-    {
-        { 0xE5, 0x40, 0x00 },
-        { 0xE1, 0xE0, 0x00 },
-    };
-
-    // Channel AB (Tx: RF_FRFMSB_913, Rx: ~904)
-    const iClickerChannel_t AB =
-    {
-        { 0xE4, 0x40, 0x00 },
-        { 0xE2, 0x20, 0x00 },
-    };
-
-    // Channel AC (Tx: RF_FRFMSB_914, Rx: )
-    const iClickerChannel_t AC =
-    {
-        { 0xE4, 0x80, 0x00 },
-        { 0x00, 0x00, 0x00 }, //todo
-    };
-
-    // Channel AD (Tx: RF_FRFMSB_915, Rx: )
-    const iClickerChannel_t AD =
-    {
-        { 0xE4, 0xC0, 0x00 },
-        { 0x00, 0x00, 0x00 }, //todo
-    };
-
-    // Channel BA (Tx: RF_FRFMSB_916, Rx: )
-    const iClickerChannel_t BA =
-    {
-        { 0xE5, 0x00, 0x00 },
-        { 0x00, 0x00, 0x00 }, //todo
-    };
-
-
-    // Channel BB (Tx: RF_FRFMSB_919, Rx: RF_FRFMSB_910)
-    const iClickerChannel_t BB =
-    {
-        { 0xE5, 0xC0, 0x00 },
-        { 0xE3, 0x80, 0x00 },
-    };
-
-    // Channel BC (Tx: RF_FRFMSB_920, Rx: )
-    const iClickerChannel_t BC =
-    {
-        { 0xE6, 0x00, 0x00 },
-        { 0x00, 0x00, 0x00 }, //todo
-    };
-
-    // Channel BD (Tx: RF_FRFMSB_921, Rx: )
-    const iClickerChannel_t BD =
-    {
-        { 0xE6, 0x40, 0x00 },
-        { 0x00, 0x00, 0x00 }, //todo
-    };
-
-    // Channel DD (Tx: RF_FRFMSB_909, Rx: ~920)?
-    const iClickerChannel_t DD =
-    {
-        { 0xE3, 0x40, 0x00 },
-        { 0xE6, 0x20, 0x00 },
-    };
-
-}
-
-typedef struct iClickerAnswerPacket
-{
-    uint8_t encoded_id[4];
-    uint8_t answer;
-} iClickerAnswerPacket_t;
-
-class iClickerRadio
+class RFM69
 {
 public:
     // need to make public and static for isr
     static volatile uint8_t DATA[RF69_MAX_DATA_LEN]; // recv/xmit buf, including header & crc bytes
-    static volatile uint8_t DATALEN;
-    //static volatile uint8_t SENDERID;
-    //static volatile uint8_t TARGETID; // should match _address
-    //static volatile uint8_t PAYLOADLEN;
-    static volatile uint8_t ACK_REQUESTED;
-    static volatile uint8_t ACK_RECEIVED; // should be polled immediately after sending a packet with ACK request
+    static volatile uint8_t PAYLOADLEN;
     static volatile int16_t RSSI; // most accurate RSSI during reception (closest to the reception)
     static volatile uint8_t _mode; // should be protected?
 
-    iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS, uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
+    RFM69(uint8_t slaveSelectPin=RF69_SPI_CS, uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
 
-    bool initialize(uint8_t freqBand, uint8_t ID, uint8_t networkID=1);
+    bool initialize(uint8_t freqBand);
     bool canSend();
     virtual void send(uint8_t toAddress, const void* buffer, uint8_t bufferSize);
     virtual bool receiveDone();
@@ -188,7 +96,6 @@ public:
     void setFrequency(uint32_t freqHz);
     void setCS(uint8_t newSPISlaveSelect);
     int16_t readRSSI(bool forceTrigger=false);
-    void promiscuous(bool onOff=true);
     virtual void setHighPower(bool onOFF=true); // has to be called after initialize() for RFM69HW
     virtual void setPowerLevel(uint8_t level); // reduce/increase transmit power level
     void sleep();
@@ -212,8 +119,6 @@ protected:
     uint8_t _slaveSelectPin;
     uint8_t _interruptPin;
     uint8_t _interruptNum;
-    uint8_t _address;
-    bool _promiscuousMode;
     uint8_t _powerLevel;
     bool _isRFM69HW;
 #if defined (SPCR) && defined (SPSR)
@@ -227,11 +132,6 @@ protected:
     virtual void select();
     virtual void unselect();
     inline void maybeInterrupts();
-
-
-    iClickerChannel::iClickerChannel_t *_chan;
-    bool _clickerMode;
-
 };
 
 #endif
