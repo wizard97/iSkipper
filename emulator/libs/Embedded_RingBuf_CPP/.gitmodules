@@ -1,0 +1,3 @@
+[submodule "src/SimplyAtomic"]
+	path = src/SimplyAtomic
+	url = https://github.com/wizard97/SimplyAtomic

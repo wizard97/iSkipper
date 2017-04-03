@@ -54,7 +54,7 @@ bool iClickerRadio::begin()
       /* 0x30 */ { REG_SYNCVALUE2, RF_SYNC_BYTE2_VALUE_IC },
       /* 0x31 */ { REG_SYNCVALUE3, RF_SYNC_BYTE3_VALUE_IC },
       /* 0x37 */ { REG_PACKETCONFIG1, RF_PACKET1_FORMAT_FIXED | RF_PACKET1_DCFREE_OFF | RF_PACKET1_CRC_OFF | RF_PACKET1_CRCAUTOCLEAR_ON | RF_PACKET1_ADRSFILTERING_OFF },
-      /* 0x38 */ { REG_PAYLOADLENGTH, PAYLOAD_LENGTH_IC }, // in variable length mode: the max frame size, not used in TX
+      /* 0x38 */ { REG_PAYLOADLENGTH, PAYLOAD_LENGTH_SEND }, // in variable length mode: the max frame size, not used in TX
       ///* 0x39 */ { REG_NODEADRS, nodeID }, // turned off because we're not using address filtering
       /* 0x3C */ { REG_FIFOTHRESH, RF_FIFOTHRESH_TXSTART_FIFOTHRESH | RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC  }, // TX on FIFO not empty
       /* 0x3D */ { REG_PACKETCONFIG2, RF_PACKET2_RXRESTARTDELAY_1BIT | RF_PACKET2_AUTORXRESTART_OFF | RF_PACKET2_AES_OFF }, // RXRESTARTDELAY must match transmitter PA ramp-down time (bitrate dependent)
@@ -93,6 +93,33 @@ bool iClickerRadio::begin()
 
     selfPointer = this;
     _address = 0;
-    
+
     return true;
+}
+
+
+// internal function - interrupt gets called when a packet is received
+void iClickerRadio::interruptHandler() {
+  //pinMode(4, OUTPUT);
+  //digitalWrite(4, 1);
+  if (_mode == RF69_MODE_RX && (readReg(REG_IRQFLAGS2) & RF_IRQFLAGS2_PAYLOADREADY))
+  {
+    //RSSI = readRSSI();
+    setMode(RF69_MODE_STANDBY);
+    select();
+    SPI.transfer(REG_FIFO & 0x7F);
+
+    PAYLOADLEN = PAYLOAD_LENGTH_IC;
+    DATALEN = PAYLOAD_LENGTH_IC;
+
+    for (uint8_t i = 0; i < PAYLOAD_LENGTH_IC; i++)
+    {
+      DATA[i] = SPI.transfer(0);
+    }
+
+    unselect();
+    setMode(RF69_MODE_RX);
+  }
+  RSSI = readRSSI();
+  //digitalWrite(4, 0);
 }
