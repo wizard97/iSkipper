@@ -26,9 +26,7 @@ typedef struct iClickerAnswerPacket
 class iClickerEmulator
 {
 public:
-    iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
-    bool begin();
-
+    /***** STATIC METHODS *****/
     //encodes iclicker id for transmission
     static void encodeId(uint8_t *id, uint8_t *ret);
     // decodes a transmitted id
@@ -36,7 +34,11 @@ public:
     //checks to make sure valid iclicker id
     static bool validId(uint8_t *id);
 
-    bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck=false, uin32_t timeout=100);
+    /***** NON-STATIC METHODS *****/
+    iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
+    bool begin();
+    bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
+            bool withAck=false, uin32_t timeout=100);
 
 private:
     iClickerRadio _radio;

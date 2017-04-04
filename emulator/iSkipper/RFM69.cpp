@@ -116,7 +116,10 @@ void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
 
         for (uint8_t i =0; i < len; i++)
             SPI.transfer(addr[i]);
+
+        unselect();
     }
+
 }
 
 
