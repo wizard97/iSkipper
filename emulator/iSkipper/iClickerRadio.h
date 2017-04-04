@@ -35,6 +35,8 @@ public:
 
     void setChannelType(iClickerChannelType_t chanType);
 
+    virtual void recvCallback(uint8_t numBytes); //interrupt callback
+
 
 
 protected:

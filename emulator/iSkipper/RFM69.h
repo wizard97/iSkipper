@@ -113,7 +113,7 @@ protected:
 
     static void isr0();
     void virtual interruptHandler();
-    virtual void packetRecvdCallback(uint8_t numBytes) {}; //interrupt callback
+    virtual void recvCallback(uint8_t numBytes) {}; //interrupt callback
     static volatile bool _inISR;
     void encrypt(const char* key);
 

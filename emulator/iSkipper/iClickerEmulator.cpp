@@ -3,7 +3,8 @@
 iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
 : _radio(_cspin, _irqpin)
 {
-
+    _recvCallback = NULL;
+    _self = this; //this sucks
 }
 
 bool iClickerEmulator::begin()
@@ -46,7 +47,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
 
     iClickerAnswerPacket_t toSend;
 
-    encodeId(id, toSend.encoded_id); //encode the id for transmission
+    encodeId(id, toSend.id); //encode the id for transmission
     toSend.answer = (uint8_t)ans;
 
     //send packet, we can cast toSend to array since all uint8_t bytes
@@ -56,7 +57,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     if (withAck)
     {
         uint32_t start = millis();
-        _radio.setSyncAddr(toSend.encoded_id, ICLICKER_ID_LEN - 1);
+        _radio.setSyncAddr(toSend.id, ICLICKER_ID_LEN - 1);
         _radio.setChannelType(CHANNEL_RECV);
 
         bool recvd = false;

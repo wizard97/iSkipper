@@ -120,3 +120,9 @@ void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
         setFrequency(_chanType == CHANNEL_SEND ? _chan.send : _chan.recv);
     }
 }
+
+
+void iClickerRadio::recvCallback(uint8_t numBytes)
+{
+    
+}

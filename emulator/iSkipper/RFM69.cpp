@@ -107,7 +107,7 @@ uint32_t RFM69::getFrequency()
 void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
 {
     if (!len) {
-        writeReg(REG_SYNCCONFIG, readReg(REG_SYNCCONFIG) & ~RF_SYNC_OFF)
+        writeReg(REG_SYNCCONFIG, RF_SYNC_OFF | RF_SYNC_FIFOFILL_AUTO | RF_SYNC_TOL_0);
     } else {
         len = len > RF_SYNC_SIZE_8 ? RF_SYNC_SIZE_8 : len;
         select();
@@ -271,7 +271,7 @@ void RFM69::interruptHandler() {
 
     unselect();
     setMode(RF69_MODE_RX);
-    packetRecvdCallback(PAYLOADLEN);
+    recvCallback(PAYLOADLEN);
   }
   RSSI = readRSSI();
   //digitalWrite(4, 0);

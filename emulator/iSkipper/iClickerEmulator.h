@@ -17,15 +17,44 @@ typedef enum iClickerAnswer
 } iClickerAnswer_t;
 
 
+// 5 bytes
 typedef struct iClickerAnswerPacket
 {
-    uint8_t encoded_id[ICLICKER_ID_LEN];
+    uint8_t id[ICLICKER_ID_LEN];
     uint8_t answer;
 } iClickerAnswerPacket_t;
+
+
+typedef struct iClickerResponsePacket
+{
+    uint8_t unknown[7]; //dont know whats in it yet, but 7 bytes
+} iClickerResponsePacket_t;
+
+
+typedef union iClickerPacketUnion
+{
+    iClickerAnswerPacket_t answerPacket; //if an answer packet
+    iClickerResponsePacket_t respPacket; //if base station response
+} iClickerPacketUnion_t;
+
+
+typedef enum iClickerPacketType
+{
+    PACKET_ANSWER = 0,
+    PACKET_RESP,
+} iClickerPacketType_t;
+
+typedef iClickerPacket
+{
+    iClickerPacketType_t type;
+    iClickerPacketUnion_t packet;
+
+} iClickerPacket_t;
 
 class iClickerEmulator
 {
 public:
+    static iClickerEmulator *_self; //Sucks I have to do this, but must be able to be called through isr
     /***** STATIC METHODS *****/
     //encodes iclicker id for transmission
     static void encodeId(uint8_t *id, uint8_t *ret);
@@ -40,8 +69,12 @@ public:
     bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uin32_t timeout=100);
 
-private:
+    void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick called through ISR
+
+protected:
+
     iClickerRadio _radio;
+    void (*_recvCallback)(iClickerPacket_t *);
 };
 
 #endif
