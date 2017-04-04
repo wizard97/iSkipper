@@ -30,13 +30,13 @@ public:
     bool begin();
 
     //encodes iclicker id for transmission
-    static void id_encode(uint8_t *id, uint8_t *ret);
+    static void encodeId(uint8_t *id, uint8_t *ret);
     // decodes a transmitted id
-    static void id_decode(uint8_t *id, uint8_t *ret);
+    static void decodeId(uint8_t *id, uint8_t *ret);
     //checks to make sure valid iclicker id
-    static bool valid_id(uint8_t *id);
+    static bool validId(uint8_t *id);
 
-    bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uin32_t timeout);
+    bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck=false, uin32_t timeout=100);
 
 private:
     iClickerRadio _radio;

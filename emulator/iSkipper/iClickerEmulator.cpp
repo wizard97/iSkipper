@@ -15,7 +15,7 @@ bool iClickerEmulator::begin()
 
 
 
-void iClickerEmulator::id_encode(uint8_t *id, uint8_t *ret)
+void iClickerEmulator::encodeId(uint8_t *id, uint8_t *ret)
 {
     //bits 4-0
     ret[0] = ((id[0] >> 5) & 0x4) | ((id[0]<<3) & 0xf8) | (id[1] >> 7);
@@ -25,7 +25,7 @@ void iClickerEmulator::id_encode(uint8_t *id, uint8_t *ret)
 }
 
 
-void iClickerEmulator::id_decode(uint8_t *id, uint8_t *ret)
+void iClickerEmulator::decodeId(uint8_t *id, uint8_t *ret)
 {
     ret[0] = (id[0] >> 3) | ((id[2] & 0x1) << 5) | ((id[1] & 0x1) << 6) | ((id[0] & 0x4) << 5);
     ret[1] = ((id[0] & 0x1) << 7) | (id[1] >> 1) | (id[2] >> 7);
@@ -34,7 +34,7 @@ void iClickerEmulator::id_decode(uint8_t *id, uint8_t *ret)
 }
 
 
-bool iClickerEmulator::valid_id(uint8_t *id)
+bool iClickerEmulator::validId(uint8_t *id)
 {
     return (id[0]^id[1]^id[2]) == id[3];
 }
@@ -63,7 +63,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
         while(millis() - start < timeout & !recvd) {
             recvd = receiveDone();
         }
-
+        //eventually should parse response
         PAYLOADLEN = 0;
 
         setChannelType(CHANNEL_SEND);
