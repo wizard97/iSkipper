@@ -96,7 +96,7 @@ public:
     void setFrequency(uint32_t freqHz);
     void setFrequency(uint8_t freq[3]); //manually set the registers
     void setCS(uint8_t newSPISlaveSelect);
-    void setSyncAddr(uint8_t *addr, uint8_t len); 
+    void setSyncAddr(uint8_t *addr, uint8_t len);
     int16_t readRSSI(bool forceTrigger=false);
     virtual void setHighPower(bool onOFF=true); // has to be called after initialize() for RFM69HW
     virtual void setPowerLevel(uint8_t level); // reduce/increase transmit power level
@@ -113,7 +113,7 @@ protected:
 
     static void isr0();
     void virtual interruptHandler();
-    virtual void interruptHook(uint8_t CTLbyte) {};
+    virtual void packetRecvdCallback(uint8_t numBytes) {}; //interrupt callback
     static volatile bool _inISR;
     void encrypt(const char* key);
 
