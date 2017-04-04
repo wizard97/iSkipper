@@ -42,31 +42,31 @@ bool iClickerEmulator::validId(uint8_t *id)
 
 bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uin32_t timeout)
 {
-    setChannelType(CHANNEL_SEND);
+    _radio.setChannelType(CHANNEL_SEND);
 
     iClickerAnswerPacket_t toSend;
 
-    id_encode(id, toSend.encoded_id); //encode the id for transmission
+    encodeId(id, toSend.encoded_id); //encode the id for transmission
     toSend.answer = (uint8_t)ans;
 
     //send packet, we can cast toSend to array since all uint8_t bytes
-    send(&toSend, PACKET_LENGTH_SEND);
+    _radio.send(&toSend, PACKET_LENGTH_SEND);
 
     // need to determine packet format!
     if (withAck)
     {
         uint32_t start = millis();
-        setSyncAddr(toSend.encoded_id, ICLICKER_ID_LEN - 1);
-        setChannelType(CHANNEL_RECV);
+        _radio.setSyncAddr(toSend.encoded_id, ICLICKER_ID_LEN - 1);
+        _radio.setChannelType(CHANNEL_RECV);
 
         bool recvd = false;
         while(millis() - start < timeout & !recvd) {
-            recvd = receiveDone();
+            recvd = _radio.receiveDone();
         }
         //eventually should parse response
         PAYLOADLEN = 0;
 
-        setChannelType(CHANNEL_SEND);
+        _radio.setChannelType(CHANNEL_SEND);
         return recvd;
     }
 

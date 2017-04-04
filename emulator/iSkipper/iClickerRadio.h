@@ -21,7 +21,7 @@
 
 
 
-class iClickerRadio : protected RFM69
+class iClickerRadio : public RFM69
 {
 public:
 
