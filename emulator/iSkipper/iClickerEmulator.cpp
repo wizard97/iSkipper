@@ -8,9 +8,7 @@ iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
 
 bool iClickerEmulator::begin()
 {
-    _radio.begin();
-    //_radio.setCRCLength(RF24_CRC_16 );
-    //_radio.powerUp();
+    _radio.initialize();
 
     return true;
 }
@@ -39,4 +37,38 @@ void iClickerEmulator::id_decode(uint8_t *id, uint8_t *ret)
 bool iClickerEmulator::valid_id(uint8_t *id)
 {
     return (id[0]^id[1]^id[2]) == id[3];
+}
+
+
+bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uin32_t timeout)
+{
+    setChannelType(CHANNEL_SEND);
+
+    iClickerAnswerPacket_t toSend;
+
+    id_encode(id, toSend.encoded_id); //encode the id for transmission
+    toSend.answer = (uint8_t)ans;
+
+    //send packet, we can cast toSend to array since all uint8_t bytes
+    send(&toSend, PACKET_LENGTH_SEND);
+
+    // need to determine packet format!
+    if (withAck)
+    {
+        uint32_t start = millis();
+        setSyncAddr(toSend.encoded_id, ICLICKER_ID_LEN - 1);
+        setChannelType(CHANNEL_RECV);
+
+        bool recvd = false;
+        while(millis() - start < timeout & !recvd) {
+            recvd = receiveDone();
+        }
+
+        PAYLOADLEN = 0;
+
+        setChannelType(CHANNEL_SEND);
+        return recvd;
+    }
+
+    return true;
 }

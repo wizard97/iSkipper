@@ -22,18 +22,12 @@
 #define RF_SYNC_BYTE3_VALUE_IC          0x85
 
 //packet length
-#define PAYLOAD_LENGTH_SEND               0x05
-#define PAYLOAD_LENGTH_RECV               0x07
+#define PACKET_LENGTH_SEND               0x05
+#define PACKET_LENGTH_RECV               0x07
 
 // threshold for triggerins fifo transmit interrupt
 #define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
 
-#define ANSWER_A 0xB2
-#define ANSWER_B 0xB6
-#define ANSWER_C 0xBE
-#define ANSWER_D 0xBF
-#define ANSWER_E 0xBB
-#define ANSWER_PING 0xB3 //pings reciever
 
 //RegSyncValue1-8 for sending is:
 // 0x85, 0x85, 0x85, 0, 0...
@@ -43,13 +37,16 @@
 
 // Note: sending packets are 5 bytes
 //  Recieving packets from base are 7 bytes
+
+typdef struct iClickerChannel
+{
+    uint8_t send[3];
+    uint8_t recv[3];
+} iClickerChannel_t;
+
+
 namespace iClickerChannels
 {
-    typdef struct iClickerChannel
-    {
-        uint8_t send[3];
-        uint8_t recv[3];
-    } iClickerChannel_t;
     // MSB to LSB RegFrf
 
     // Channel AA (Tx: RF_FRFMSB_917, Rx: ~903)
@@ -118,11 +115,13 @@ namespace iClickerChannels
 
 }
 
-typedef struct iClickerAnswerPacket
+typedef enum iClickerChannelType
 {
-    uint8_t encoded_id[4];
-    uint8_t answer;
-} iClickerAnswerPacket_t;
+    CHANNEL_SEND = 0, //act as a clicker
+    CHANNEL_RECV = 1, // act as base station
+} iClickerChannelType_t;
+
+
 
 class iClickerRadio : protected RFM69
 {
@@ -131,13 +130,19 @@ public:
 
     iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS, uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
 
-    virtual bool initialize(uint8_t freqBand, uint8_t ID, uint8_t networkID=1);
+    virtual bool initialize();
+
+    // set the frequency (in Hz)
+    void setChannel(iClickerChannel_t chan);
+
+    void setChannelType(iClickerChannelType_t chanType);
+
 
 
 protected:
 
-    iClickerChannel::iClickerChannel_t *_chan;
-    bool _clickerMode;
+    iClickerChannel_t _chan; //which channel AA?
+    iClickerChannelType_t _chanType; //send or recv channel?
 
 };
 

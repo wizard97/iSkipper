@@ -90,11 +90,13 @@ public:
 
     virtual bool initialize(uint8_t freqBand);
     bool canSend();
-    virtual void send(uint8_t toAddress, const void* buffer, uint8_t bufferSize);
+    virtual void send(const void* buffer, uint8_t bufferSize);
     virtual bool receiveDone();
     uint32_t getFrequency();
     void setFrequency(uint32_t freqHz);
+    void setFrequency(uint8_t freq[3]); //manually set the registers
     void setCS(uint8_t newSPISlaveSelect);
+    void setSyncAddr(uint8_t *addr, uint8_t len); 
     int16_t readRSSI(bool forceTrigger=false);
     virtual void setHighPower(bool onOFF=true); // has to be called after initialize() for RFM69HW
     virtual void setPowerLevel(uint8_t level); // reduce/increase transmit power level

@@ -1,24 +1,15 @@
 #include <SPI.h>
 #include "iClickerRadio.h"
 #include "RFM69registers.h"
-
-volatile uint8_t RFM69::DATA[RF69_MAX_DATA_LEN];
-volatile uint8_t RFM69::_mode;        // current transceiver state
-volatile uint8_t RFM69::DATALEN;
-volatile uint8_t RFM69::ACK_REQUESTED;
-volatile uint8_t RFM69::ACK_RECEIVED; // should be polled immediately after sending a packet with ACK request
-volatile int16_t RFM69::RSSI;          // most accurate RSSI during reception (closest to the reception)
-volatile bool RFM69::_inISR;
-RFM69* RFM69::selfPointer;
-
+#include <string.h>
 
 iClickerRadio::iClickerRadio(uint8_t slaveSelectPin, uint8_t interruptPin, bool isRFM69HW, uint8_t interruptNum)
 : RFM69(slaveSelectPin, interruptPin, isRFM69HW, interruptNum)
 {
 
     // default to AA
-    _chan = &iClickerChannels::AA;
-    _clickerMode = true; //by default act as clicker
+    _chan = iClickerChannels::AA;
+    _chanType = CHANNEL_SEND; //by default go to send channel
 }
 
 bool iClickerRadio::initialize()
@@ -32,9 +23,9 @@ bool iClickerRadio::initialize()
       /* 0x05 */ { REG_FDEVMSB, RF_FDEVMSB_222833 }, // default: 5KHz, (FDEV + BitRate / 2 <= 500KHz)
       /* 0x06 */ { REG_FDEVLSB, RF_FDEVLSB_222833 }, //fstep = 61.0hz, now fstep*0xe45 = 2228333
 
-      /* 0x07 */ { REG_FRFMSB, RF_FRFMSB_917}, //default to channel A
-      /* 0x08 */ { REG_FRFMID, RF_FRFMID_917 },
-      /* 0x09 */ { REG_FRFLSB, RF_FRFLSB_917 },
+      /* 0x07 */ { REG_FRFMSB, _chan.send[0] }, //default to channel AA
+      /* 0x08 */ { REG_FRFMID, _chan.send[1] },
+      /* 0x09 */ { REG_FRFLSB, _chan.send[2] },
 
       //RegAfcCtrl is set to 0x40?, iclicker bug
 
@@ -109,4 +100,23 @@ bool iClickerRadio::initialize()
     _chan = &iClickerChannels::AA;
 
     return true;
+}
+
+
+
+void iClickerRadio::setChannel(iClickerChannel_t chan);
+{
+  _chan = chan;
+  _mode = IC_MODE_CLICKER;
+  setFrequency(_chan.send);
+}
+
+
+void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
+{
+    // dont change it if allready correct
+    if (_chanType != chanType) {
+        _chanType = chanType;
+        setFrequency(_chanType == CHANNEL_SEND ? _chan.send : _chan.recv);
+    }
 }

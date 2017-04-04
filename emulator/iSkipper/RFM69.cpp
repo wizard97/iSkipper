@@ -102,21 +102,48 @@ uint32_t RFM69::getFrequency()
   return RF69_FSTEP * (((uint32_t) readReg(REG_FRFMSB) << 16) + ((uint16_t) readReg(REG_FRFMID) << 8) + readReg(REG_FRFLSB));
 }
 
-// set the frequency (in Hz)
+
+
+void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
+{
+    if (!len) {
+        writeReg(REG_SYNCCONFIG, readReg(REG_SYNCCONFIG) & ~RF_SYNC_OFF)
+    } else {
+        len = len > RF_SYNC_SIZE_8 ? RF_SYNC_SIZE_8 : len;
+        select();
+        SPI.transfer(REG_SYNCCONFIG | 0x80);
+        SPI.transfer(RF_SYNC_ON | RF_SYNC_FIFOFILL_AUTO | (len << 3) | RF_SYNC_TOL_0);
+
+        for (uint8_t i =0; i < len; i++)
+            SPI.transfer(addr[i]);
+    }
+}
+
+
+// set the frequency directly set regs
 void RFM69::setFrequency(uint32_t freqHz)
 {
-  uint8_t oldMode = _mode;
-  if (oldMode == RF69_MODE_TX) {
-    setMode(RF69_MODE_RX);
-  }
   freqHz /= RF69_FSTEP; // divide down by FSTEP to get FRF
-  writeReg(REG_FRFMSB, freqHz >> 16);
-  writeReg(REG_FRFMID, freqHz >> 8);
-  writeReg(REG_FRFLSB, freqHz);
-  if (oldMode == RF69_MODE_RX) {
-    setMode(RF69_MODE_SYNTH);
-  }
-  setMode(oldMode);
+  uint8_t freq[] = {freqHz >> 16, freqHz >> 8, freqHz};
+  setFrequency(freq);
+}
+
+// manually set the frequency regs
+void RFM69::setFrequency(uint8_t freq[3])
+{
+    uint8_t oldMode = _mode;
+    if (oldMode == RF69_MODE_TX) {
+      setMode(RF69_MODE_RX);
+    }
+
+    writeReg(REG_FRFMSB, freq[0];
+    writeReg(REG_FRFMID, freq[1]);
+    writeReg(REG_FRFLSB, freq[2]);
+
+    if (oldMode == RF69_MODE_RX) {
+      setMode(RF69_MODE_SYNTH);
+    }
+    setMode(oldMode);
 }
 
 
@@ -184,7 +211,7 @@ bool RFM69::canSend()
   return false;
 }
 
-void RFM69::send(uint8_t toAddress, const void* buffer, uint8_t bufferSize)
+void RFM69::send(const void* buffer, uint8_t bufferSize)
 {
   writeReg(REG_PACKETCONFIG2, (readReg(REG_PACKETCONFIG2) & 0xFB) | RF_PACKET2_RXRESTART); // avoid RX deadlocks
   uint32_t now = millis();
