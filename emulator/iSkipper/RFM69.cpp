@@ -107,12 +107,14 @@ uint32_t RFM69::getFrequency()
 void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
 {
     if (!len) {
-        writeReg(REG_SYNCCONFIG, RF_SYNC_OFF | RF_SYNC_FIFOFILL_AUTO | RF_SYNC_TOL_0);
+        writeReg(REG_SYNCCONFIG, RF_SYNC_OFF | (readReg(REG_SYNCCONFIG) & ~(0x80)));
     } else {
         len = len > RF_SYNC_SIZE_8 ? RF_SYNC_SIZE_8 : len;
+        uint8_t syncConf = readReg(REG_SYNCCONFIG);
         select();
         SPI.transfer(REG_SYNCCONFIG | 0x80);
-        SPI.transfer(RF_SYNC_ON | RF_SYNC_FIFOFILL_AUTO | (len << 3) | RF_SYNC_TOL_0);
+        (syncConf & ~(0x80 | 0x38))
+        SPI.transfer(RF_SYNC_ON | (len << 3) | (syncConf & ~(0x80 | 0x38)));
 
         for (uint8_t i =0; i < len; i++)
             SPI.transfer(addr[i]);
@@ -122,6 +124,21 @@ void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
 
 }
 
+void RFM69::setPayloadLength(uint8_t len, bool variable)
+{
+    if (len > 255)
+        return;
+
+    uint8_t pConfig = readReg(REG_PACKETCONFIG1) & ~0x80;
+
+    if (variable) {
+        writeReg(REG_PACKETCONFIG1, RF_PACKET1_FORMAT_VARIABLE | pConfig);
+    } else {
+        writeReg(REG_PACKETCONFIG1, RF_PACKET1_FORMAT_FIXED | pConfig);
+    }
+
+    writeReg(REG_PAYLOADLENGTH, len);
+}
 
 // set the frequency directly set regs
 void RFM69::setFrequency(uint32_t freqHz)

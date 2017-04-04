@@ -16,8 +16,8 @@
 #define RF_SYNC_BYTE3_VALUE_IC          0x85
 
 //packet length
-#define PACKET_LENGTH_SEND               0x05
-#define PACKET_LENGTH_RECV               0x07
+#define PAYLOAD_LENGTH_SEND               0x05
+#define PAYLOAD_LENGTH_RECV               0x07
 
 
 typedef enum iClickerChannelType
