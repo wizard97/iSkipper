@@ -105,7 +105,7 @@ bool iClickerRadio::initialize()
 
 
 
-void iClickerRadio::setChannel(iClickerChannel_t chan);
+void iClickerRadio::setChannel(iClickerChannel_t chan)
 {
     _chan = chan;
     setChannelType(CHANNEL_SEND);
@@ -124,7 +124,7 @@ void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
 }
 
 
-void iClickerRadio::getChannelType()
+iClickerChannelType_t iClickerRadio::getChannelType()
 {
     return _chanType;
 }
@@ -137,7 +137,7 @@ void iClickerRadio::recvCallback(uint8_t *data, uint8_t numBytes)
 }
 
 
-void iClickerRadio::setRecvCallback((*recvCallback)(uint8_t *, uint8_t))
+void iClickerRadio::setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t))
 {
     _recvCallback = recvCallback;
 }

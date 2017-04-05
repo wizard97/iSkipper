@@ -41,10 +41,10 @@ typedef union iClickerPacketUnion
 typedef enum iClickerPacketType
 {
     PACKET_ANSWER = 0,
-    PACKET_RESP,
+    PACKET_RESPONSE,
 } iClickerPacketType_t;
 
-typedef iClickerPacket
+typedef struct iClickerPacket
 {
     iClickerPacketType_t type;
     iClickerPacketUnion_t packet;
@@ -68,7 +68,7 @@ public:
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
     bool begin();
     bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
-            bool withAck=false, uin32_t timeout=100);
+            bool withAck=false, uint32_t timeout=100);
 
     void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick, called through ISR
 

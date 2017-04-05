@@ -113,7 +113,6 @@ void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
         uint8_t syncConf = readReg(REG_SYNCCONFIG);
         select();
         SPI.transfer(REG_SYNCCONFIG | 0x80);
-        (syncConf & ~(0x80 | 0x38))
         SPI.transfer(RF_SYNC_ON | (len << 3) | (syncConf & ~(0x80 | 0x38)));
 
         for (uint8_t i =0; i < len; i++)
@@ -144,7 +143,7 @@ void RFM69::setPayloadLength(uint8_t len, bool variable)
 void RFM69::setFrequency(uint32_t freqHz)
 {
   freqHz /= RF69_FSTEP; // divide down by FSTEP to get FRF
-  uint8_t freq[] = {freqHz >> 16, freqHz >> 8, freqHz};
+  uint8_t freq[] = {(uint8_t)(freqHz >> 16), (uint8_t)(freqHz >> 8), (uint8_t)(freqHz)};
   setFrequency(freq);
 }
 
@@ -156,7 +155,7 @@ void RFM69::setFrequency(uint8_t freq[3])
       setMode(RF69_MODE_RX);
     }
 
-    writeReg(REG_FRFMSB, freq[0];
+    writeReg(REG_FRFMSB, freq[0]);
     writeReg(REG_FRFMID, freq[1]);
     writeReg(REG_FRFLSB, freq[2]);
 
@@ -288,7 +287,7 @@ void RFM69::interruptHandler() {
 
     unselect();
     setMode(RF69_MODE_RX);
-    recvCallback(DATA, PAYLOADLEN);
+    recvCallback((uint8_t *)DATA, (uint8_t)PAYLOADLEN);
   }
   RSSI = readRSSI();
   //digitalWrite(4, 0);

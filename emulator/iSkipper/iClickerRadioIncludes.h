@@ -27,7 +27,7 @@ typedef enum iClickerChannelType
 } iClickerChannelType_t;
 
 
-typdef struct iClickerChannel
+typedef struct iClickerChannel
 {
     uint8_t send[3];
     uint8_t recv[3];

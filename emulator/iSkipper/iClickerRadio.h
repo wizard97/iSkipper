@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 #include "iClickerRadioIncludes.h"
-
+#include "RFM69.h"
 
 // threshold for triggerins fifo transmit interrupt
 #define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
@@ -37,7 +37,7 @@ public:
 
     iClickerChannelType_t getChannelType();
 
-    void setRecvCallback((*recvCallback)(uint8_t *, uint8_t));
+    void setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t));
 
 
 protected:
