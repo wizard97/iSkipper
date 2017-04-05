@@ -123,6 +123,18 @@ void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
     }
 }
 
+//promiscuous on current channel and channel type
+void enablePromiscous();
+{
+    receiveBegin(); //make sure _recvCallback installed
+}
+
+//alias to standby
+void iClickerRadio::stopPromiscuous()
+{
+    standby();
+}
+
 
 iClickerChannelType_t iClickerRadio::getChannelType()
 {

@@ -205,6 +205,11 @@ void RFM69::sleep() {
   setMode(RF69_MODE_SLEEP);
 }
 
+void RFM69::standby()
+{
+    setMode(RF69_MODE_STANDBY);
+}
+
 
 // set *transmit/TX* output power: 0=min, 31=max
 // this results in a "weaker" transmitted signal, and directly results in a lower RSSI at the receiver

@@ -67,13 +67,13 @@ public:
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
     bool begin();
-    bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
+    bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=100);
 
     void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick, called through ISR
 
-protected:
 
+protected:
     iClickerRadio _radio;
     void (*_recvCallback)(iClickerPacket_t *);
 };

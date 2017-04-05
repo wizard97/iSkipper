@@ -32,13 +32,11 @@ public:
 
     // set the frequency (in Hz)
     void setChannel(iClickerChannel_t chan);
-
     void setChannelType(iClickerChannelType_t chanType);
-
     iClickerChannelType_t getChannelType();
-
     void setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t));
-
+    void enablePromiscous();
+    void disablePromiscous();
 
 protected:
     virtual void recvCallback(uint8_t *data, uint8_t numBytes) override; //interrupt callback

@@ -99,6 +99,7 @@ public:
     void setCS(uint8_t newSPISlaveSelect);
     void setSyncAddr(uint8_t *addr, uint8_t len);
     void setPacketSize(uint8_t len);
+    void standby(); //setMode(RF69_MODE_STANDBY);
     int16_t readRSSI(bool forceTrigger=false);
     virtual void setHighPower(bool onOFF=true); // has to be called after initialize() for RFM69HW
     virtual void setPowerLevel(uint8_t level); // reduce/increase transmit power level

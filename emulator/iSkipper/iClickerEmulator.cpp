@@ -69,7 +69,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
             recvd = _radio.receiveDone();
         }
         //eventually should parse response
-        _radio.PAYLOADLEN = 0;
+        recvd &= (_radio.PAYLOADLEN == PAYLOAD_LENGTH_RECV);
 
         _radio.setChannelType(CHANNEL_SEND);
         return recvd;
@@ -78,6 +78,8 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     return true;
 }
 
+void iClickerEmulator::promiscuous
+
 
 void iClickerEmulator::setRecvPacketHandler(void (*cb)(iClickerPacket_t *))
 {
@@ -85,7 +87,7 @@ void iClickerEmulator::setRecvPacketHandler(void (*cb)(iClickerPacket_t *))
 }
 
 
-// called when packet recvd
+// static method called when packet recvd
 void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
 {
     if (!_self->_recvCallback) //make sure not null
