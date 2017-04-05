@@ -35,14 +35,19 @@ public:
 
     void setChannelType(iClickerChannelType_t chanType);
 
-    virtual void recvCallback(uint8_t numBytes); //interrupt callback
+    iClickerChannelType_t getChannelType();
 
+    void setRecvCallback((*recvCallback)(uint8_t *, uint8_t));
 
 
 protected:
+    virtual void recvCallback(uint8_t *data, uint8_t numBytes) override; //interrupt callback
 
     iClickerChannel_t _chan; //which channel AA?
     iClickerChannelType_t _chanType; //send or recv channel?
+
+    //recv callback (buf*, numBytes)
+    void (*_recvCallback)(uint8_t *, uint8_t);
 
 };
 

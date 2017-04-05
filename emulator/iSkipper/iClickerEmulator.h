@@ -54,6 +54,7 @@ typedef iClickerPacket
 class iClickerEmulator
 {
 public:
+    static void isrRecvCallback(uint8_t *buf, uint8_t numBytes);
     static iClickerEmulator *_self; //Sucks I have to do this, but must be able to be called through isr
     /***** STATIC METHODS *****/
     //encodes iclicker id for transmission
@@ -69,7 +70,7 @@ public:
     bool submitAnswer(uint8_t encoded_id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uin32_t timeout=100);
 
-    void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick called through ISR
+    void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick, called through ISR
 
 protected:
 

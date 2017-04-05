@@ -10,6 +10,7 @@ iClickerRadio::iClickerRadio(uint8_t slaveSelectPin, uint8_t interruptPin, bool 
     // default to AA
     _chan = iClickerChannels::AA;
     _chanType = CHANNEL_SEND; //by default go to send channel
+    _recvCallback = NULL;
 }
 
 bool iClickerRadio::initialize()
@@ -97,7 +98,7 @@ bool iClickerRadio::initialize()
 
     selfPointer = this;
 
-    _chan = &iClickerChannels::AA;
+    _chan = iClickerChannels::AA;
 
     return true;
 }
@@ -107,7 +108,7 @@ bool iClickerRadio::initialize()
 void iClickerRadio::setChannel(iClickerChannel_t chan);
 {
     _chan = chan;
-    _mode = IC_MODE_CLICKER;
+    setChannelType(CHANNEL_SEND);
     setFrequency(_chan.send);
 }
 
@@ -123,7 +124,20 @@ void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
 }
 
 
-void iClickerRadio::recvCallback(uint8_t numBytes)
+void iClickerRadio::getChannelType()
 {
+    return _chanType;
+}
 
+void iClickerRadio::recvCallback(uint8_t *data, uint8_t numBytes)
+{
+    if(_recvCallback) {
+        _recvCallback(data, numBytes);
+    }
+}
+
+
+void iClickerRadio::setRecvCallback((*recvCallback)(uint8_t *, uint8_t))
+{
+    _recvCallback = recvCallback;
 }

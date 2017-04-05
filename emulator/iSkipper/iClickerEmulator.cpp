@@ -1,10 +1,12 @@
 #include "iClickerEmulator.h"
+#include <string.h>
 
 iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
 : _radio(_cspin, _irqpin)
 {
     _recvCallback = NULL;
     _self = this; //this sucks
+    _radio.setRecvCallback(&isrRecvCallback);
 }
 
 bool iClickerEmulator::begin()
@@ -72,4 +74,34 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     }
 
     return true;
+}
+
+
+void iClickerEmulator::setRecvPacketHandler(void (*cb)(iClickerPacket_t *))
+{
+    _recvCallback = cb;
+}
+
+
+// called when packet recvd
+void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
+{
+    if (!_recvCallback) //make sure not null
+        return;
+
+    iClickerPacket_t recvd;
+    //process packet
+    if (numBytes == PAYLOAD_LENGTH_SEND && _radio.getChannelType() == CHANNEL_SEND) {
+        //recvd from another iclicker
+        recvd.type = PACKET_ANSWER;
+        memcpy(recv.packet, buf, PAYLOAD_LENGTH_SEND);
+
+    } else if (numBytes == PAYLOAD_LENGTH_RECV && _radio.getChannelType() == CHANNEL_RECV) {
+        //recvd from base station
+        recvd.type = PACKET_RESPONSE;
+        memcpy(recv.packet, buf, PAYLOAD_LENGTH_RECV);
+    }
+
+    _recvCallback(&recvd);
+
 }
