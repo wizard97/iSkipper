@@ -76,12 +76,13 @@ public:
 
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
-    bool begin();
+    bool begin(iClickerChannel_t chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=100);
 
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
+    void setChannel(iClickerChannel_t chan);
 
 
 protected:

@@ -11,9 +11,10 @@ iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
     _radio.setRecvCallback(&isrRecvCallback);
 }
 
-bool iClickerEmulator::begin()
+bool iClickerEmulator::begin(iClickerChannel_t chan)
 {
     _radio.initialize();
+    _radio.setChannel(chan);
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
     return true;
@@ -104,6 +105,13 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     }
 
     return true;
+}
+
+
+void iClickerEmulator::setChannel(iClickerChannel_t chan)
+{
+    _radio.setChannel(chan);
+    configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 }
 
 

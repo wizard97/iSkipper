@@ -12,7 +12,7 @@ RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
 void setup()
 {
     Serial.begin(115200);
-    clicker.begin();
+    clicker.begin(iClickerChannels::AA);
     // enter promiscouse mode on sending channel
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
 }
