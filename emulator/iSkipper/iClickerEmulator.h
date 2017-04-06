@@ -71,6 +71,8 @@ public:
     static void decodeId(uint8_t *id, uint8_t *ret);
     //checks to make sure valid iclicker id
     static bool validId(uint8_t *id);
+    //generate random iClicker id
+    static void randomId(uint8_t *ret);
 
     static char answerChar(iClickerAnswer_t ans);
 

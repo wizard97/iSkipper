@@ -13,6 +13,9 @@ iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
 
 bool iClickerEmulator::begin(iClickerChannel_t chan)
 {
+    //seed rand
+    randomSeed(analogRead(0) + analogRead(1) + analogRead(2));
+
     _radio.initialize();
     _radio.setChannel(chan);
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
@@ -44,6 +47,15 @@ void iClickerEmulator::decodeId(uint8_t *id, uint8_t *ret)
 bool iClickerEmulator::validId(uint8_t *id)
 {
     return (id[0]^id[1]^id[2]) == id[3];
+}
+
+
+void iClickerEmulator::randomId(uint8_t *ret)
+{
+    ret[0] = (uint8_t)random(256);
+    ret[1] = (uint8_t)random(256);
+    ret[2] = (uint8_t)random(256);
+    ret[3] = (uint8_t)ret[0]^ret[1]^ret[2];
 }
 
 
