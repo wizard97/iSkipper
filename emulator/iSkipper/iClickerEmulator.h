@@ -6,6 +6,10 @@
 
 #define ICLICKER_ID_LEN 4
 
+#define SEND_SYNC_ADDR_LEN 3
+#define RECV_SYNC_ADDR_LEN (ICLICKER_ID_LEN - 1)
+
+
 typedef enum iClickerAnswer
 {
     ANSWER_A = 0xB2,
@@ -15,6 +19,10 @@ typedef enum iClickerAnswer
     ANSWER_E = 0xBB,
     ANSWER_PING = 0xB3,
 } iClickerAnswer_t;
+
+
+const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
+    {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
 
 
 // 5 bytes
@@ -76,6 +84,8 @@ public:
 protected:
     iClickerRadio _radio;
     void (*_recvCallback)(iClickerPacket_t *);
+
+    void configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr = DEFAULT_SEND_SYNC_ADDR);
 };
 
 #endif

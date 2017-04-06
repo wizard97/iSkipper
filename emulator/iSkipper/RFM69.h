@@ -97,7 +97,7 @@ public:
     void setFrequency(uint32_t freqHz);
     void setFrequency(uint8_t freq[3]); //manually set the registers
     void setCS(uint8_t newSPISlaveSelect);
-    void setSyncAddr(uint8_t *addr, uint8_t len);
+    void setSyncAddr(const uint8_t *addr, uint8_t len);
     void setPacketSize(uint8_t len);
     void standby(); //setMode(RF69_MODE_STANDBY);
     int16_t readRSSI(bool forceTrigger=false);

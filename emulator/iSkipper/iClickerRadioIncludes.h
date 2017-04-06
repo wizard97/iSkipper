@@ -19,7 +19,6 @@
 #define PAYLOAD_LENGTH_SEND               0x05
 #define PAYLOAD_LENGTH_RECV               0x07
 
-
 typedef enum iClickerChannelType
 {
     CHANNEL_SEND = 0, //act as a clicker

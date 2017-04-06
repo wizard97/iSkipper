@@ -104,7 +104,7 @@ uint32_t RFM69::getFrequency()
 
 
 
-void RFM69::setSyncAddr(uint8_t *addr, uint8_t len)
+void RFM69::setSyncAddr(const uint8_t *addr, uint8_t len)
 {
     if (!len) {
         writeReg(REG_SYNCCONFIG, RF_SYNC_OFF | (readReg(REG_SYNCCONFIG) & ~(0x80)));

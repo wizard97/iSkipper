@@ -47,7 +47,7 @@ bool iClickerEmulator::validId(uint8_t *id)
 
 bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout)
 {
-    _radio.setChannelType(CHANNEL_SEND);
+    configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
     iClickerAnswerPacket_t toSend;
 
@@ -61,8 +61,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     if (withAck)
     {
         uint32_t start = millis();
-        _radio.setSyncAddr(toSend.id, ICLICKER_ID_LEN - 1);
-        _radio.setChannelType(CHANNEL_RECV);
+        configureRadio(CHANNEL_RECV, id);
 
         bool recvd = false;
         while(millis() - start < timeout && !recvd) {
@@ -71,15 +70,31 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
         //eventually should parse response
         recvd &= (_radio.PAYLOADLEN == PAYLOAD_LENGTH_RECV);
 
-        _radio.setChannelType(CHANNEL_SEND);
+        configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
         return recvd;
     }
 
     return true;
 }
 
-void iClickerEmulator::promiscuous
 
+void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr)
+{
+    // set the correct sync addr and len
+    _radio.setSyncAddr(syncaddr, type == CHANNEL_SEND ? SEND_SYNC_ADDR_LEN : RECV_SYNC_ADDR_LEN);
+
+    // put radio on the correct freq and packet size
+    _radio.setChannelType(type);
+}
+
+
+/*
+// go into recv mode
+void iClickerEmulator::promiscuous()
+{
+
+}
+*/
 
 void iClickerEmulator::setRecvPacketHandler(void (*cb)(iClickerPacket_t *))
 {
