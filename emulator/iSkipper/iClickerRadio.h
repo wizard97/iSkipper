@@ -35,8 +35,8 @@ public:
     void setChannelType(iClickerChannelType_t chanType);
     iClickerChannelType_t getChannelType();
     void setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t));
-    void enablePromiscous();
-    void disablePromiscous();
+    void enablePromiscuous();
+    void disablePromiscuous();
 
 protected:
     virtual void recvCallback(uint8_t *data, uint8_t numBytes) override; //interrupt callback

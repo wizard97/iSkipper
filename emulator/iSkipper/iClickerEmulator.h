@@ -72,13 +72,16 @@ public:
     //checks to make sure valid iclicker id
     static bool validId(uint8_t *id);
 
+    static char answerChar(iClickerAnswer_t ans);
+
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin);
     bool begin();
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=100);
 
-    void setRecvPacketHandler(void (*cb)(iClickerPacket_t *)); //must be quick, called through ISR
+    void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
+    void stopPromiscuous();
 
 
 protected:

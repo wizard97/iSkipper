@@ -14,6 +14,7 @@ iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
 bool iClickerEmulator::begin()
 {
     _radio.initialize();
+    configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
     return true;
 }
@@ -42,6 +43,34 @@ void iClickerEmulator::decodeId(uint8_t *id, uint8_t *ret)
 bool iClickerEmulator::validId(uint8_t *id)
 {
     return (id[0]^id[1]^id[2]) == id[3];
+}
+
+
+char iClickerEmulator::answerChar(iClickerAnswer_t ans)
+{
+    switch(ans)
+    {
+        case ANSWER_A:
+            return 'A';
+
+        case ANSWER_B:
+            return 'B';
+
+        case ANSWER_C:
+            return 'C';
+
+        case ANSWER_D:
+            return 'D';
+
+        case ANSWER_E:
+            return 'E';
+
+        case ANSWER_PING:
+            return 'P';
+
+        default:
+            return 'X'; //unknown
+    }
 }
 
 
@@ -88,17 +117,20 @@ void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t 
 }
 
 
-/*
+
 // go into recv mode
-void iClickerEmulator::promiscuous()
-{
-
-}
-*/
-
-void iClickerEmulator::setRecvPacketHandler(void (*cb)(iClickerPacket_t *))
+void iClickerEmulator::startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *))
 {
     _recvCallback = cb;
+    _radio.setChannelType(chanType);
+    _radio.enablePromiscuous(); //should call isr recv callback
+}
+
+
+void iClickerEmulator::stopPromiscuous()
+{
+    _recvCallback = NULL;
+    _radio.disablePromiscuous();
 }
 
 
