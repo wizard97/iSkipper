@@ -88,6 +88,9 @@ public:
     void stopPromiscuous();
     void setChannel(iClickerChannel_t chan);
 
+    //return true if base station responds to any ping (wait= how many ms for wait for ping response)
+    bool ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = 50);
+
 
     //ATTACKS
     bool floodAttack(uint32_t num, uint32_t interval);
