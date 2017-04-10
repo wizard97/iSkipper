@@ -28,7 +28,7 @@ public:
 
     iClickerRadio(uint8_t slaveSelectPin=RF69_SPI_CS, uint8_t interruptPin=RF69_IRQ_PIN, bool isRFM69HW=false, uint8_t interruptNum=RF69_IRQ_NUM);
 
-    virtual bool initialize();
+    virtual bool initialize(uint8_t freqBand = RF69_915MHZ) override;
 
     // set the frequency (in Hz)
     void setChannel(iClickerChannel_t chan);

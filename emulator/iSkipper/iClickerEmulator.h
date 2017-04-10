@@ -73,7 +73,9 @@ public:
     static bool validId(uint8_t *id);
     //generate random iClicker id
     static void randomId(uint8_t *ret);
-
+    //generate random answer
+    static iClickerAnswer_t randomAnswer();
+    //concert answer to char
     static char answerChar(iClickerAnswer_t ans);
 
     /***** NON-STATIC METHODS *****/
@@ -85,6 +87,10 @@ public:
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
     void setChannel(iClickerChannel_t chan);
+
+
+    //ATTACKS
+    bool floodAttack(uint32_t num, uint32_t interval);
 
 
 protected:

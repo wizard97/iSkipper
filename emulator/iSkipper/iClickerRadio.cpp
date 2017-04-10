@@ -13,7 +13,7 @@ iClickerRadio::iClickerRadio(uint8_t slaveSelectPin, uint8_t interruptPin, bool 
     _recvCallback = NULL;
 }
 
-bool iClickerRadio::initialize()
+bool iClickerRadio::initialize(uint8_t freqBand)
 {
     const uint8_t CONFIG[][2] =
     {
