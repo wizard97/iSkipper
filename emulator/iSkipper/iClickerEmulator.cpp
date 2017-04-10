@@ -213,16 +213,18 @@ bool iClickerEmulator::floodAttack(uint32_t num, uint32_t interval)
 }
 
 
-bool iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uint16_t wait)
+uint16_t iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uint16_t wait)
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
+
+    uint16_t total = 0;
 
     for (uint16_t i=0; i < tries; i++)
     {
         if (submitAnswer(id, ANSWER_PING, true, wait))
-            return true;
+            total++;
 
     }
 
-    return false;
+    return total;
 }
