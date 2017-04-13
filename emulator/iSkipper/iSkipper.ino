@@ -69,7 +69,7 @@ void loop()
     Serial.println("processing packet");
     uint8_t *id = r.packet.answerPacket.id;
     char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
-    snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer, id[0], id[1], id[2], id[3]);
+    snprintf(tmp, sizeof(tmp), "Captured: %X (%02X, %02X, %02X, %02X) \n", r.packet.answerPacket.answer, id[0], id[1], id[2], id[3]);
     Serial.println(tmp);
   }
   Serial.println("+");
@@ -80,7 +80,13 @@ void loop()
 
 void recvPacketHandler(iClickerPacket_t *recvd)
 {
+  char tmp[50];
   //copy into buffer
-  bool ret = recvBuf.add(*recvd);
+  iClickerPacket_t r = *recvd;
+      uint8_t *id = r.packet.answerPacket.id;
+    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
+    snprintf(tmp, sizeof(tmp), "Captured: %X (%02X, %02X, %02X, %02X) \n", r.packet.answerPacket.answer, id[0], id[1], id[2], id[3]);
+    Serial.println(tmp);
+ // bool ret = recvBuf.add(*recvd);
 }
 

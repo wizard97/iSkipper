@@ -178,6 +178,12 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
     //process packet
     if (numBytes == PAYLOAD_LENGTH_SEND && _self->_radio.getChannelType() == CHANNEL_SEND) {
         //recvd from another iclicker
+        for (uint8_t i=0; i < numBytes;i++)
+        {
+            Serial.print(buf[i], HEX);
+            Serial.print(",");
+        }
+        Serial.println("");
         recvd.type = PACKET_ANSWER;
         memcpy(&recvd.packet.answerPacket, buf, PAYLOAD_LENGTH_SEND);
 
