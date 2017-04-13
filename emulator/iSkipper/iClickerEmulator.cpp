@@ -37,9 +37,8 @@ uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
         x += encoded_id[i];
 
-    const uint8_t offsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9 , 1 };
 
-    return x + offsets[ans];
+    return x + answerOffsets[ans];
 }
 
 
@@ -55,11 +54,9 @@ iClickerAnswer_t iClickerEmulator::decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_
 
     encoded -= x;
 
-    const uint8_t offsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9 , 1 };
-
     for (uint8_t i=0; i < NUM_ANSWER_CHOICES; i++)
     {
-        if (offsets[i] == encoded)
+        if (answerOffsets[i] == encoded)
             return (iClickerAnswer_t)i;
     }
 
