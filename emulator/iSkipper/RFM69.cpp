@@ -87,7 +87,7 @@ bool RFM69::initialize(uint8_t freqBand)
     if (millis()-start >= timeout)
       return false;
     _inISR = false;
-    attachInterrupt(digitalPinToInterrupt(_interruptPin), RFM69::isr0, RISING);
+    attachInterrupt(_interruptNum, RFM69::isr0, RISING);
 
     selfPointer = this;
 
