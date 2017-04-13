@@ -22,8 +22,21 @@ typedef enum iClickerAnswer
     NUM_ANSWER_CHOICES,
 } iClickerAnswer_t;
 
+// Encoded answer choice is sent as follows:
+/*
+x = sum_bytes(encoded_id[4])%256
+
+A = x
+B = x + 4
+C = x + 12
+D = x + 13
+E = x + 9
+
+P = x + 1
+*/
+
 // The encoded answer choice is the value sum(encoded_id) + answerOffsets[iClickerAnswer_t]
-const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9 , 1 };
+const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9, 1 };
 
 const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
     {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
