@@ -4,7 +4,7 @@
 iClickerEmulator *iClickerEmulator::_self;
 
 iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin)
-: _radio(_cspin, _irqpin)
+: _radio(_cspin, _irqpin, false, 0)
 {
     _recvCallback = NULL;
     _self = this; //this sucks
