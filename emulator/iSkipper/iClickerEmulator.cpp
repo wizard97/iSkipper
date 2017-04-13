@@ -150,7 +150,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     iClickerAnswerPacket_t toSend;
 
     encodeId(id, toSend.id); //encode the id for transmission
-    toSend.answer = (uint8_t)ans;
+    toSend.answer = encodeAns(id, ans);
 
     //send packet, we can cast toSend to array since all uint8_t bytes
     _radio.send(&toSend, PAYLOAD_LENGTH_SEND);
