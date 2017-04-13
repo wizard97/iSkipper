@@ -95,8 +95,8 @@ namespace iClickerChannels
         { 0x00, 0x00, 0x00 }, //todo
     };
 
-    // Channel DD (Tx: RF_FRFMSB_909, Rx: ~920)?
-    const iClickerChannel_t DD =
+    // Channel DB (Tx: RF_FRFMSB_909, Rx: ~920)
+    const iClickerChannel_t DB =
     {
         { 0xE3, 0x40, 0x00 },
         { 0xE6, 0x20, 0x00 },
