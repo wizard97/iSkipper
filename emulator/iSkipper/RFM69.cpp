@@ -280,10 +280,10 @@ void RFM69::interruptHandler() {
   {
     //RSSI = readRSSI();
     setMode(RF69_MODE_STANDBY);
+    PAYLOADLEN = readReg(REG_PAYLOADLENGTH);
+
     select();
     SPI.transfer(REG_FIFO & 0x7F);
-
-    PAYLOADLEN = readReg(REG_PAYLOADLENGTH);
 
     for (uint8_t i = 0; i < PAYLOADLEN; i++)
     {
