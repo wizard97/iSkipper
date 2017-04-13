@@ -178,9 +178,10 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
     //process packet
     if (numBytes == PAYLOAD_LENGTH_SEND && _self->_radio.getChannelType() == CHANNEL_SEND) {
         //recvd from another iclicker
-
+        iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
-        memcpy(&recvd.packet.answerPacket, buf, PAYLOAD_LENGTH_SEND);
+        recvd.packet.answerPacket.answer = pack->answer;
+        decodeId(pack->id, recvd.packet.answerPacket.id);
 
     } else if (numBytes == PAYLOAD_LENGTH_RECV && _self->_radio.getChannelType() == CHANNEL_RECV) {
         //recvd from base station
