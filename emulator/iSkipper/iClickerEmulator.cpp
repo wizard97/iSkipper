@@ -24,6 +24,48 @@ bool iClickerEmulator::begin(iClickerChannel_t chan)
 }
 
 
+uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans)
+{
+    uint8_t x = 1;
+    uint8_t encoded_id[ICLICKER_ID_LEN];
+
+    if (ans >= NUM_ANSWER_CHOICES)
+        return 0;
+
+    encodeId(id, encoded_id);
+
+    for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
+        x += encoded_id[i];
+
+    const uint8_t offsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9 , 1 };
+
+    return x + offsets[ans];
+}
+
+
+iClickerAnswer_t iClickerEmulator::decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded)
+{
+    uint8_t x = 1;
+
+    uint8_t encoded_id[ICLICKER_ID_LEN];
+    encodeId(id, encoded_id);
+
+    for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
+        x += encoded_id[i];
+
+    encoded -= x;
+
+    const uint8_t offsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9 , 1 };
+
+    for (uint8_t i=0; i < NUM_ANSWER_CHOICES; i++)
+    {
+        if (offsets[i] == encoded)
+            return (iClickerAnswer_t)i;
+    }
+
+    return ANSWER_A;
+}
+
 
 void iClickerEmulator::encodeId(uint8_t *id, uint8_t *ret)
 {
@@ -180,8 +222,9 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
         //recvd from another iclicker
         iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
-        recvd.packet.answerPacket.answer = pack->answer;
+
         decodeId(pack->id, recvd.packet.answerPacket.id);
+        recvd.packet.answerPacket.answer = decodeAns(recvd.packet.answerPacket.id, pack->answer);
 
     } else if (numBytes == PAYLOAD_LENGTH_RECV && _self->_radio.getChannelType() == CHANNEL_RECV) {
         //recvd from base station

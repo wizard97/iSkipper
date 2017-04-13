@@ -67,15 +67,13 @@ void loop()
   //see if there is a pending packet, check if its an answer packet
   
   while (recvBuf.pull(&r)) {
-    Serial.println("processing packet");
     uint8_t *id = r.packet.answerPacket.id;
     char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
-    snprintf(tmp, sizeof(tmp), "Captured: %X (%02X, %02X, %02X, %02X) \n", r.packet.answerPacket.answer, id[0], id[1], id[2], id[3]);
+    snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer, id[0], id[1], id[2], id[3]);
     Serial.println(tmp);
   }
   
-  Serial.println("+");
-  delay(1000);
+  delay(100);
 
 }
 

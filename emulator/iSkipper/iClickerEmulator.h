@@ -12,12 +12,14 @@
 
 typedef enum iClickerAnswer
 {
-    ANSWER_A = 0xB2,
-    ANSWER_B = 0xB6,
-    ANSWER_C = 0xBE,
-    ANSWER_D = 0xBF,
-    ANSWER_E = 0xBB,
-    ANSWER_PING = 0xB3,
+    ANSWER_A = 0,
+    ANSWER_B,
+    ANSWER_C,
+    ANSWER_D,
+    ANSWER_E,
+    ANSWER_PING,
+
+    NUM_ANSWER_CHOICES,
 } iClickerAnswer_t;
 
 
@@ -77,6 +79,9 @@ public:
     static iClickerAnswer_t randomAnswer();
     //concert answer to char
     static char answerChar(iClickerAnswer_t ans);
+
+    static iClickerAnswer_t decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded);
+    static uint8_t encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);
 
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum);
