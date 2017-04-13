@@ -80,8 +80,14 @@ bool iClickerRadio::initialize(uint8_t freqBand)
     start = millis();
     do writeReg(REG_SYNCVALUE1, 0x55); while (readReg(REG_SYNCVALUE1) != 0x55 && millis()-start < timeout);
 
-    for (uint8_t i = 0; CONFIG[i][0] != 255; i++)
-    writeReg(CONFIG[i][0], CONFIG[i][1]);
+    for (uint8_t i = 0; CONFIG[i][0] != 255; i++) {
+
+        writeReg(CONFIG[i][0], CONFIG[i][1]);
+        Serial.print("Reg: ");
+        Serial.print(CONFIG[i][0], HEX);
+        Serial.print(", val: ");
+        Serial.println(CONFIG[i][1], HEX);
+    }
 
     // Encryption is persistent between resets and can trip you up during debugging.
     // Disable it during initialization so we always start from a known state.

@@ -109,11 +109,11 @@ void RFM69::setSyncAddr(const uint8_t *addr, uint8_t len)
     if (!len) {
         writeReg(REG_SYNCCONFIG, RF_SYNC_OFF | (readReg(REG_SYNCCONFIG) & ~(0x80)));
     } else {
-        len = len > RF_SYNC_SIZE_8 ? RF_SYNC_SIZE_8 : len;
+        uint8_t val = ((len-1) > RF_SYNC_SIZE_8) ? RF_SYNC_SIZE_8 : (len-1);
         uint8_t syncConf = readReg(REG_SYNCCONFIG);
         select();
         SPI.transfer(REG_SYNCCONFIG | 0x80);
-        SPI.transfer(RF_SYNC_ON | (len << 3) | (syncConf & ~(0x80 | 0x38)));
+        SPI.transfer(RF_SYNC_ON | (val << 3) | (syncConf & ~(0x80 | 0x38)));
 
         for (uint8_t i =0; i < len; i++)
             SPI.transfer(addr[i]);

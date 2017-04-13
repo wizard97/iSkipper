@@ -1,3 +1,4 @@
+/*
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -14,41 +15,24 @@ void setup()
     Serial.begin(115200);
     Serial.println("working");
     clicker.begin(iClickerChannels::AA);
-    // enter promiscouse mode on sending channel
-    //clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+    clicker.dumpRegisters();
 }
 
 
 void loop()
 {
-  char tmp[50];
-  iClickerPacket_t r;
 
   uint8_t id[4];
   iClickerEmulator::randomId(id);
-  clicker.submitAnswer( id, ANSWER_A,
-            false, 100);
+  clicker.submitAnswer( id, ANSWER_A, false, 100);
 
   delay(1000);
-/*
-  //see if there is a pending packet, check if its an answer packet
-  if (recvBuf.pull(&r) && r.type == PACKET_ANSWER) {
-    uint8_t *id = r.packet.answerPacket.id;
-    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
-    snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer, id[0], id[1], id[2], id[3]);
-    Serial.println(tmp);
-  }
-  */
+  Serial.println(".");
+
 }
+*/
 
 
-void recvPacketHandler(iClickerPacket_t *recvd)
-{
-  //copy into buffer
-  recvBuf.add(*recvd);
-}
-
-/*
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -66,8 +50,11 @@ void setup()
     Serial.begin(115200);
     Serial.println("working");
     clicker.begin(iClickerChannels::AA);
+    clicker.dumpRegisters();
     // enter promiscouse mode on sending channel
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+    Serial.println("after promiscous");
+    clicker.dumpRegisters();
 }
 
 
@@ -91,4 +78,4 @@ void recvPacketHandler(iClickerPacket_t *recvd)
   //copy into buffer
   recvBuf.add(*recvd);
 }
-*/
+
