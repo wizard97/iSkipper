@@ -219,7 +219,8 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
         //recvd from another iclicker
         iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
-
+        //Serial.println(pack->id[3] & 0x0F, HEX);
+        Serial.println(pack->id[3], HEX);
         decodeId(pack->id, recvd.packet.answerPacket.id);
         recvd.packet.answerPacket.answer = decodeAns(recvd.packet.answerPacket.id, pack->answer);
 

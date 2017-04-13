@@ -1,0 +1,15624 @@
+working
+Reg: 1, val: 4
+Reg: 2, val: 0
+Reg: 3, val: 0
+Reg: 4, val: D2
+Reg: 5, val: E
+Reg: 6, val: 45
+Reg: 7, val: E5
+Reg: 8, val: 40
+Reg: 9, val: 0
+Reg: D, val: A2
+Reg: 12, val: F
+Reg: 13, val: 1B
+Reg: 19, val: 40
+Reg: 1A, val: 40
+Reg: 25, val: 40
+Reg: 26, val: 7
+Reg: 28, val: 10
+Reg: 29, val: DC
+Reg: 2E, val: 90
+Reg: 2F, val: 85
+Reg: 30, val: 85
+Reg: 31, val: 85
+Reg: 37, val: 0
+Reg: 38, val: 5
+Reg: 3C, val: 4
+Reg: 3D, val: 0
+Reg: 6F, val: 30
+Reg: 58, val: 2D
+Address - HEX - BIN
+1 - 4 - 100
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 2 - 10
+24 - CF - 11001111
+25 - 40 - 1000000
+26 - 7 - 111
+27 - 80 - 10000000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+after promiscous
+Address - HEX - BIN
+1 - 10 - 10000
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 0 - 0
+24 - AE - 10101110
+25 - 40 - 1000000
+26 - 7 - 111
+27 - D8 - 11011000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+3D
+Captured: C (42, 80, 71, B3) 
+
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+BF
+Captured: A (9F, 03, F5, 69) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+Captured: E (42, BF, D6, 2B) 
+
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+Captured: D (42, 80, 71, B3) 
+
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+Captured: E (42, 80, 71, B3) 
+
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+41
+41
+41
+41
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+C5
+C5
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+CD
+CD
+CD
+CD
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+41
+41
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+4A
+Captured: E (3E, B9, 02, 85) 
+
+4A
+4A
+4A
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+4D
+4D
+4D
+4D
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+3D
+3D
+Captured: C (34, EE, F1, 2B) 
+
+Captured: C (34, EE, F1, 2B) 
+
+3D
+Captured: C (34, EE, F1, 2B) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+45
+Captured: B (41, 06, 7A, 3D) 
+
+45
+45
+45
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4A
+4A
+4A
+4A
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+2A
+Captured: A (3F, 8F, C1, 71) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+35
+35
+35
+35
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+F1
+F1
+F1
+F1
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+CA
+CA
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+35
+Captured: B (43, 3A, 09, 70) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (3C, E9, 27, F2) 
+
+81
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (42, 80, 71, B3) 
+
+F1
+3A
+Captured: A (43, 20, D7, B4) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+F1
+Captured: A (33, 12, DF, FE) 
+
+Captured: A (43, 2A, FF, 96) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+8A
+B1
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (42, BF, D6, 2B) 
+
+41
+3A
+Captured: A (3E, B9, 02, 85) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+3A
+Captured: E (43, 22, A1, C0) 
+
+41
+F1
+Captured: A (32, 34, 42, 44) 
+
+Captured: A (3C, E9, 27, F2) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+A
+Captured: E (42, 83, 68, A9) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+71
+Captured: A (43, D5, DB, 4D) 
+
+81
+Captured: A (43, 80, 2C, EF) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+21
+Captured: A (1E, 75, 41, 2A) 
+
+8A
+6A
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (B0, F5, AB, EE) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+31
+F1
+Captured: A (43, 13, D9, 89) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+A
+Captured: E (44, 1E, 98, C2) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (3B, 13, E5, CD) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+C1
+41
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, 87, 21, E5) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+Captured: A (43, 10, 88, DB) 
+
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (31, C4, FB, 0E) 
+
+F1
+B1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 1C, A5, FA) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+E1
+31
+Captured: A (18, 19, 47, 46) 
+
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+7A
+Captured: E (47, 98, C3, 1C) 
+
+A
+Captured: E (43, 1F, A0, FC) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+F1
+F1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (39, 02, 37, 0C) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+F1
+Captured: A (39, 02, 37, 0C) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+B1
+F1
+Captured: A (47, 2E, D5, BC) 
+
+Captured: A (3E, EC, 37, E5) 
+
+7D
+Captured: C (43, 0A, BB, F2) 
+
+F1
+Captured: A (42, BA, 77, 8F) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (42, 6A, FD, D5) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+51
+81
+Captured: A (F1, 82, DA, A9) 
+
+Captured: A (3E, EE, 4C, 9C) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+B1
+Captured: A (3E, 82, DD, 61) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+41
+F1
+FA
+8A
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (33, 12, DF, FE) 
+
+Captured: E (43, 3A, C7, BE) 
+
+Captured: E (3E, AB, FC, 69) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (43, 36, 0F, 7A) 
+
+81
+Captured: A (3E, EE, 4C, 9C) 
+
+51
+Captured: A (59, 56, E2, ED) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+8A
+F1
+Captured: E (3E, AB, FC, 69) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+81
+B1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 54, FD, EA) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+C1
+71
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+4A
+Captured: E (43, 2C, B2, DD) 
+
+B1
+F1
+Captured: A (42, B9, 65, 9E) 
+
+Captured: A (3E, EC, 37, E5) 
+
+31
+Captured: A (36, EF, 99, 40) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+41
+F1
+Captured: A (43, 7E, FA, C7) 
+
+Captured: A (43, 3D, 9F, E1) 
+
+5
+B1
+Captured: B (3B, 84, 18, A7) 
+
+Captured: A (43, 80, BD, 7E) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+41
+Captured: A (32, 34, 42, 44) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+A
+Captured: E (31, D0, 38, D9) 
+
+A
+Captured: E (43, 41, 00, 02) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+FA
+Captured: E (43, 6B, 7F, 57) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 3D, 9F, E1) 
+
+31
+31
+41
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 7E, FA, C7) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+C1
+Captured: A (42, 2E, 76, 1A) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+71
+3A
+Captured: A (43, 00, D3, 90) 
+
+Captured: E (43, 18, 09, 52) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+41
+B1
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (26, 61, DD, 9A) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+41
+41
+41
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+31
+Captured: A (97, AB, 49, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+A
+Captured: E (43, 61, D8, FA) 
+
+C1
+Captured: A (3E, 81, BE, 01) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+CA
+71
+Captured: E (43, 38, 46, 3D) 
+
+Captured: A (47, 98, C3, 1C) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+41
+71
+31
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (36, EF, 99, 40) 
+
+F1
+A
+Captured: A (39, 02, 37, 0C) 
+
+Captured: E (3B, 84, 18, A7) 
+
+8E
+Captured: D (3E, F4, 0C, C6) 
+
+A
+Captured: E (43, 61, 00, 22) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3C, E3, 76, A9) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+F1
+F1
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (3C, E9, 27, F2) 
+
+Captured: A (42, BA, 77, 8F) 
+
+41
+Captured: A (41, 06, 7A, 3D) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+A
+31
+B1
+B1
+F1
+Captured: E (3E, AB, B8, 2D) 
+
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (3B, 83, 37, 8F) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+32
+31
+1
+Captured: P (43, D4, E1, 76) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, A0, 98, 7B) 
+
+C1
+1
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 61, D8, FA) 
+
+C1
+BA
+81
+41
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 2C, B2, DD) 
+
+41
+Captured: A (36, 5B, 7A, 17) 
+
+4E
+Captured: D (3E, 7B, EA, AF) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+A1
+Captured: A (99, 8D, B5, A1) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+F1
+C1
+Captured: A (43, 3A, C7, BE) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+1
+Captured: A (43, A0, 98, 7B) 
+
+F1
+41
+Captured: A (43, 3D, 9F, E1) 
+
+Captured: A (43, 7E, FA, C7) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+E1
+F1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (3E, EC, 37, E5) 
+
+81
+41
+31
+B1
+C1
+Captured: A (3E, EE, 4C, 9C) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (42, 21, 9E, FD) 
+
+1
+31
+Captured: A (43, 61, D8, FA) 
+
+Captured: A (36, EF, 99, 40) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+1
+Captured: A (32, A5, 18, 8F) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+C1
+1
+Captured: A (42, 21, 9E, FD) 
+
+Captured: A (3E, AB, B8, 2D) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+C1
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+B1
+Captured: A (81, C6, CE, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+8A
+Captured: E (3E, AB, FC, 69) 
+
+A
+Captured: E (3B, 84, 18, A7) 
+
+41
+Captured: A (43, 29, 92, F8) 
+
+C1
+41
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (3E, C8, 32, C4) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 38, 46, 3D) 
+
+71
+F5
+7A
+Captured: A (42, E1, EB, 48) 
+
+Captured: B (43, E6, 17, B2) 
+
+Captured: E (42, C9, CB, 40) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+C1
+1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (42, 6D, 09, 26) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+F1
+71
+B1
+Captured: A (3B, 83, 37, 8F) 
+
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+8A
+2A
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (22, 41, E9, 8A) 
+
+41
+C1
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 2E, 76, 1A) 
+
+31
+31
+Captured: A (43, 27, 91, F5) 
+
+Captured: A (43, D4, E1, 76) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+F1
+C1
+71
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+CD
+Captured: C (23, 93, 56, E6) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+8A
+31
+B1
+81
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+CA
+BA
+Captured: E (42, BA, A6, 5E) 
+
+Captured: E (43, 43, 55, 55) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+71
+B1
+21
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (22, 41, E9, 8A) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+BA
+F1
+C1
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+8A
+Captured: E (41, 3F, 34, 4A) 
+
+F1
+Captured: A (3C, E9, 27, F2) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+41
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+61
+71
+Captured: A (B0, F5, AB, EE) 
+
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+C1
+B1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 88, CD, 06) 
+
+31
+3A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 18, 09, 52) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+3E
+Captured: A (47, 91, A8, 7E) 
+
+Captured: D (41, 06, D1, 96) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (44, 2B, 43, 2C) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (3E, AB, B8, 2D) 
+
+B1
+8A
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+Captured: A (47, 91, A8, 7E) 
+
+1
+FA
+Captured: A (43, 36, B0, C5) 
+
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+41
+C1
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, 80, 86, 38) 
+
+8A
+1
+41
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (43, 6F, 90, BC) 
+
+Captured: A (43, 2C, B2, DD) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+1
+71
+71
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, E1, EB, 48) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+71
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (42, C9, CB, 40) 
+
+81
+Captured: A (3E, F4, 0C, C6) 
+
+FA
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+B1
+Captured: A (32, 06, 55, 61) 
+
+B1
+1
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (43, 88, F8, 33) 
+
+1
+B1
+8A
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (47, 97, A5, 75) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+C1
+F1
+1
+FD
+Captured: A (25, 22, E6, E1) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: C (43, 2A, FF, 96) 
+
+CA
+BA
+81
+Captured: E (3E, 81, BE, 01) 
+
+Captured: E (42, 6A, FD, D5) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+71
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+Captured: A (45, D3, F0, 66) 
+
+1
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+C1
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+21
+71
+31
+F1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+8A
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (41, 3F, 34, 4A) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+21
+C1
+B1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+CA
+Captured: E (3E, 81, BE, 01) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (43, 51, BF, AD) 
+
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, 83, 68, A9) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+FA
+Captured: A (43, 88, 1A, D1) 
+
+Captured: E (44, 25, 27, 46) 
+
+FA
+31
+Captured: E (43, 6B, 7F, 57) 
+
+Captured: A (24, B0, 59, CD) 
+
+C1
+81
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+41
+FA
+Captured: A (36, 5B, 7A, 17) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+41
+31
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+81
+31
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (34, C3, D9, 2E) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+81
+1
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+71
+41
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+31
+Captured: A (32, A5, 18, 8F) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 3A, 09, 70) 
+
+1
+Captured: A (43, 61, 00, 22) 
+
+81
+C1
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+31
+31
+21
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+81
+B1
+1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (45, D3, F0, 66) 
+
+C1
+71
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+81
+Captured: A (47, 27, 2B, 4B) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+B1
+A
+1
+Captured: A (42, 7C, 65, 5B) 
+
+Captured: E (41, 3D, C8, B4) 
+
+Captured: A (47, 91, A8, 7E) 
+
+B1
+31
+31
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (3E, F8, 89, 4F) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+C1
+31
+F1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+1
+F1
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+31
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (43, 18, 09, 52) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+31
+BA
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 43, 55, 55) 
+
+C1
+1
+FA
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (44, 25, 27, 46) 
+
+31
+FA
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+1
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (47, 91, A8, 7E) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+B1
+F1
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+F1
+Captured: A (47, 17, F8, A8) 
+
+Captured: A (43, 20, D7, B4) 
+
+B1
+Captured: A (42, 7C, 65, 5B) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+B1
+FA
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (44, 25, 27, 46) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+8A
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (3C, E1, E4, 39) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+81
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+71
+1
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (45, D3, F0, 66) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+8A
+Captured: E (3C, E1, E4, 39) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+F1
+1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (44, 1E, 98, C2) 
+
+C1
+F1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (41, 06, D1, 96) 
+
+B1
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (47, 17, F8, A8) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (3F, 2A, 53, 46) 
+
+1
+41
+41
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (43, 88, 1A, D1) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+31
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+C1
+C1
+31
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+FA
+Captured: E (44, 25, 27, 46) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+F1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+C1
+71
+Captured: A (42, 2E, 76, 1A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+1
+31
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (43, 27, 91, F5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+41
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+41
+B1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+B1
+71
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (44, 27, DB, B8) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+41
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (3D, B4, FA, 73) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+1
+31
+8A
+71
+Captured: A (42, 83, 68, A9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+B1
+41
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (3E, B9, 02, 85) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+71
+Captured: A (44, 27, DB, B8) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+31
+C1
+C1
+31
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+31
+1
+71
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+8A
+C1
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (81, C6, CE, 89) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+B1
+71
+31
+Captured: A (47, 97, A5, 75) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 18, 09, 52) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+8A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (3C, E1, E4, 39) 
+
+F1
+F1
+31
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+41
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (41, 07, 6A, 2C) 
+
+4A
+B1
+F1
+Captured: E (0E, A0, EA, 44) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (43, 36, 0F, 7A) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+C1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+41
+81
+31
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (24, B0, 59, CD) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+BA
+Captured: E (43, 43, 55, 55) 
+
+31
+31
+41
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+C1
+C1
+Captured: A (3E, 81, BE, 01) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+C1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+C1
+A
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, 21, 9E, FD) 
+
+Captured: E (45, D0, B8, 2D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+81
+31
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (42, 6D, 09, 26) 
+
+31
+5
+Captured: A (42, 6D, 09, 26) 
+
+Captured: B (43, 61, 00, 22) 
+
+31
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+71
+31
+35
+71
+71
+71
+35
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+35
+35
+Captured: A (43, 38, 46, 3D) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+1
+1
+1
+1
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+71
+Captured: A (43, 00, D3, 90) 
+
+71
+71
+71
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+31
+71
+31
+31
+31
+71
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+41
+41
+41
+41
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+1
+1
+1
+1
+35
+35
+35
+35
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+41
+41
+41
+41
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+71
+71
+71
+71
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+31
+71
+E5
+31
+71
+31
+31
+71
+31
+31
+C1
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (43, 38, 47, 3C) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (9C, 01, 33, AE) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, C9, CB, 40) 
+
+3E
+3E
+3E
+3E
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+F1
+F1
+F1
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+35
+35
+35
+35
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+C1
+C1
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+31
+31
+71
+71
+C1
+71
+71
+C1
+C1
+C1
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+C1
+C1
+C1
+C1
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+31
+31
+C1
+C1
+31
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 81, 11, D2) 
+
+B1
+71
+31
+71
+B1
+B1
+71
+71
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+E1
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+FA
+Captured: E (41, 2A, B7, DC) 
+
+FA
+FA
+FA
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+71
+71
+71
+71
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+
+
+
+//next questions
+
+
+working
+Reg: 1, val: 4
+Reg: 2, val: 0
+Reg: 3, val: 0
+Reg: 4, val: D2
+Reg: 5, val: E
+Reg: 6, val: 45
+Reg: 7, val: E5
+Reg: 8, val: 40
+Reg: 9, val: 0
+Reg: D, val: A2
+Reg: 12, val: F
+Reg: 13, val: 1B
+Reg: 19, val: 40
+Reg: 1A, val: 40
+Reg: 25, val: 40
+Reg: 26, val: 7
+Reg: 28, val: 10
+Reg: 29, val: DC
+Reg: 2E, val: 90
+Reg: 2F, val: 85
+Reg: 30, val: 85
+Reg: 31, val: 85
+Reg: 37, val: 0
+Reg: 38, val: 5
+Reg: 3C, val: 4
+Reg: 3D, val: 0
+Reg: 6F, val: 30
+Reg: 58, val: 2D
+Address - HEX - BIN
+1 - 4 - 100
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 2 - 10
+24 - CF - 11001111
+25 - 40 - 1000000
+26 - 7 - 111
+27 - 80 - 10000000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+after promiscous
+Address - HEX - BIN
+1 - 10 - 10000
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 0 - 0
+24 - AE - 10101110
+25 - 40 - 1000000
+26 - 7 - 111
+27 - D8 - 11011000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+3D
+Captured: C (42, 80, 71, B3) 
+
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+BF
+Captured: A (9F, 03, F5, 69) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+Captured: E (42, BF, D6, 2B) 
+
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+Captured: D (42, 80, 71, B3) 
+
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+Captured: E (42, 80, 71, B3) 
+
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+41
+41
+41
+41
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+C5
+C5
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+CD
+CD
+CD
+CD
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+41
+41
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+4A
+Captured: E (3E, B9, 02, 85) 
+
+4A
+4A
+4A
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+4D
+4D
+4D
+4D
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+3D
+3D
+Captured: C (34, EE, F1, 2B) 
+
+Captured: C (34, EE, F1, 2B) 
+
+3D
+Captured: C (34, EE, F1, 2B) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+45
+Captured: B (41, 06, 7A, 3D) 
+
+45
+45
+45
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4A
+4A
+4A
+4A
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+2A
+Captured: A (3F, 8F, C1, 71) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+35
+35
+35
+35
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+F1
+F1
+F1
+F1
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+CA
+CA
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+35
+Captured: B (43, 3A, 09, 70) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (3C, E9, 27, F2) 
+
+81
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (42, 80, 71, B3) 
+
+F1
+3A
+Captured: A (43, 20, D7, B4) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+F1
+Captured: A (33, 12, DF, FE) 
+
+Captured: A (43, 2A, FF, 96) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+8A
+B1
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (42, BF, D6, 2B) 
+
+41
+3A
+Captured: A (3E, B9, 02, 85) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+3A
+Captured: E (43, 22, A1, C0) 
+
+41
+F1
+Captured: A (32, 34, 42, 44) 
+
+Captured: A (3C, E9, 27, F2) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+A
+Captured: E (42, 83, 68, A9) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+71
+Captured: A (43, D5, DB, 4D) 
+
+81
+Captured: A (43, 80, 2C, EF) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+21
+Captured: A (1E, 75, 41, 2A) 
+
+8A
+6A
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (B0, F5, AB, EE) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+31
+F1
+Captured: A (43, 13, D9, 89) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+A
+Captured: E (44, 1E, 98, C2) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (3B, 13, E5, CD) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+C1
+41
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, 87, 21, E5) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+Captured: A (43, 10, 88, DB) 
+
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (31, C4, FB, 0E) 
+
+F1
+B1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 1C, A5, FA) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+E1
+31
+Captured: A (18, 19, 47, 46) 
+
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+7A
+Captured: E (47, 98, C3, 1C) 
+
+A
+Captured: E (43, 1F, A0, FC) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+F1
+F1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (39, 02, 37, 0C) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+F1
+Captured: A (39, 02, 37, 0C) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+B1
+F1
+Captured: A (47, 2E, D5, BC) 
+
+Captured: A (3E, EC, 37, E5) 
+
+7D
+Captured: C (43, 0A, BB, F2) 
+
+F1
+Captured: A (42, BA, 77, 8F) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (42, 6A, FD, D5) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+51
+81
+Captured: A (F1, 82, DA, A9) 
+
+Captured: A (3E, EE, 4C, 9C) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+B1
+Captured: A (3E, 82, DD, 61) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+41
+F1
+FA
+8A
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (33, 12, DF, FE) 
+
+Captured: E (43, 3A, C7, BE) 
+
+Captured: E (3E, AB, FC, 69) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (43, 36, 0F, 7A) 
+
+81
+Captured: A (3E, EE, 4C, 9C) 
+
+51
+Captured: A (59, 56, E2, ED) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+8A
+F1
+Captured: E (3E, AB, FC, 69) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+81
+B1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 54, FD, EA) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+C1
+71
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+4A
+Captured: E (43, 2C, B2, DD) 
+
+B1
+F1
+Captured: A (42, B9, 65, 9E) 
+
+Captured: A (3E, EC, 37, E5) 
+
+31
+Captured: A (36, EF, 99, 40) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+41
+F1
+Captured: A (43, 7E, FA, C7) 
+
+Captured: A (43, 3D, 9F, E1) 
+
+5
+B1
+Captured: B (3B, 84, 18, A7) 
+
+Captured: A (43, 80, BD, 7E) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+41
+Captured: A (32, 34, 42, 44) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+A
+Captured: E (31, D0, 38, D9) 
+
+A
+Captured: E (43, 41, 00, 02) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+FA
+Captured: E (43, 6B, 7F, 57) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 3D, 9F, E1) 
+
+31
+31
+41
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 7E, FA, C7) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+C1
+Captured: A (42, 2E, 76, 1A) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+71
+3A
+Captured: A (43, 00, D3, 90) 
+
+Captured: E (43, 18, 09, 52) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+41
+B1
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (26, 61, DD, 9A) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+41
+41
+41
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+31
+Captured: A (97, AB, 49, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+A
+Captured: E (43, 61, D8, FA) 
+
+C1
+Captured: A (3E, 81, BE, 01) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+CA
+71
+Captured: E (43, 38, 46, 3D) 
+
+Captured: A (47, 98, C3, 1C) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+41
+71
+31
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (36, EF, 99, 40) 
+
+F1
+A
+Captured: A (39, 02, 37, 0C) 
+
+Captured: E (3B, 84, 18, A7) 
+
+8E
+Captured: D (3E, F4, 0C, C6) 
+
+A
+Captured: E (43, 61, 00, 22) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3C, E3, 76, A9) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+F1
+F1
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (3C, E9, 27, F2) 
+
+Captured: A (42, BA, 77, 8F) 
+
+41
+Captured: A (41, 06, 7A, 3D) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+A
+31
+B1
+B1
+F1
+Captured: E (3E, AB, B8, 2D) 
+
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (3B, 83, 37, 8F) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+32
+31
+1
+Captured: P (43, D4, E1, 76) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, A0, 98, 7B) 
+
+C1
+1
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 61, D8, FA) 
+
+C1
+BA
+81
+41
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 2C, B2, DD) 
+
+41
+Captured: A (36, 5B, 7A, 17) 
+
+4E
+Captured: D (3E, 7B, EA, AF) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+A1
+Captured: A (99, 8D, B5, A1) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+F1
+C1
+Captured: A (43, 3A, C7, BE) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+1
+Captured: A (43, A0, 98, 7B) 
+
+F1
+41
+Captured: A (43, 3D, 9F, E1) 
+
+Captured: A (43, 7E, FA, C7) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+E1
+F1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (3E, EC, 37, E5) 
+
+81
+41
+31
+B1
+C1
+Captured: A (3E, EE, 4C, 9C) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (42, 21, 9E, FD) 
+
+1
+31
+Captured: A (43, 61, D8, FA) 
+
+Captured: A (36, EF, 99, 40) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+1
+Captured: A (32, A5, 18, 8F) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+C1
+1
+Captured: A (42, 21, 9E, FD) 
+
+Captured: A (3E, AB, B8, 2D) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+C1
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+B1
+Captured: A (81, C6, CE, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+8A
+Captured: E (3E, AB, FC, 69) 
+
+A
+Captured: E (3B, 84, 18, A7) 
+
+41
+Captured: A (43, 29, 92, F8) 
+
+C1
+41
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (3E, C8, 32, C4) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 38, 46, 3D) 
+
+71
+F5
+7A
+Captured: A (42, E1, EB, 48) 
+
+Captured: B (43, E6, 17, B2) 
+
+Captured: E (42, C9, CB, 40) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+C1
+1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (42, 6D, 09, 26) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+F1
+71
+B1
+Captured: A (3B, 83, 37, 8F) 
+
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+8A
+2A
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (22, 41, E9, 8A) 
+
+41
+C1
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 2E, 76, 1A) 
+
+31
+31
+Captured: A (43, 27, 91, F5) 
+
+Captured: A (43, D4, E1, 76) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+F1
+C1
+71
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+CD
+Captured: C (23, 93, 56, E6) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+8A
+31
+B1
+81
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+CA
+BA
+Captured: E (42, BA, A6, 5E) 
+
+Captured: E (43, 43, 55, 55) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+71
+B1
+21
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (22, 41, E9, 8A) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+BA
+F1
+C1
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+8A
+Captured: E (41, 3F, 34, 4A) 
+
+F1
+Captured: A (3C, E9, 27, F2) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+41
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+61
+71
+Captured: A (B0, F5, AB, EE) 
+
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+C1
+B1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 88, CD, 06) 
+
+31
+3A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 18, 09, 52) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+3E
+Captured: A (47, 91, A8, 7E) 
+
+Captured: D (41, 06, D1, 96) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (44, 2B, 43, 2C) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (3E, AB, B8, 2D) 
+
+B1
+8A
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+Captured: A (47, 91, A8, 7E) 
+
+1
+FA
+Captured: A (43, 36, B0, C5) 
+
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+41
+C1
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, 80, 86, 38) 
+
+8A
+1
+41
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (43, 6F, 90, BC) 
+
+Captured: A (43, 2C, B2, DD) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+1
+71
+71
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, E1, EB, 48) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+71
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (42, C9, CB, 40) 
+
+81
+Captured: A (3E, F4, 0C, C6) 
+
+FA
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+B1
+Captured: A (32, 06, 55, 61) 
+
+B1
+1
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (43, 88, F8, 33) 
+
+1
+B1
+8A
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (47, 97, A5, 75) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+C1
+F1
+1
+FD
+Captured: A (25, 22, E6, E1) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: C (43, 2A, FF, 96) 
+
+CA
+BA
+81
+Captured: E (3E, 81, BE, 01) 
+
+Captured: E (42, 6A, FD, D5) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+71
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+Captured: A (45, D3, F0, 66) 
+
+1
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+C1
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+21
+71
+31
+F1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+8A
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (41, 3F, 34, 4A) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+21
+C1
+B1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+CA
+Captured: E (3E, 81, BE, 01) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (43, 51, BF, AD) 
+
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, 83, 68, A9) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+FA
+Captured: A (43, 88, 1A, D1) 
+
+Captured: E (44, 25, 27, 46) 
+
+FA
+31
+Captured: E (43, 6B, 7F, 57) 
+
+Captured: A (24, B0, 59, CD) 
+
+C1
+81
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+41
+FA
+Captured: A (36, 5B, 7A, 17) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+41
+31
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+81
+31
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (34, C3, D9, 2E) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+81
+1
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+71
+41
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+31
+Captured: A (32, A5, 18, 8F) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 3A, 09, 70) 
+
+1
+Captured: A (43, 61, 00, 22) 
+
+81
+C1
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+31
+31
+21
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+81
+B1
+1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (45, D3, F0, 66) 
+
+C1
+71
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+81
+Captured: A (47, 27, 2B, 4B) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+B1
+A
+1
+Captured: A (42, 7C, 65, 5B) 
+
+Captured: E (41, 3D, C8, B4) 
+
+Captured: A (47, 91, A8, 7E) 
+
+B1
+31
+31
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (3E, F8, 89, 4F) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+C1
+31
+F1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+1
+F1
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+31
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (43, 18, 09, 52) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+31
+BA
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 43, 55, 55) 
+
+C1
+1
+FA
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (44, 25, 27, 46) 
+
+31
+FA
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+1
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (47, 91, A8, 7E) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+B1
+F1
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+F1
+Captured: A (47, 17, F8, A8) 
+
+Captured: A (43, 20, D7, B4) 
+
+B1
+Captured: A (42, 7C, 65, 5B) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+B1
+FA
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (44, 25, 27, 46) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+8A
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (3C, E1, E4, 39) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+81
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+71
+1
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (45, D3, F0, 66) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+8A
+Captured: E (3C, E1, E4, 39) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+F1
+1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (44, 1E, 98, C2) 
+
+C1
+F1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (41, 06, D1, 96) 
+
+B1
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (47, 17, F8, A8) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (3F, 2A, 53, 46) 
+
+1
+41
+41
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (43, 88, 1A, D1) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+31
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+C1
+C1
+31
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+FA
+Captured: E (44, 25, 27, 46) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+F1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+C1
+71
+Captured: A (42, 2E, 76, 1A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+1
+31
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (43, 27, 91, F5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+41
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+41
+B1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+B1
+71
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (44, 27, DB, B8) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+41
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (3D, B4, FA, 73) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+1
+31
+8A
+71
+Captured: A (42, 83, 68, A9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+B1
+41
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (3E, B9, 02, 85) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+71
+Captured: A (44, 27, DB, B8) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+31
+C1
+C1
+31
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+31
+1
+71
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+8A
+C1
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (81, C6, CE, 89) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+B1
+71
+31
+Captured: A (47, 97, A5, 75) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 18, 09, 52) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+8A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (3C, E1, E4, 39) 
+
+F1
+F1
+31
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+41
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (41, 07, 6A, 2C) 
+
+4A
+B1
+F1
+Captured: E (0E, A0, EA, 44) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (43, 36, 0F, 7A) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+C1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+41
+81
+31
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (24, B0, 59, CD) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+BA
+Captured: E (43, 43, 55, 55) 
+
+31
+31
+41
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+C1
+C1
+Captured: A (3E, 81, BE, 01) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+C1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+C1
+A
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, 21, 9E, FD) 
+
+Captured: E (45, D0, B8, 2D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+81
+31
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (42, 6D, 09, 26) 
+
+31
+5
+Captured: A (42, 6D, 09, 26) 
+
+Captured: B (43, 61, 00, 22) 
+
+31
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+71
+31
+35
+71
+71
+71
+35
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+35
+35
+Captured: A (43, 38, 46, 3D) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+1
+1
+1
+1
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+71
+Captured: A (43, 00, D3, 90) 
+
+71
+71
+71
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+31
+71
+31
+31
+31
+71
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+41
+41
+41
+41
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+1
+1
+1
+1
+35
+35
+35
+35
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+41
+41
+41
+41
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+71
+71
+71
+71
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+31
+71
+E5
+31
+71
+31
+31
+71
+31
+31
+C1
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (43, 38, 47, 3C) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (9C, 01, 33, AE) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, C9, CB, 40) 
+
+3E
+3E
+3E
+3E
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+F1
+F1
+F1
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+35
+35
+35
+35
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+C1
+C1
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+31
+31
+71
+71
+C1
+71
+71
+C1
+C1
+C1
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+C1
+C1
+C1
+C1
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+31
+31
+C1
+C1
+31
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 81, 11, D2) 
+
+B1
+71
+31
+71
+B1
+B1
+71
+71
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+E1
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+FA
+Captured: E (41, 2A, B7, DC) 
+
+FA
+FA
+FA
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+71
+71
+71
+71
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+31
+Captured: A (43, 13, D9, 89) 
+
+F5
+Captured: B (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+5
+Captured: B (43, 41, 00, 02) 
+
+31
+Captured: A (97, AB, 49, 75) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+5
+71
+Captured: B (43, 10, 88, DB) 
+
+Captured: A (42, C9, CB, 40) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+B5
+Captured: B (47, 2E, D5, BC) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+45
+C5
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (31, 5E, 96, F9) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+35
+Captured: B (43, 22, A1, C0) 
+
+C5
+31
+Captured: B (31, 5E, 96, F9) 
+
+Captured: A (43, 13, D9, 89) 
+
+5
+Captured: B (43, 1F, A0, FC) 
+
+35
+Captured: B (41, 06, D1, 96) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+Captured: B (42, BA, 77, 8F) 
+
+85
+Captured: B (3E, AB, FC, 69) 
+
+75
+C5
+Captured: B (43, 00, D3, 90) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+C5
+35
+Captured: B (43, 38, 46, 3D) 
+
+Captured: B (34, EE, F1, 2B) 
+
+C5
+85
+F5
+Captured: B (31, 5E, 96, F9) 
+
+Captured: B (43, 80, 2C, EF) 
+
+Captured: B (3E, EC, 37, E5) 
+
+75
+Captured: B (43, D5, DB, 4D) 
+
+F5
+45
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (43, 7E, FA, C7) 
+
+F5
+F5
+Captured: B (43, 3D, 9F, E1) 
+
+Captured: B (43, E6, 17, B2) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+F5
+5
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (43, 88, F8, 33) 
+
+5
+C5
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+35
+Captured: B (36, EF, 99, 40) 
+
+B5
+Captured: B (42, B9, 65, 9E) 
+
+8D
+C5
+Captured: C (3E, E5, A4, 7F) 
+
+Captured: B (42, 21, 9E, FD) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+45
+5
+F5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (43, 88, F8, 33) 
+
+Captured: B (3E, EC, 37, E5) 
+
+F5
+C5
+Captured: B (3F, 28, 9F, 88) 
+
+Captured: B (3E, 80, 86, 38) 
+
+C5
+FD
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: C (3B, 83, 37, 8F) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+5
+Captured: B (43, 88, F8, 33) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+45
+75
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (44, 2B, 43, 2C) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+FD
+Captured: C (3B, 83, 37, 8F) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+45
+5
+5
+Captured: B (3E, C8, 32, C4) 
+
+Captured: B (43, 88, F8, 33) 
+
+Captured: B (47, 91, A8, 7E) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+45
+5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (31, D0, 38, D9) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+C5
+B5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (32, 06, 55, 61) 
+
+FD
+Captured: C (3B, 83, 37, 8F) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+75
+35
+B5
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (43, 87, 21, E5) 
+
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (44, 27, DB, B8) 
+
+45
+ED
+45
+Captured: B (3E, C8, 32, C4) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (3D, BC, B2, 33) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+2D
+C5
+Captured: A (22, 41, E9, 8A) 
+
+Captured: B (42, 2E, 76, 1A) 
+
+5
+C5
+Captured: B (43, 41, 00, 02) 
+
+Captured: B (3C, E3, 76, A9) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+ED
+Captured: B (44, 04, B3, F3) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+5
+75
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (44, 27, DB, B8) 
+
+35
+2D
+Captured: B (42, 80, 71, B3) 
+
+Captured: A (22, 41, E9, 8A) 
+
+C5
+55
+Captured: B (25, 22, E6, E1) 
+
+Captured: A (F1, 82, DA, A9) 
+
+35
+31
+Captured: B (24, B0, 59, CD) 
+
+Captured: A (42, 81, 11, D2) 
+
+A5
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+C5
+F5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3B, 83, 37, 8F) 
+
+C5
+95
+C5
+Captured: B (25, 22, E6, E1) 
+
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (42, 21, 9E, FD) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+35
+55
+Captured: B (24, B0, 59, CD) 
+
+Captured: A (F1, 82, DA, A9) 
+
+35
+A
+Captured: B (43, 13, D9, 89) 
+
+Captured: E (3B, 84, 18, A7) 
+
+5
+Captured: B (47, 4A, A8, A5) 
+
+45
+Captured: B (41, 07, 6A, 2C) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+5
+35
+Captured: B (43, 36, B0, C5) 
+
+Captured: B (43, 3A, 09, 70) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (24, B0, 59, CD) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+75
+Captured: B (31, C4, FB, 0E) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+C5
+Captured: B (3C, E9, 27, F2) 
+
+Captured: B (3C, E3, 76, A9) 
+
+A5
+B5
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (3B, 13, E5, CD) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+95
+75
+C5
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, BF, D6, 2B) 
+
+85
+Captured: B (41, 3F, 34, 4A) 
+
+54
+5
+5
+5
+Captured: A (E2, AA, AA, E2) 
+
+Captured: B (43, 6F, 90, BC) 
+
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (43, 36, B0, C5) 
+
+35
+4D
+45
+Captured: B (24, B0, 59, CD) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: B (3E, C8, 32, C4) 
+
+45
+85
+Captured: B (41, 07, 6A, 2C) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+C5
+Captured: B (25, 22, E6, E1) 
+
+A5
+35
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: A (99, 8D, B5, A1) 
+
+35
+A5
+Captured: B (97, AB, 49, 75) 
+
+Captured: A (99, 8D, B5, A1) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+35
+Captured: B (43, 3A, 09, 70) 
+
+85
+5
+Captured: B (41, 3F, 34, 4A) 
+
+Captured: B (47, 91, A8, 7E) 
+
+F5
+45
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (32, 34, 42, 44) 
+
+5
+B5
+B5
+Captured: B (44, 1E, 98, C2) 
+
+Captured: B (43, 88, CD, 06) 
+
+Captured: B (42, 6A, FD, D5) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+8D
+75
+75
+Captured: B (3E, F8, 89, 4F) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (42, C9, CB, 40) 
+
+45
+Captured: B (43, 2C, B2, DD) 
+
+35
+Captured: B (43, 13, D9, 89) 
+
+F5
+8D
+Captured: B (43, 51, BF, AD) 
+
+Captured: C (3E, E5, A4, 7F) 
+
+B5
+75
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (44, 04, B3, F3) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+C5
+F5
+F5
+5
+45
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (25, EB, FF, 31) 
+
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: B (43, 10, 88, DB) 
+
+Captured: B (3D, BC, B2, 33) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (43, 3A, C7, BE) 
+
+C5
+Captured: B (31, 5E, 96, F9) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+C5
+75
+Captured: B (3E, 81, BE, 01) 
+
+Captured: B (42, C9, CB, 40) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+F5
+85
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (3E, 83, 34, 89) 
+
+35
+Captured: B (3E, F8, 89, 4F) 
+
+F5
+Captured: B (25, EB, FF, 31) 
+
+4D
+85
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: B (3C, E1, E4, 39) 
+
+A5
+A5
+75
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: A (99, 8D, B5, A1) 
+
+F5
+5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (47, 91, A8, 7E) 
+
+C5
+8D
+Captured: B (3E, 81, BE, 01) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+85
+75
+Captured: B (3E, 83, 34, 89) 
+
+Captured: B (42, C9, CB, 40) 
+
+3D
+Captured: C (36, EF, 99, 40) 
+
+F5
+Captured: B (41, 2A, B7, DC) 
+
+F5
+35
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (43, 18, 09, 52) 
+
+A1
+Captured: A (99, 8D, B5, A1) 
+
+A1
+A1
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+85
+4D
+Captured: B (3E, E5, A4, 7F) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+F5
+45
+Captured: B (43, 3D, 9F, E1) 
+
+Captured: B (43, 7E, FA, C7) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+F5
+Captured: B (43, 36, 0F, 7A) 
+
+45
+F5
+Captured: B (3E, C8, 32, C4) 
+
+Captured: B (3E, EC, 37, E5) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+F5
+85
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+CA
+Captured: E (42, BA, A6, 5E) 
+
+BE
+Captured: D (3E, 82, DD, 61) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+B5
+F5
+Captured: B (43, 1C, A5, FA) 
+
+Captured: B (43, 36, 0F, 7A) 
+
+35
+35
+8D
+45
+Captured: B (43, D4, E1, 76) 
+
+Captured: B (42, 6D, 09, 26) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: B (0E, A0, EA, 44) 
+
+C5
+Captured: B (3E, 81, BE, 01) 
+
+5
+Captured: B (43, A0, 98, 7B) 
+
+F5
+3D
+Captured: B (43, 51, BF, AD) 
+
+Captured: C (36, EF, 99, 40) 
+
+F5
+F5
+75
+E5
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (41, 2A, B7, DC) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+5
+Captured: B (3E, AB, B8, 2D) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+5E
+Captured: A (59, 56, E2, ED) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+8D
+Captured: C (3E, F4, 0C, C6) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+F5
+F5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 37, E5) 
+
+BD
+Captured: C (42, 7C, 65, 5B) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+F5
+F5
+75
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (3E, 84, 3B, 81) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (43, 27, 91, F5) 
+
+5
+Captured: B (43, 36, B0, C5) 
+
+5
+4D
+Captured: B (47, 91, A8, 7E) 
+
+Captured: C (43, 88, 1A, D1) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+A5
+B5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+A5
+B5
+F5
+F5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (3B, 13, E5, CD) 
+
+Captured: B (3C, E9, 27, F2) 
+
+Captured: B (44, 25, 27, 46) 
+
+Captured: A (99, 8D, B5, A1) 
+
+75
+85
+45
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+Captured: B (3E, B9, 02, 85) 
+
+35
+B5
+85
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (3E, EE, 4C, 9C) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+B5
+Captured: B (47, 97, A5, 75) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+B5
+35
+85
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (3E, 83, 34, 89) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+B5
+Captured: B (42, 74, 45, 73) 
+
+FE
+Captured: D (39, 02, 37, 0C) 
+
+45
+CA
+B5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: E (42, BA, A6, 5E) 
+
+Captured: B (42, 6A, FD, D5) 
+
+35
+B5
+F5
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (47, 97, A5, 75) 
+
+Captured: B (43, 2A, FF, 96) 
+
+75
+45
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (43, 88, 1A, D1) 
+
+5
+B5
+Captured: B (42, 83, 68, A9) 
+
+Captured: B (43, 88, CD, 06) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+F5
+75
+Captured: B (42, BA, 77, 8F) 
+
+Captured: B (3E, 84, 3B, 81) 
+
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+45
+F5
+FE
+35
+Captured: B (3D, B4, FA, 73) 
+
+Captured: B (43, 51, BF, AD) 
+
+Captured: D (39, 02, 37, 0C) 
+
+Captured: B (43, 3A, 09, 70) 
+
+5
+Captured: B (41, 3D, C8, B4) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+45
+Captured: B (3E, C8, 32, C4) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+F5
+Captured: B (43, 2A, FF, 96) 
+
+35
+35
+Captured: B (41, 06, D1, 96) 
+
+Captured: B (24, B0, 59, CD) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+C5
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+Captured: B (3E, 80, 86, 38) 
+
+C5
+35
+Captured: B (47, 4A, 5E, 53) 
+
+Captured: B (43, 18, 09, 52) 
+
+45
+EE
+75
+Captured: B (43, 88, 1A, D1) 
+
+Captured: A (18, 19, 47, 46) 
+
+Captured: B (47, 27, 2B, 4B) 
+
+5
+Captured: B (32, A5, 18, 8F) 
+
+35
+Captured: B (41, 06, D1, 96) 
+
+35
+F5
+75
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (42, DC, 3B, A5) 
+
+5
+Captured: B (45, D3, F0, 66) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+5
+Captured: B (43, A0, 98, 7B) 
+
+C5
+Captured: B (47, 4A, 5E, 53) 
+
+E5
+35
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (24, B0, 59, CD) 
+
+6D
+45
+Captured: A (B0, F5, AB, EE) 
+
+Captured: B (42, 79, E2, D9) 
+
+CA
+Captured: E (81, C6, CE, 89) 
+
+C5
+75
+F5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (47, 27, 2B, 4B) 
+
+Captured: B (43, 51, BF, AD) 
+
+75
+5
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (47, 4A, A8, A5) 
+
+45
+35
+Captured: B (36, 5B, 7A, 17) 
+
+Captured: B (42, 6D, 09, 26) 
+
+B5
+CA
+Captured: B (39, 38, 35, 34) 
+
+Captured: E (42, 71, 2E, 1D) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+BD
+Captured: C (42, 7C, 65, 5B) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+25
+35
+Captured: A (1E, 75, 41, 2A) 
+
+Captured: B (43, 27, 91, F5) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+C5
+Captured: B (23, 93, 56, E6) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+B5
+75
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (43, 0A, BB, F2) 
+
+75
+Captured: B (3F, 2A, 53, 46) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+35
+F5
+Captured: B (42, 6D, 09, 26) 
+
+Captured: B (44, 25, 27, 46) 
+
+35
+Captured: B (97, AB, 49, 75) 
+
+BE
+Captured: D (43, 43, 55, 55) 
+
+F5
+Captured: B (3F, 28, 9F, 88) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+B5
+75
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (42, C9, CB, 40) 
+
+45
+35
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (43, 18, 09, 52) 
+
+75
+Captured: B (47, 98, C3, 1C) 
+
+75
+3D
+Captured: B (43, 0A, BB, F2) 
+
+Captured: C (39, BC, C9, 4C) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+35
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (42, 6D, 09, 26) 
+
+B5
+Captured: B (42, 7C, 65, 5B) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+B5
+BD
+Captured: B (42, E1, EB, 48) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: C (26, 61, DD, 9A) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+8D
+Captured: C (3E, F4, 0C, C6) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+Captured: B (44, 2B, 43, 2C) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+5
+Captured: B (45, D3, F0, 66) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+35
+45
+BE
+Captured: B (42, 6D, 09, 26) 
+
+Captured: B (43, 2C, B2, DD) 
+
+Captured: D (43, 43, 55, 55) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+E5
+F5
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (25, EB, FF, 31) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+95
+F5
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (43, 51, BF, AD) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+3D
+Captured: C (39, BC, C9, 4C) 
+
+FD
+Captured: C (43, 20, D7, B4) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+45
+75
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (42, C9, CB, 40) 
+
+5
+35
+BD
+Captured: B (47, 17, F8, A8) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: C (42, 7C, 65, 5B) 
+
+85
+Captured: B (43, 80, 2C, EF) 
+
+B5
+3D
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: C (39, BC, C9, 4C) 
+
+85
+4E
+Captured: B (3E, AB, FC, 69) 
+
+Captured: D (3E, 7B, EA, AF) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+41
+Captured: A (43, 29, 92, F8) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+45
+C5
+Captured: B (43, 88, 1A, D1) 
+
+Captured: B (3B, 50, FE, 95) 
+
+75
+3D
+Captured: B (42, E1, EB, 48) 
+
+Captured: C (39, BC, C9, 4C) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+C5
+Captured: B (42, BA, A6, 5E) 
+
+F5
+Captured: B (43, 3D, 9F, E1) 
+
+B5
+Captured: B (3B, 13, E5, CD) 
+
+1
+45
+Captured: A (43, 61, D8, FA) 
+
+Captured: B (43, 7E, FA, C7) 
+
+F5
+F5
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: B (43, 51, BF, AD) 
+
+75
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (44, 04, B3, F3) 
+
+85
+Captured: B (3E, F4, 0C, C6) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+5
+Captured: B (32, A5, 18, 8F) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+75
+5
+FE
+F5
+Captured: B (47, 98, C3, 1C) 
+
+Captured: B (47, 17, F8, A8) 
+
+Captured: D (39, 02, 37, 0C) 
+
+Captured: B (43, 2A, FF, 96) 
+
+4E
+Captured: D (25, E9, A2, 6E) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+75
+B5
+B5
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, 6A, FD, D5) 
+
+Captured: B (42, 6A, FD, D5) 
+
+B5
+75
+85
+Captured: B (42, 6A, FD, D5) 
+
+Captured: B (44, 04, B3, F3) 
+
+Captured: B (3E, F4, 0C, C6) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+45
+F5
+Captured: B (43, 00, D3, 90) 
+
+Captured: B (43, 2C, B2, DD) 
+
+Captured: B (43, 51, BF, AD) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+25
+75
+Captured: A (22, 41, E9, 8A) 
+
+Captured: B (42, C9, CB, 40) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+B5
+Captured: B (42, B9, 65, 9E) 
+
+3E
+Captured: D (42, 81, 11, D2) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+E5
+Captured: A (18, 19, 47, 46) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+C5
+Captured: B (3B, 50, FE, 95) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+CA
+5
+Captured: E (81, C6, CE, 89) 
+
+Captured: B (43, 61, 00, 22) 
+
+F5
+5
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (43, 6F, 90, BC) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+C5
+B5
+Captured: B (42, 71, 2E, 1D) 
+
+Captured: B (39, 38, 35, 34) 
+
+3D
+3D
+3D
+Captured: C (34, C3, D9, 2E) 
+
+Captured: C (34, C3, D9, 2E) 
+
+Captured: C (34, C3, D9, 2E) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+F5
+5
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (43, 6F, 90, BC) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+65
+Captured: A (B0, F5, AB, EE) 
+
+C5
+Captured: B (42, 71, 2E, 1D) 
+
+35
+Captured: B (43, 27, 91, F5) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+F5
+FD
+Captured: B (3F, 28, 9F, 88) 
+
+Captured: C (43, 6B, 7F, 57) 
+
+35
+5
+Captured: B (97, AB, 49, 75) 
+
+Captured: B (42, 83, 68, A9) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+B5
+F5
+25
+Captured: B (39, 38, 35, 34) 
+
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+C5
+Captured: B (81, C6, CE, 89) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+85
+C5
+Captured: B (3E, EE, 4C, 9C) 
+
+Captured: B (42, 71, 2E, 1D) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+45
+Captured: B (42, 79, E2, D9) 
+
+4E
+C5
+B5
+Captured: D (3E, 7B, EA, AF) 
+
+Captured: B (47, 4A, 5E, 53) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+C5
+Captured: B (42, 71, 2E, 1D) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+F5
+45
+Captured: B (43, 6B, 7F, 57) 
+
+Captured: B (3E, B9, 02, 85) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+35
+Captured: B (43, 13, D9, 89) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+45
+Captured: B (43, 88, 1A, D1) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+5
+D
+Captured: B (43, 6F, 90, BC) 
+
+Captured: C (3B, 84, 18, A7) 
+
+45
+Captured: B (3E, DE, 9A, 7A) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+CD
+Captured: C (42, BA, A6, 5E) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+C5
+35
+Captured: B (42, 71, 2E, 1D) 
+
+Captured: B (24, B0, 59, CD) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+B5
+Captured: B (32, 06, 55, 61) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+45
+F5
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (43, 20, D7, B4) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+45
+35
+Captured: B (43, 29, 92, F8) 
+
+Captured: B (42, 80, 71, B3) 
+
+F5
+BD
+Captured: B (43, 20, D7, B4) 
+
+Captured: C (43, 80, BD, 7E) 
+
+C5
+75
+Captured: B (43, 38, 46, 3D) 
+
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+5
+Captured: B (3E, AB, B8, 2D) 
+
+35
+C5
+Captured: B (39, BC, C9, 4C) 
+
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (43, 29, 92, F8) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+CD
+Captured: C (42, BA, A6, 5E) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+5
+45
+Captured: B (43, A0, 98, 7B) 
+
+Captured: B (43, 88, 1A, D1) 
+
+5
+Captured: B (45, D0, B8, 2D) 
+
+7D
+Captured: C (43, 00, D3, 90) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+5
+Captured: B (43, 41, 00, 02) 
+
+C5
+Captured: B (47, 4A, 5E, 53) 
+
+45
+Captured: B (3E, DE, 9A, 7A) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+F5
+Captured: B (43, E6, 17, B2) 
+
+F5
+Captured: B (43, 6B, 7F, 57) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+75
+85
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (3E, 83, 34, 89) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+31
+Captured: A (39, BC, C9, 4C) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+31
+Captured: A (43, 87, 21, E5) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+35
+F5
+5
+Captured: B (43, 87, 21, E5) 
+
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (47, 17, F8, A8) 
+
+45
+Captured: B (43, 88, 1A, D1) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+C5
+B5
+Captured: B (3C, E3, 76, A9) 
+
+Captured: B (39, 38, 35, 34) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+75
+F5
+Captured: B (44, 04, B3, F3) 
+
+Captured: B (43, 51, BF, AD) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+F5
+Captured: B (43, 3A, C7, BE) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+25
+Captured: A (1E, 75, 41, 2A) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+F5
+C5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 0E, DC) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+F5
+35
+Captured: B (43, 36, 0F, 7A) 
+
+Captured: B (41, 06, D1, 96) 
+
+B5
+45
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+B5
+C5
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (47, 4A, 5E, 53) 
+
+85
+35
+5
+F5
+Captured: B (3F, 0C, 6C, 5F) 
+
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (41, 3D, C8, B4) 
+
+Captured: B (43, 3A, C7, BE) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+BD
+35
+Captured: C (26, 61, DD, 9A) 
+
+Captured: B (41, 06, D1, 96) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+B5
+B5
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (42, 74, 45, 73) 
+
+B5
+B5
+45
+45
+45
+45
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+75
+75
+
+
+//last question
+working
+Reg: 1, val: 4
+Reg: 2, val: 0
+Reg: 3, val: 0
+Reg: 4, val: D2
+Reg: 5, val: E
+Reg: 6, val: 45
+Reg: 7, val: E5
+Reg: 8, val: 40
+Reg: 9, val: 0
+Reg: D, val: A2
+Reg: 12, val: F
+Reg: 13, val: 1B
+Reg: 19, val: 40
+Reg: 1A, val: 40
+Reg: 25, val: 40
+Reg: 26, val: 7
+Reg: 28, val: 10
+Reg: 29, val: DC
+Reg: 2E, val: 90
+Reg: 2F, val: 85
+Reg: 30, val: 85
+Reg: 31, val: 85
+Reg: 37, val: 0
+Reg: 38, val: 5
+Reg: 3C, val: 4
+Reg: 3D, val: 0
+Reg: 6F, val: 30
+Reg: 58, val: 2D
+Address - HEX - BIN
+1 - 4 - 100
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 2 - 10
+24 - CF - 11001111
+25 - 40 - 1000000
+26 - 7 - 111
+27 - 80 - 10000000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+after promiscous
+Address - HEX - BIN
+1 - 10 - 10000
+2 - 0 - 0
+3 - 0 - 0
+4 - D2 - 11010010
+5 - E - 1110
+6 - 45 - 1000101
+7 - E5 - 11100101
+8 - 40 - 1000000
+9 - 0 - 0
+A - 41 - 1000001
+B - 40 - 1000000
+C - 2 - 10
+D - A2 - 10100010
+E - F5 - 11110101
+F - 20 - 100000
+10 - 24 - 100100
+11 - 9F - 10011111
+12 - F - 1111
+13 - 1A - 11010
+14 - 40 - 1000000
+15 - B0 - 10110000
+16 - 7B - 1111011
+17 - 9B - 10011011
+18 - 8 - 1000
+19 - 40 - 1000000
+1A - 40 - 1000000
+1B - 40 - 1000000
+1C - 80 - 10000000
+1D - 6 - 110
+1E - 10 - 10000
+1F - 0 - 0
+20 - 0 - 0
+21 - 0 - 0
+22 - 0 - 0
+23 - 0 - 0
+24 - AE - 10101110
+25 - 40 - 1000000
+26 - 7 - 111
+27 - D8 - 11011000
+28 - 0 - 0
+29 - DC - 11011100
+2A - 0 - 0
+2B - 0 - 0
+2C - 0 - 0
+2D - 3 - 11
+2E - 90 - 10010000
+2F - 85 - 10000101
+30 - 85 - 10000101
+31 - 85 - 10000101
+32 - 0 - 0
+33 - 0 - 0
+34 - 0 - 0
+35 - 0 - 0
+36 - 0 - 0
+37 - 0 - 0
+38 - 5 - 101
+39 - 0 - 0
+3A - 0 - 0
+3B - 0 - 0
+3C - 4 - 100
+3D - 0 - 0
+3E - 0 - 0
+3F - 0 - 0
+40 - 0 - 0
+41 - 0 - 0
+42 - 0 - 0
+43 - 0 - 0
+44 - 0 - 0
+45 - 0 - 0
+46 - 0 - 0
+47 - 0 - 0
+48 - 0 - 0
+49 - 0 - 0
+4A - 0 - 0
+4B - 0 - 0
+4C - 0 - 0
+4D - 0 - 0
+4E - 1 - 1
+4F - 0 - 0
+3D
+Captured: C (42, 80, 71, B3) 
+
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+BF
+Captured: A (9F, 03, F5, 69) 
+
+3E
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+CA
+Captured: E (42, BF, D6, 2B) 
+
+CA
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+31
+31
+Captured: A (42, 80, 71, B3) 
+
+Captured: A (42, 80, 71, B3) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+35
+35
+35
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: B (42, 80, 71, B3) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+Captured: C (42, 80, 71, B3) 
+
+3E
+Captured: D (42, 80, 71, B3) 
+
+3E
+3E
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 80, 71, B3) 
+
+3A
+Captured: E (42, 80, 71, B3) 
+
+3A
+3A
+3A
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+Captured: E (42, 80, 71, B3) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+C1
+C1
+C1
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+Captured: A (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+C5
+C5
+Captured: B (42, BF, D6, 2B) 
+
+Captured: B (42, BF, D6, 2B) 
+
+CD
+CD
+CD
+CD
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+Captured: C (42, BF, D6, 2B) 
+
+CE
+CE
+CE
+CE
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+Captured: D (42, BF, D6, 2B) 
+
+CA
+CA
+Captured: E (42, BF, D6, 2B) 
+
+Captured: E (42, BF, D6, 2B) 
+
+41
+41
+41
+41
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+Captured: A (43, 2C, B2, DD) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+C5
+C5
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+C5
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+CD
+CD
+CD
+CD
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+Captured: C (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+C1
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+41
+41
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+Captured: A (3E, B9, 02, 85) 
+
+4A
+Captured: E (3E, B9, 02, 85) 
+
+4A
+4A
+4A
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+Captured: E (3E, B9, 02, 85) 
+
+4D
+4D
+4D
+4D
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+Captured: C (3E, B9, 02, 85) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+3D
+3D
+Captured: C (34, EE, F1, 2B) 
+
+Captured: C (34, EE, F1, 2B) 
+
+3D
+Captured: C (34, EE, F1, 2B) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+41
+41
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (41, 06, 7A, 3D) 
+
+45
+Captured: B (41, 06, 7A, 3D) 
+
+45
+45
+45
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4D
+4D
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+4A
+4A
+4A
+4A
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+Captured: E (41, 06, 7A, 3D) 
+
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+4E
+4E
+4E
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+Captured: D (41, 06, 7A, 3D) 
+
+2A
+Captured: A (3F, 8F, C1, 71) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+81
+81
+Captured: A (43, 80, 2C, EF) 
+
+Captured: A (43, 80, 2C, EF) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+35
+35
+35
+35
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: B (43, 18, 09, 52) 
+
+F1
+F1
+F1
+F1
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+Captured: A (43, 2A, FF, 96) 
+
+CA
+CA
+CA
+CA
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+Captured: E (3E, 7D, CE, 8D) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+35
+Captured: B (34, EE, F1, 2B) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+41
+Captured: A (41, 07, 6A, 2C) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3E, E5, A4, 7F) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+7A
+Captured: E (42, E1, EB, 48) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+35
+Captured: B (43, 3A, 09, 70) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (3C, E9, 27, F2) 
+
+81
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (42, 80, 71, B3) 
+
+F1
+3A
+Captured: A (43, 20, D7, B4) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+F1
+Captured: A (33, 12, DF, FE) 
+
+Captured: A (43, 2A, FF, 96) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+8A
+B1
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (42, BF, D6, 2B) 
+
+41
+3A
+Captured: A (3E, B9, 02, 85) 
+
+Captured: E (43, 18, 09, 52) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+3A
+Captured: E (43, 22, A1, C0) 
+
+41
+F1
+Captured: A (32, 34, 42, 44) 
+
+Captured: A (3C, E9, 27, F2) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+A
+Captured: E (42, 83, 68, A9) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+91
+Captured: A (B1, 81, BC, 8C) 
+
+71
+Captured: A (43, D5, DB, 4D) 
+
+81
+Captured: A (43, 80, 2C, EF) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+21
+Captured: A (1E, 75, 41, 2A) 
+
+8A
+6A
+Captured: E (3E, 83, 34, 89) 
+
+Captured: A (B0, F5, AB, EE) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+31
+F1
+Captured: A (43, 13, D9, 89) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+A
+Captured: E (44, 1E, 98, C2) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (3B, 13, E5, CD) 
+
+B1
+Captured: A (42, 74, 45, 73) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+C1
+41
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, 87, 21, E5) 
+
+7A
+Captured: E (3E, 84, 3B, 81) 
+
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+Captured: A (43, 10, 88, DB) 
+
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (31, C4, FB, 0E) 
+
+F1
+B1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 1C, A5, FA) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+E1
+31
+Captured: A (18, 19, 47, 46) 
+
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+7A
+Captured: E (47, 98, C3, 1C) 
+
+A
+Captured: E (43, 1F, A0, FC) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+F1
+F1
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (39, 02, 37, 0C) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+F1
+Captured: A (39, 02, 37, 0C) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+31
+Captured: A (43, 19, B1, EB) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+B1
+F1
+Captured: A (47, 2E, D5, BC) 
+
+Captured: A (3E, EC, 37, E5) 
+
+7D
+Captured: C (43, 0A, BB, F2) 
+
+F1
+Captured: A (42, BA, 77, 8F) 
+
+B1
+Captured: A (43, 88, CD, 06) 
+
+B1
+Captured: A (42, 6A, FD, D5) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+51
+81
+Captured: A (F1, 82, DA, A9) 
+
+Captured: A (3E, EE, 4C, 9C) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+B1
+Captured: A (3E, 82, DD, 61) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+41
+F1
+FA
+8A
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (33, 12, DF, FE) 
+
+Captured: E (43, 3A, C7, BE) 
+
+Captured: E (3E, AB, FC, 69) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+F1
+Captured: A (43, 36, 0F, 7A) 
+
+81
+Captured: A (3E, EE, 4C, 9C) 
+
+51
+Captured: A (59, 56, E2, ED) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+8A
+F1
+Captured: E (3E, AB, FC, 69) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (31, 5E, 96, F9) 
+
+81
+B1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 54, FD, EA) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+C1
+71
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+4A
+Captured: E (43, 2C, B2, DD) 
+
+B1
+F1
+Captured: A (42, B9, 65, 9E) 
+
+Captured: A (3E, EC, 37, E5) 
+
+31
+Captured: A (36, EF, 99, 40) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+41
+F1
+Captured: A (43, 7E, FA, C7) 
+
+Captured: A (43, 3D, 9F, E1) 
+
+5
+B1
+Captured: B (3B, 84, 18, A7) 
+
+Captured: A (43, 80, BD, 7E) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+41
+Captured: A (32, 34, 42, 44) 
+
+C1
+Captured: A (31, 5E, 96, F9) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+A
+Captured: E (31, D0, 38, D9) 
+
+A
+Captured: E (43, 41, 00, 02) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+FA
+Captured: E (43, 6B, 7F, 57) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 3D, 9F, E1) 
+
+31
+31
+41
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 87, 21, E5) 
+
+Captured: A (43, 7E, FA, C7) 
+
+CA
+Captured: E (3C, E3, 76, A9) 
+
+8A
+Captured: E (3E, 83, 34, 89) 
+
+C1
+Captured: A (42, 2E, 76, 1A) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+71
+3A
+Captured: A (43, 00, D3, 90) 
+
+Captured: E (43, 18, 09, 52) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+41
+B1
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (26, 61, DD, 9A) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+Captured: A (43, 2C, B2, DD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+41
+41
+41
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (0E, A0, EA, 44) 
+
+31
+Captured: A (97, AB, 49, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+A
+Captured: E (43, 61, D8, FA) 
+
+C1
+Captured: A (3E, 81, BE, 01) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+CA
+71
+Captured: E (43, 38, 46, 3D) 
+
+Captured: A (47, 98, C3, 1C) 
+
+3A
+Captured: E (43, 18, 09, 52) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+41
+71
+31
+Captured: A (41, 06, 7A, 3D) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (36, EF, 99, 40) 
+
+F1
+A
+Captured: A (39, 02, 37, 0C) 
+
+Captured: E (3B, 84, 18, A7) 
+
+8E
+Captured: D (3E, F4, 0C, C6) 
+
+A
+Captured: E (43, 61, 00, 22) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+C1
+C1
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3C, E3, 76, A9) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+F1
+F1
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (3C, E9, 27, F2) 
+
+Captured: A (42, BA, 77, 8F) 
+
+41
+Captured: A (41, 06, 7A, 3D) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+A
+31
+B1
+B1
+F1
+Captured: E (3E, AB, B8, 2D) 
+
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (3B, 83, 37, 8F) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+32
+31
+1
+Captured: P (43, D4, E1, 76) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, A0, 98, 7B) 
+
+C1
+1
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 61, D8, FA) 
+
+C1
+BA
+81
+41
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (43, 2C, B2, DD) 
+
+41
+Captured: A (36, 5B, 7A, 17) 
+
+4E
+Captured: D (3E, 7B, EA, AF) 
+
+31
+Captured: A (34, EE, F1, 2B) 
+
+A1
+Captured: A (99, 8D, B5, A1) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+F1
+C1
+Captured: A (43, 3A, C7, BE) 
+
+Captured: A (42, BF, D6, 2B) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+1
+Captured: A (43, A0, 98, 7B) 
+
+F1
+41
+Captured: A (43, 3D, 9F, E1) 
+
+Captured: A (43, 7E, FA, C7) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+E1
+F1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (3E, EC, 37, E5) 
+
+81
+41
+31
+B1
+C1
+Captured: A (3E, EE, 4C, 9C) 
+
+Captured: A (0E, A0, EA, 44) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (42, 21, 9E, FD) 
+
+1
+31
+Captured: A (43, 61, D8, FA) 
+
+Captured: A (36, EF, 99, 40) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+1
+Captured: A (32, A5, 18, 8F) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+C1
+1
+Captured: A (42, 21, 9E, FD) 
+
+Captured: A (3E, AB, B8, 2D) 
+
+31
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+51
+Captured: A (F1, 82, DA, A9) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+7A
+Captured: E (42, C9, CB, 40) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+C1
+C1
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+B1
+Captured: A (81, C6, CE, 89) 
+
+Captured: A (42, 74, 45, 73) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+B1
+Captured: A (43, 54, FD, EA) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+71
+Captured: A (47, 27, 2B, 4B) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (33, 12, DF, FE) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+8A
+Captured: E (3E, AB, FC, 69) 
+
+A
+Captured: E (3B, 84, 18, A7) 
+
+41
+Captured: A (43, 29, 92, F8) 
+
+C1
+41
+Captured: A (3E, EC, 0E, DC) 
+
+Captured: A (3E, C8, 32, C4) 
+
+F1
+C1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 38, 46, 3D) 
+
+71
+F5
+7A
+Captured: A (42, E1, EB, 48) 
+
+Captured: B (43, E6, 17, B2) 
+
+Captured: E (42, C9, CB, 40) 
+
+71
+Captured: A (44, 04, B3, F3) 
+
+C1
+1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (42, 6D, 09, 26) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+F1
+71
+B1
+Captured: A (3B, 83, 37, 8F) 
+
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+8A
+2A
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (22, 41, E9, 8A) 
+
+41
+C1
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 2E, 76, 1A) 
+
+31
+31
+Captured: A (43, 27, 91, F5) 
+
+Captured: A (43, D4, E1, 76) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+31
+Captured: A (43, 3A, 09, 70) 
+
+F1
+C1
+71
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+CD
+Captured: C (23, 93, 56, E6) 
+
+F1
+Captured: A (3B, 83, 37, 8F) 
+
+8A
+31
+B1
+81
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+CA
+BA
+Captured: E (42, BA, A6, 5E) 
+
+Captured: E (43, 43, 55, 55) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+71
+B1
+21
+Captured: A (31, C4, FB, 0E) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (22, 41, E9, 8A) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+1
+Captured: A (43, 41, 00, 02) 
+
+BA
+F1
+C1
+Captured: E (43, 43, 55, 55) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+8A
+Captured: E (41, 3F, 34, 4A) 
+
+F1
+Captured: A (3C, E9, 27, F2) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+41
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+41
+Captured: A (3D, BC, B2, 33) 
+
+61
+71
+Captured: A (B0, F5, AB, EE) 
+
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+C1
+B1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 88, CD, 06) 
+
+31
+3A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 18, 09, 52) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+3E
+Captured: A (47, 91, A8, 7E) 
+
+Captured: D (41, 06, D1, 96) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 80, 71, B3) 
+
+71
+Captured: A (44, 2B, 43, 2C) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+1
+Captured: A (3E, AB, B8, 2D) 
+
+B1
+8A
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+Captured: A (47, 91, A8, 7E) 
+
+1
+FA
+Captured: A (43, 36, B0, C5) 
+
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3B, 50, FE, 95) 
+
+41
+C1
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, 80, 86, 38) 
+
+8A
+1
+41
+Captured: E (41, 3F, 34, 4A) 
+
+Captured: A (43, 6F, 90, BC) 
+
+Captured: A (43, 2C, B2, DD) 
+
+B1
+Captured: A (47, 97, A5, 75) 
+
+B1
+Captured: A (43, 0B, 4D, 05) 
+
+41
+Captured: A (43, 88, 1A, D1) 
+
+1
+71
+71
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, E1, EB, 48) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+71
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (42, C9, CB, 40) 
+
+81
+Captured: A (3E, F4, 0C, C6) 
+
+FA
+Captured: E (43, 51, BF, AD) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+B1
+Captured: A (32, 06, 55, 61) 
+
+B1
+1
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (43, 88, F8, 33) 
+
+1
+B1
+8A
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (47, 97, A5, 75) 
+
+Captured: E (3F, 0C, 6C, 5F) 
+
+1
+Captured: A (47, 4A, A8, A5) 
+
+C1
+F1
+1
+FD
+Captured: A (25, 22, E6, E1) 
+
+Captured: A (3E, EC, 37, E5) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: C (43, 2A, FF, 96) 
+
+CA
+BA
+81
+Captured: E (3E, 81, BE, 01) 
+
+Captured: E (42, 6A, FD, D5) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+71
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+Captured: A (45, D3, F0, 66) 
+
+1
+C1
+Captured: A (43, 36, B0, C5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+C1
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+41
+41
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (3E, B9, 02, 85) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+1
+C1
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+21
+71
+31
+F1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+8A
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (41, 3F, 34, 4A) 
+
+31
+Captured: A (42, 6D, 09, 26) 
+
+21
+C1
+B1
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+CA
+Captured: E (3E, 81, BE, 01) 
+
+41
+Captured: A (3E, B9, 02, 85) 
+
+31
+F1
+Captured: A (43, 3A, 09, 70) 
+
+Captured: A (43, 51, BF, AD) 
+
+71
+1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (42, 83, 68, A9) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+41
+FA
+Captured: A (43, 88, 1A, D1) 
+
+Captured: E (44, 25, 27, 46) 
+
+FA
+31
+Captured: E (43, 6B, 7F, 57) 
+
+Captured: A (24, B0, 59, CD) 
+
+C1
+81
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+41
+FA
+Captured: A (36, 5B, 7A, 17) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+41
+31
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (3E, 84, 3B, 81) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+81
+31
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (34, C3, D9, 2E) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+81
+1
+31
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+71
+41
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, 7B, EA, AF) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+1
+31
+31
+Captured: A (32, A5, 18, 8F) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 3A, 09, 70) 
+
+1
+Captured: A (43, 61, 00, 22) 
+
+81
+C1
+Captured: A (41, 3F, 34, 4A) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+31
+31
+21
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+81
+B1
+1
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (45, D3, F0, 66) 
+
+C1
+71
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+81
+Captured: A (47, 27, 2B, 4B) 
+
+Captured: A (3E, F4, 0C, C6) 
+
+B1
+A
+1
+Captured: A (42, 7C, 65, 5B) 
+
+Captured: E (41, 3D, C8, B4) 
+
+Captured: A (47, 91, A8, 7E) 
+
+B1
+31
+31
+Captured: A (43, 0B, 4D, 05) 
+
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+Captured: A (3E, F8, 89, 4F) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+C1
+31
+F1
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+1
+F1
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+31
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (43, 18, 09, 52) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+C1
+Captured: A (3E, EC, 0E, DC) 
+
+31
+BA
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (43, 43, 55, 55) 
+
+C1
+1
+FA
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (47, 17, F8, A8) 
+
+Captured: E (44, 25, 27, 46) 
+
+31
+FA
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (41, 2A, B7, DC) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+1
+Captured: A (45, D3, F0, 66) 
+
+Captured: A (47, 91, A8, 7E) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 18, 09, 52) 
+
+31
+31
+Captured: A (41, 06, D1, 96) 
+
+Captured: A (24, B0, 59, CD) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+21
+Captured: A (22, 41, E9, 8A) 
+
+B1
+F1
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (43, 51, BF, AD) 
+
+1
+F1
+Captured: A (47, 17, F8, A8) 
+
+Captured: A (43, 20, D7, B4) 
+
+B1
+Captured: A (42, 7C, 65, 5B) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+B1
+FA
+Captured: A (39, 38, 35, 34) 
+
+Captured: E (44, 25, 27, 46) 
+
+41
+Captured: A (3E, DE, 9A, 7A) 
+
+31
+8A
+Captured: A (41, 06, D1, 96) 
+
+Captured: E (3C, E1, E4, 39) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+F1
+F1
+81
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (3F, 0C, 6C, 5F) 
+
+71
+1
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (45, D3, F0, 66) 
+
+F1
+Captured: A (0E, FD, 8F, 7C) 
+
+F1
+Captured: A (43, 3A, C7, BE) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+8A
+Captured: E (3C, E1, E4, 39) 
+
+FD
+Captured: C (43, 2A, FF, 96) 
+
+F1
+1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (44, 1E, 98, C2) 
+
+C1
+F1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 51, BF, AD) 
+
+Captured: A (41, 06, D1, 96) 
+
+B1
+1
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (47, 17, F8, A8) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (3F, 2A, 53, 46) 
+
+1
+41
+41
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (43, 88, 1A, D1) 
+
+F1
+Captured: A (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 51, BF, AD) 
+
+F1
+31
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+C1
+C1
+31
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (3C, E3, 76, A9) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (24, B0, 59, CD) 
+
+FA
+Captured: E (44, 25, 27, 46) 
+
+1
+Captured: A (45, D3, F0, 66) 
+
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+F1
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (43, 51, BF, AD) 
+
+81
+71
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+C1
+71
+Captured: A (42, 2E, 76, 1A) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, DC, 3B, A5) 
+
+F1
+Captured: A (25, EB, FF, 31) 
+
+1
+31
+Captured: A (43, A0, 98, 7B) 
+
+Captured: A (43, 27, 91, F5) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+41
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+31
+71
+Captured: A (97, AB, 49, 75) 
+
+Captured: A (44, 2B, 43, 2C) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+71
+41
+B1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (3E, C8, 32, C4) 
+
+Captured: A (43, 0B, 4D, 05) 
+
+B1
+71
+Captured: A (32, 06, 55, 61) 
+
+Captured: A (44, 27, DB, B8) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+C1
+Captured: A (3C, E3, 76, A9) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+41
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (3D, B4, FA, 73) 
+
+B1
+Captured: A (42, B9, 65, 9E) 
+
+1
+31
+8A
+71
+Captured: A (42, 83, 68, A9) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+31
+F1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 20, D7, B4) 
+
+31
+C1
+B1
+41
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 6A, FD, D5) 
+
+Captured: A (3E, B9, 02, 85) 
+
+1
+Captured: A (43, 6F, 90, BC) 
+
+71
+Captured: A (44, 27, DB, B8) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+81
+Captured: A (3F, 0C, 6C, 5F) 
+
+31
+C1
+C1
+31
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (42, 71, 2E, 1D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (41, 06, D1, 96) 
+
+81
+Captured: A (3E, 83, 34, 89) 
+
+31
+1
+71
+Captured: A (39, BC, C9, 4C) 
+
+Captured: A (44, 1E, 98, C2) 
+
+Captured: A (3E, 84, 3B, 81) 
+
+8A
+C1
+Captured: E (3C, E1, E4, 39) 
+
+Captured: A (81, C6, CE, 89) 
+
+81
+Captured: A (41, 3F, 34, 4A) 
+
+31
+Captured: A (24, B0, 59, CD) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+B1
+71
+31
+Captured: A (47, 97, A5, 75) 
+
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 18, 09, 52) 
+
+4A
+Captured: E (25, E9, A2, 6E) 
+
+71
+Captured: A (47, 98, C3, 1C) 
+
+31
+8A
+Captured: A (24, B0, 59, CD) 
+
+Captured: E (3C, E1, E4, 39) 
+
+F1
+F1
+31
+Captured: A (0E, FD, 8F, 7C) 
+
+Captured: A (43, 20, D7, B4) 
+
+Captured: A (24, B0, 59, CD) 
+
+31
+41
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (41, 07, 6A, 2C) 
+
+4A
+B1
+F1
+Captured: E (0E, A0, EA, 44) 
+
+Captured: A (3B, 13, E5, CD) 
+
+Captured: A (43, 36, 0F, 7A) 
+
+1
+Captured: A (47, 91, A8, 7E) 
+
+71
+C1
+Captured: A (42, DC, 3B, A5) 
+
+Captured: A (43, 38, 46, 3D) 
+
+41
+81
+31
+Captured: A (43, 88, 1A, D1) 
+
+Captured: A (3E, 83, 34, 89) 
+
+Captured: A (24, B0, 59, CD) 
+
+1
+Captured: A (44, 1E, 98, C2) 
+
+31
+Captured: A (43, D4, E1, 76) 
+
+BA
+Captured: E (43, 43, 55, 55) 
+
+31
+31
+41
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (3D, B4, FA, 73) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+C1
+C1
+Captured: A (3E, 81, BE, 01) 
+
+Captured: A (25, 22, E6, E1) 
+
+31
+C1
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 38, 46, 3D) 
+
+C1
+C1
+A
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, 21, 9E, FD) 
+
+Captured: E (45, D0, B8, 2D) 
+
+71
+Captured: A (42, DC, 3B, A5) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+81
+31
+Captured: A (3F, 0C, 6C, 5F) 
+
+Captured: A (42, 6D, 09, 26) 
+
+31
+5
+Captured: A (42, 6D, 09, 26) 
+
+Captured: B (43, 61, 00, 22) 
+
+31
+31
+31
+31
+31
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (43, 18, 09, 52) 
+
+31
+71
+31
+35
+71
+71
+71
+35
+Captured: A (24, B0, 59, CD) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (43, 18, 09, 52) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: A (44, 04, B3, F3) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+35
+35
+Captured: A (43, 38, 46, 3D) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+1
+1
+1
+1
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+Captured: A (43, 88, F8, 33) 
+
+71
+Captured: A (43, 00, D3, 90) 
+
+71
+71
+71
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+Captured: A (43, 00, D3, 90) 
+
+31
+71
+31
+31
+31
+71
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+41
+41
+41
+41
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+Captured: A (42, 79, E2, D9) 
+
+1
+1
+1
+1
+35
+35
+35
+35
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: A (47, 91, A8, 7E) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+41
+41
+41
+41
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+Captured: A (3D, BC, B2, 33) 
+
+71
+71
+71
+71
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+Captured: A (44, 27, DB, B8) 
+
+C1
+Captured: A (43, 38, 46, 3D) 
+
+31
+31
+71
+E5
+31
+71
+31
+31
+71
+31
+31
+C1
+71
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (43, 38, 47, 3C) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (9C, 01, 33, AE) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, 6D, 09, 26) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (34, EE, F1, 2B) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, C9, CB, 40) 
+
+3E
+3E
+3E
+3E
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (43, 13, D9, 89) 
+
+F1
+F1
+F1
+F1
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+Captured: A (3F, 28, 9F, 88) 
+
+35
+35
+35
+35
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+Captured: B (42, 81, 11, D2) 
+
+C1
+C1
+C1
+C1
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+31
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+31
+31
+71
+71
+C1
+71
+71
+C1
+C1
+C1
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (3E, F8, 89, 4F) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+Captured: A (3E, 7D, CE, 8D) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+71
+71
+Captured: A (43, 0A, BB, F2) 
+
+Captured: A (43, 0A, BB, F2) 
+
+C1
+C1
+C1
+C1
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+Captured: A (3B, 50, FE, 95) 
+
+31
+31
+C1
+C1
+31
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (43, 38, 46, 3D) 
+
+Captured: A (42, 81, 11, D2) 
+
+B1
+71
+31
+71
+B1
+B1
+71
+71
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, 81, 11, D2) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (39, 38, 35, 34) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+E1
+E1
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+FA
+Captured: E (41, 2A, B7, DC) 
+
+FA
+FA
+FA
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+Captured: E (41, 2A, B7, DC) 
+
+71
+71
+71
+71
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+Captured: A (42, C9, CB, 40) 
+
+3D
+3D
+3D
+3D
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+Captured: C (42, 81, 11, D2) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+31
+Captured: A (43, 13, D9, 89) 
+
+F5
+Captured: B (3E, EC, 37, E5) 
+
+F1
+Captured: A (43, 20, D7, B4) 
+
+B1
+Captured: A (39, 38, 35, 34) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+71
+Captured: A (42, C9, CB, 40) 
+
+5
+Captured: B (43, 41, 00, 02) 
+
+31
+Captured: A (97, AB, 49, 75) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+5
+71
+Captured: B (43, 10, 88, DB) 
+
+Captured: A (42, C9, CB, 40) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+B5
+Captured: B (47, 2E, D5, BC) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+45
+C5
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (31, 5E, 96, F9) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+35
+Captured: B (43, 22, A1, C0) 
+
+C5
+31
+Captured: B (31, 5E, 96, F9) 
+
+Captured: A (43, 13, D9, 89) 
+
+5
+Captured: B (43, 1F, A0, FC) 
+
+35
+Captured: B (41, 06, D1, 96) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+Captured: B (42, BA, 77, 8F) 
+
+85
+Captured: B (3E, AB, FC, 69) 
+
+75
+C5
+Captured: B (43, 00, D3, 90) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+C5
+35
+Captured: B (43, 38, 46, 3D) 
+
+Captured: B (34, EE, F1, 2B) 
+
+C5
+85
+F5
+Captured: B (31, 5E, 96, F9) 
+
+Captured: B (43, 80, 2C, EF) 
+
+Captured: B (3E, EC, 37, E5) 
+
+75
+Captured: B (43, D5, DB, 4D) 
+
+F5
+45
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (43, 7E, FA, C7) 
+
+F5
+F5
+Captured: B (43, 3D, 9F, E1) 
+
+Captured: B (43, E6, 17, B2) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+F5
+5
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (43, 88, F8, 33) 
+
+5
+C5
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (3E, 7D, CE, 8D) 
+
+35
+Captured: B (36, EF, 99, 40) 
+
+B5
+Captured: B (42, B9, 65, 9E) 
+
+8D
+C5
+Captured: C (3E, E5, A4, 7F) 
+
+Captured: B (42, 21, 9E, FD) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+45
+5
+F5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (43, 88, F8, 33) 
+
+Captured: B (3E, EC, 37, E5) 
+
+F5
+C5
+Captured: B (3F, 28, 9F, 88) 
+
+Captured: B (3E, 80, 86, 38) 
+
+C5
+FD
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: C (3B, 83, 37, 8F) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+5
+Captured: B (43, 88, F8, 33) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+45
+75
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (44, 2B, 43, 2C) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+FD
+Captured: C (3B, 83, 37, 8F) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+45
+5
+5
+Captured: B (3E, C8, 32, C4) 
+
+Captured: B (43, 88, F8, 33) 
+
+Captured: B (47, 91, A8, 7E) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+45
+5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (31, D0, 38, D9) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+C5
+B5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (32, 06, 55, 61) 
+
+FD
+Captured: C (3B, 83, 37, 8F) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+75
+35
+B5
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (43, 87, 21, E5) 
+
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (44, 27, DB, B8) 
+
+45
+ED
+45
+Captured: B (3E, C8, 32, C4) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (3D, BC, B2, 33) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+2D
+C5
+Captured: A (22, 41, E9, 8A) 
+
+Captured: B (42, 2E, 76, 1A) 
+
+5
+C5
+Captured: B (43, 41, 00, 02) 
+
+Captured: B (3C, E3, 76, A9) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+ED
+Captured: B (44, 04, B3, F3) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+5
+75
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (44, 27, DB, B8) 
+
+35
+2D
+Captured: B (42, 80, 71, B3) 
+
+Captured: A (22, 41, E9, 8A) 
+
+C5
+55
+Captured: B (25, 22, E6, E1) 
+
+Captured: A (F1, 82, DA, A9) 
+
+35
+31
+Captured: B (24, B0, 59, CD) 
+
+Captured: A (42, 81, 11, D2) 
+
+A5
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+C5
+F5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (3B, 83, 37, 8F) 
+
+C5
+95
+C5
+Captured: B (25, 22, E6, E1) 
+
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (42, 21, 9E, FD) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+35
+55
+Captured: B (24, B0, 59, CD) 
+
+Captured: A (F1, 82, DA, A9) 
+
+35
+A
+Captured: B (43, 13, D9, 89) 
+
+Captured: E (3B, 84, 18, A7) 
+
+5
+Captured: B (47, 4A, A8, A5) 
+
+45
+Captured: B (41, 07, 6A, 2C) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+5
+35
+Captured: B (43, 36, B0, C5) 
+
+Captured: B (43, 3A, 09, 70) 
+
+35
+35
+Captured: B (34, EE, F1, 2B) 
+
+Captured: B (24, B0, 59, CD) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+75
+Captured: B (31, C4, FB, 0E) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+C5
+Captured: B (3C, E9, 27, F2) 
+
+Captured: B (3C, E3, 76, A9) 
+
+A5
+B5
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (3B, 13, E5, CD) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+95
+75
+C5
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, BF, D6, 2B) 
+
+85
+Captured: B (41, 3F, 34, 4A) 
+
+54
+5
+5
+5
+Captured: A (E2, AA, AA, E2) 
+
+Captured: B (43, 6F, 90, BC) 
+
+Captured: B (47, 91, A8, 7E) 
+
+Captured: B (43, 36, B0, C5) 
+
+35
+4D
+45
+Captured: B (24, B0, 59, CD) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: B (3E, C8, 32, C4) 
+
+45
+85
+Captured: B (41, 07, 6A, 2C) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+C5
+Captured: B (25, 22, E6, E1) 
+
+A5
+35
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (42, 80, 71, B3) 
+
+Captured: A (99, 8D, B5, A1) 
+
+35
+A5
+Captured: B (97, AB, 49, 75) 
+
+Captured: A (99, 8D, B5, A1) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+35
+Captured: B (43, 3A, 09, 70) 
+
+85
+5
+Captured: B (41, 3F, 34, 4A) 
+
+Captured: B (47, 91, A8, 7E) 
+
+F5
+45
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (32, 34, 42, 44) 
+
+5
+B5
+B5
+Captured: B (44, 1E, 98, C2) 
+
+Captured: B (43, 88, CD, 06) 
+
+Captured: B (42, 6A, FD, D5) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+8D
+75
+75
+Captured: B (3E, F8, 89, 4F) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (42, C9, CB, 40) 
+
+45
+Captured: B (43, 2C, B2, DD) 
+
+35
+Captured: B (43, 13, D9, 89) 
+
+F5
+8D
+Captured: B (43, 51, BF, AD) 
+
+Captured: C (3E, E5, A4, 7F) 
+
+B5
+75
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (44, 04, B3, F3) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+C5
+F5
+F5
+5
+45
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (25, EB, FF, 31) 
+
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: B (43, 10, 88, DB) 
+
+Captured: B (3D, BC, B2, 33) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (43, 3A, C7, BE) 
+
+C5
+Captured: B (31, 5E, 96, F9) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+C5
+75
+Captured: B (3E, 81, BE, 01) 
+
+Captured: B (42, C9, CB, 40) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+F5
+85
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (3E, 83, 34, 89) 
+
+35
+Captured: B (3E, F8, 89, 4F) 
+
+F5
+Captured: B (25, EB, FF, 31) 
+
+4D
+85
+Captured: C (41, 06, 7A, 3D) 
+
+Captured: B (3C, E1, E4, 39) 
+
+A5
+A5
+75
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: A (99, 8D, B5, A1) 
+
+F5
+5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (47, 91, A8, 7E) 
+
+C5
+8D
+Captured: B (3E, 81, BE, 01) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+85
+75
+Captured: B (3E, 83, 34, 89) 
+
+Captured: B (42, C9, CB, 40) 
+
+3D
+Captured: C (36, EF, 99, 40) 
+
+F5
+Captured: B (41, 2A, B7, DC) 
+
+F5
+35
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (43, 18, 09, 52) 
+
+A1
+Captured: A (99, 8D, B5, A1) 
+
+A1
+A1
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+85
+4D
+Captured: B (3E, E5, A4, 7F) 
+
+Captured: C (41, 06, 7A, 3D) 
+
+F5
+45
+Captured: B (43, 3D, 9F, E1) 
+
+Captured: B (43, 7E, FA, C7) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+F5
+Captured: B (43, 36, 0F, 7A) 
+
+45
+F5
+Captured: B (3E, C8, 32, C4) 
+
+Captured: B (3E, EC, 37, E5) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+F5
+85
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+CA
+Captured: E (42, BA, A6, 5E) 
+
+BE
+Captured: D (3E, 82, DD, 61) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+B5
+F5
+Captured: B (43, 1C, A5, FA) 
+
+Captured: B (43, 36, 0F, 7A) 
+
+35
+35
+8D
+45
+Captured: B (43, D4, E1, 76) 
+
+Captured: B (42, 6D, 09, 26) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: B (0E, A0, EA, 44) 
+
+C5
+Captured: B (3E, 81, BE, 01) 
+
+5
+Captured: B (43, A0, 98, 7B) 
+
+F5
+3D
+Captured: B (43, 51, BF, AD) 
+
+Captured: C (36, EF, 99, 40) 
+
+F5
+F5
+75
+E5
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (41, 2A, B7, DC) 
+
+Captured: B (42, DC, 3B, A5) 
+
+Captured: A (62, 4F, 1F, 32) 
+
+5
+Captured: B (3E, AB, B8, 2D) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+5E
+Captured: A (59, 56, E2, ED) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+8D
+Captured: C (3E, F4, 0C, C6) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+F5
+F5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 37, E5) 
+
+BD
+Captured: C (42, 7C, 65, 5B) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+F5
+F5
+75
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 37, E5) 
+
+Captured: B (3E, 84, 3B, 81) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (43, 27, 91, F5) 
+
+5
+Captured: B (43, 36, B0, C5) 
+
+5
+4D
+Captured: B (47, 91, A8, 7E) 
+
+Captured: C (43, 88, 1A, D1) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+A5
+B5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+A5
+B5
+F5
+F5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: B (3B, 13, E5, CD) 
+
+Captured: B (3C, E9, 27, F2) 
+
+Captured: B (44, 25, 27, 46) 
+
+Captured: A (99, 8D, B5, A1) 
+
+75
+85
+45
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (3F, 0C, 6C, 5F) 
+
+Captured: B (3E, B9, 02, 85) 
+
+35
+B5
+85
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (3E, EE, 4C, 9C) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+B5
+Captured: B (47, 97, A5, 75) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+B5
+35
+85
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (3E, 83, 34, 89) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+B5
+Captured: B (42, 74, 45, 73) 
+
+FE
+Captured: D (39, 02, 37, 0C) 
+
+45
+CA
+B5
+Captured: B (3E, B9, 02, 85) 
+
+Captured: E (42, BA, A6, 5E) 
+
+Captured: B (42, 6A, FD, D5) 
+
+35
+B5
+F5
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (47, 97, A5, 75) 
+
+Captured: B (43, 2A, FF, 96) 
+
+75
+45
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (43, 88, 1A, D1) 
+
+5
+B5
+Captured: B (42, 83, 68, A9) 
+
+Captured: B (43, 88, CD, 06) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+F5
+75
+Captured: B (42, BA, 77, 8F) 
+
+Captured: B (3E, 84, 3B, 81) 
+
+A5
+A5
+Captured: A (99, 8D, B5, A1) 
+
+Captured: A (99, 8D, B5, A1) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+45
+F5
+FE
+35
+Captured: B (3D, B4, FA, 73) 
+
+Captured: B (43, 51, BF, AD) 
+
+Captured: D (39, 02, 37, 0C) 
+
+Captured: B (43, 3A, 09, 70) 
+
+5
+Captured: B (41, 3D, C8, B4) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+45
+Captured: B (3E, C8, 32, C4) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+F5
+Captured: B (43, 2A, FF, 96) 
+
+35
+35
+Captured: B (41, 06, D1, 96) 
+
+Captured: B (24, B0, 59, CD) 
+
+A5
+Captured: A (99, 8D, B5, A1) 
+
+C5
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+Captured: B (3E, 80, 86, 38) 
+
+C5
+35
+Captured: B (47, 4A, 5E, 53) 
+
+Captured: B (43, 18, 09, 52) 
+
+45
+EE
+75
+Captured: B (43, 88, 1A, D1) 
+
+Captured: A (18, 19, 47, 46) 
+
+Captured: B (47, 27, 2B, 4B) 
+
+5
+Captured: B (32, A5, 18, 8F) 
+
+35
+Captured: B (41, 06, D1, 96) 
+
+35
+F5
+75
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (42, DC, 3B, A5) 
+
+5
+Captured: B (45, D3, F0, 66) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+5
+Captured: B (43, A0, 98, 7B) 
+
+C5
+Captured: B (47, 4A, 5E, 53) 
+
+E5
+35
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (24, B0, 59, CD) 
+
+6D
+45
+Captured: A (B0, F5, AB, EE) 
+
+Captured: B (42, 79, E2, D9) 
+
+CA
+Captured: E (81, C6, CE, 89) 
+
+C5
+75
+F5
+Captured: B (3E, 7D, CE, 8D) 
+
+Captured: B (47, 27, 2B, 4B) 
+
+Captured: B (43, 51, BF, AD) 
+
+75
+5
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (47, 4A, A8, A5) 
+
+45
+35
+Captured: B (36, 5B, 7A, 17) 
+
+Captured: B (42, 6D, 09, 26) 
+
+B5
+CA
+Captured: B (39, 38, 35, 34) 
+
+Captured: E (42, 71, 2E, 1D) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+BD
+Captured: C (42, 7C, 65, 5B) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+25
+35
+Captured: A (1E, 75, 41, 2A) 
+
+Captured: B (43, 27, 91, F5) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+C5
+Captured: B (23, 93, 56, E6) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+B5
+75
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (43, 0A, BB, F2) 
+
+75
+Captured: B (3F, 2A, 53, 46) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+35
+F5
+Captured: B (42, 6D, 09, 26) 
+
+Captured: B (44, 25, 27, 46) 
+
+35
+Captured: B (97, AB, 49, 75) 
+
+BE
+Captured: D (43, 43, 55, 55) 
+
+F5
+Captured: B (3F, 28, 9F, 88) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+B5
+75
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: B (42, C9, CB, 40) 
+
+45
+35
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (43, 18, 09, 52) 
+
+75
+Captured: B (47, 98, C3, 1C) 
+
+75
+3D
+Captured: B (43, 0A, BB, F2) 
+
+Captured: C (39, BC, C9, 4C) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+35
+Captured: B (42, DC, 3B, A5) 
+
+Captured: B (42, 6D, 09, 26) 
+
+B5
+Captured: B (42, 7C, 65, 5B) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+B5
+BD
+Captured: B (42, E1, EB, 48) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: C (26, 61, DD, 9A) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+8D
+Captured: C (3E, F4, 0C, C6) 
+
+C5
+Captured: B (3E, EC, 0E, DC) 
+
+35
+Captured: B (42, 6D, 09, 26) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+Captured: B (44, 2B, 43, 2C) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+5
+Captured: B (45, D3, F0, 66) 
+
+85
+Captured: B (3F, 0C, 6C, 5F) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+35
+45
+BE
+Captured: B (42, 6D, 09, 26) 
+
+Captured: B (43, 2C, B2, DD) 
+
+Captured: D (43, 43, 55, 55) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+E5
+F5
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: B (25, EB, FF, 31) 
+
+35
+Captured: B (43, D4, E1, 76) 
+
+95
+F5
+Captured: A (B1, 81, BC, 8C) 
+
+Captured: B (43, 51, BF, AD) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+3D
+Captured: C (39, BC, C9, 4C) 
+
+FD
+Captured: C (43, 20, D7, B4) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+45
+75
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (42, C9, CB, 40) 
+
+5
+35
+BD
+Captured: B (47, 17, F8, A8) 
+
+Captured: B (43, 18, 09, 52) 
+
+Captured: C (42, 7C, 65, 5B) 
+
+85
+Captured: B (43, 80, 2C, EF) 
+
+B5
+3D
+Captured: B (43, 0B, 4D, 05) 
+
+Captured: C (39, BC, C9, 4C) 
+
+85
+4E
+Captured: B (3E, AB, FC, 69) 
+
+Captured: D (3E, 7B, EA, AF) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+41
+Captured: A (43, 29, 92, F8) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+45
+C5
+Captured: B (43, 88, 1A, D1) 
+
+Captured: B (3B, 50, FE, 95) 
+
+75
+3D
+Captured: B (42, E1, EB, 48) 
+
+Captured: C (39, BC, C9, 4C) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+C5
+Captured: B (42, BA, A6, 5E) 
+
+F5
+Captured: B (43, 3D, 9F, E1) 
+
+B5
+Captured: B (3B, 13, E5, CD) 
+
+1
+45
+Captured: A (43, 61, D8, FA) 
+
+Captured: B (43, 7E, FA, C7) 
+
+F5
+F5
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: B (43, 51, BF, AD) 
+
+75
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (44, 04, B3, F3) 
+
+85
+Captured: B (3E, F4, 0C, C6) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+5
+Captured: B (32, A5, 18, 8F) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+F5
+Captured: B (43, 51, BF, AD) 
+
+75
+5
+FE
+F5
+Captured: B (47, 98, C3, 1C) 
+
+Captured: B (47, 17, F8, A8) 
+
+Captured: D (39, 02, 37, 0C) 
+
+Captured: B (43, 2A, FF, 96) 
+
+4E
+Captured: D (25, E9, A2, 6E) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+75
+B5
+B5
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, 6A, FD, D5) 
+
+Captured: B (42, 6A, FD, D5) 
+
+B5
+75
+85
+Captured: B (42, 6A, FD, D5) 
+
+Captured: B (44, 04, B3, F3) 
+
+Captured: B (3E, F4, 0C, C6) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+75
+45
+F5
+Captured: B (43, 00, D3, 90) 
+
+Captured: B (43, 2C, B2, DD) 
+
+Captured: B (43, 51, BF, AD) 
+
+5
+Captured: B (43, 61, 00, 22) 
+
+25
+75
+Captured: A (22, 41, E9, 8A) 
+
+Captured: B (42, C9, CB, 40) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+B5
+Captured: B (42, B9, 65, 9E) 
+
+3E
+Captured: D (42, 81, 11, D2) 
+
+5
+Captured: B (43, 6F, 90, BC) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+E5
+Captured: A (18, 19, 47, 46) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+C5
+Captured: B (3B, 50, FE, 95) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+CA
+5
+Captured: E (81, C6, CE, 89) 
+
+Captured: B (43, 61, 00, 22) 
+
+F5
+5
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (43, 6F, 90, BC) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+C5
+B5
+Captured: B (42, 71, 2E, 1D) 
+
+Captured: B (39, 38, 35, 34) 
+
+3D
+3D
+3D
+Captured: C (34, C3, D9, 2E) 
+
+Captured: C (34, C3, D9, 2E) 
+
+Captured: C (34, C3, D9, 2E) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+F5
+5
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (43, 6F, 90, BC) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+C5
+Captured: B (3E, 7D, CE, 8D) 
+
+65
+Captured: A (B0, F5, AB, EE) 
+
+C5
+Captured: B (42, 71, 2E, 1D) 
+
+35
+Captured: B (43, 27, 91, F5) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+F5
+FD
+Captured: B (3F, 28, 9F, 88) 
+
+Captured: C (43, 6B, 7F, 57) 
+
+35
+5
+Captured: B (97, AB, 49, 75) 
+
+Captured: B (42, 83, 68, A9) 
+
+25
+Captured: A (22, 41, E9, 8A) 
+
+B5
+F5
+25
+Captured: B (39, 38, 35, 34) 
+
+Captured: B (0E, FD, 8F, 7C) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+35
+Captured: B (43, 19, B1, EB) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+35
+Captured: B (24, B0, 59, CD) 
+
+C5
+Captured: B (81, C6, CE, 89) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+85
+C5
+Captured: B (3E, EE, 4C, 9C) 
+
+Captured: B (42, 71, 2E, 1D) 
+
+5
+Captured: B (47, 91, A8, 7E) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+45
+Captured: B (42, 79, E2, D9) 
+
+4E
+C5
+B5
+Captured: D (3E, 7B, EA, AF) 
+
+Captured: B (47, 4A, 5E, 53) 
+
+Captured: B (43, 0B, 4D, 05) 
+
+C5
+Captured: B (42, 71, 2E, 1D) 
+
+75
+Captured: B (42, DC, 3B, A5) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+75
+Captured: B (44, 27, DB, B8) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+F5
+45
+Captured: B (43, 6B, 7F, 57) 
+
+Captured: B (3E, B9, 02, 85) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+35
+Captured: B (43, 13, D9, 89) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+45
+Captured: B (43, 88, 1A, D1) 
+
+A
+Captured: E (45, D0, B8, 2D) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+5
+D
+Captured: B (43, 6F, 90, BC) 
+
+Captured: C (3B, 84, 18, A7) 
+
+45
+Captured: B (3E, DE, 9A, 7A) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+CD
+Captured: C (42, BA, A6, 5E) 
+
+F5
+Captured: B (43, 20, D7, B4) 
+
+5
+Captured: B (47, 17, F8, A8) 
+
+C5
+35
+Captured: B (42, 71, 2E, 1D) 
+
+Captured: B (24, B0, 59, CD) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+B5
+Captured: B (32, 06, 55, 61) 
+
+35
+Captured: B (43, 18, 09, 52) 
+
+45
+F5
+Captured: B (3D, BC, B2, 33) 
+
+Captured: B (43, 20, D7, B4) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+C5
+Captured: B (42, BF, D6, 2B) 
+
+C5
+Captured: B (3C, E3, 76, A9) 
+
+45
+35
+Captured: B (43, 29, 92, F8) 
+
+Captured: B (42, 80, 71, B3) 
+
+F5
+BD
+Captured: B (43, 20, D7, B4) 
+
+Captured: C (43, 80, BD, 7E) 
+
+C5
+75
+Captured: B (43, 38, 46, 3D) 
+
+Captured: B (42, DC, 3B, A5) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+C5
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+5
+Captured: B (3E, AB, B8, 2D) 
+
+35
+C5
+Captured: B (39, BC, C9, 4C) 
+
+Captured: B (43, 38, 46, 3D) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (43, 29, 92, F8) 
+
+B5
+Captured: B (43, 0B, 4D, 05) 
+
+CD
+Captured: C (42, BA, A6, 5E) 
+
+5
+Captured: B (44, 1E, 98, C2) 
+
+5
+45
+Captured: B (43, A0, 98, 7B) 
+
+Captured: B (43, 88, 1A, D1) 
+
+5
+Captured: B (45, D0, B8, 2D) 
+
+7D
+Captured: C (43, 00, D3, 90) 
+
+85
+Captured: B (3E, 83, 34, 89) 
+
+5
+Captured: B (43, 41, 00, 02) 
+
+C5
+Captured: B (47, 4A, 5E, 53) 
+
+45
+Captured: B (3E, DE, 9A, 7A) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+B5
+Captured: B (39, 38, 35, 34) 
+
+F5
+Captured: B (43, E6, 17, B2) 
+
+F5
+Captured: B (43, 6B, 7F, 57) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+75
+85
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (3E, 83, 34, 89) 
+
+F5
+Captured: B (33, 12, DF, FE) 
+
+31
+Captured: A (39, BC, C9, 4C) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+55
+Captured: A (F1, 82, DA, A9) 
+
+C5
+Captured: B (3E, 80, 86, 38) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+31
+Captured: A (43, 87, 21, E5) 
+
+35
+Captured: B (39, BC, C9, 4C) 
+
+45
+Captured: B (3D, BC, B2, 33) 
+
+35
+F5
+5
+Captured: B (43, 87, 21, E5) 
+
+Captured: B (44, 25, 27, 46) 
+
+Captured: B (47, 17, F8, A8) 
+
+45
+Captured: B (43, 88, 1A, D1) 
+
+45
+Captured: B (3E, B9, 02, 85) 
+
+C5
+B5
+Captured: B (3C, E3, 76, A9) 
+
+Captured: B (39, 38, 35, 34) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+BE
+Captured: D (43, 54, FD, EA) 
+
+35
+Captured: B (42, 80, 71, B3) 
+
+F5
+Captured: B (44, 25, 27, 46) 
+
+75
+F5
+Captured: B (44, 04, B3, F3) 
+
+Captured: B (43, 51, BF, AD) 
+
+F5
+Captured: B (3C, E9, 27, F2) 
+
+F5
+Captured: B (3B, 83, 37, 8F) 
+
+F5
+Captured: B (43, 3A, C7, BE) 
+
+85
+Captured: B (3E, E5, A4, 7F) 
+
+35
+Captured: B (43, 87, 21, E5) 
+
+25
+Captured: A (1E, 75, 41, 2A) 
+
+C5
+Captured: B (42, 2E, 76, 1A) 
+
+F5
+C5
+Captured: B (43, 51, BF, AD) 
+
+Captured: B (3E, EC, 0E, DC) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+F5
+35
+Captured: B (43, 36, 0F, 7A) 
+
+Captured: B (41, 06, D1, 96) 
+
+B5
+45
+Captured: B (42, B9, 65, 9E) 
+
+Captured: B (41, 06, 7A, 3D) 
+
+B5
+C5
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (47, 4A, 5E, 53) 
+
+85
+35
+5
+F5
+Captured: B (3F, 0C, 6C, 5F) 
+
+Captured: B (24, B0, 59, CD) 
+
+Captured: B (41, 3D, C8, B4) 
+
+Captured: B (43, 3A, C7, BE) 
+
+5
+Captured: B (31, D0, 38, D9) 
+
+BD
+35
+Captured: C (26, 61, DD, 9A) 
+
+Captured: B (41, 06, D1, 96) 
+
+E5
+Captured: A (62, 4F, 1F, 32) 
+
+B5
+B5
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (42, 74, 45, 73) 
+
+B5
+B5
+45
+45
+45
+45
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (42, 74, 45, 73) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+Captured: B (3E, B9, 02, 85) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+75
+75
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, C9, CB, 40) 
+
+75
+75
+75
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, C9, CB, 40) 
+
+Captured: B (42, C9, CB, 40) 
+
+75
+Captured: B (42, C9, CB, 40) 
+
+3D
+Captured: C (43, 22, A1, C0) 
+
+4D
+Captured: C (3D, BC, B2, 33) 
+
+E
+Captured: D (43, 6F, 90, BC) 
+
+C5
+Captured: B (25, 22, E6, E1) 
+
+E
+Captured: D (43, 6F, 90, BC) 
+
+CE
+3D
+Captured: D (42, 21, 9E, FD) 
+
+Captured: C (42, 80, 71, B3) 
+
+7E
+Captured: D (44, 27, DB, B8) 
+
+BE
+Captured: D (32, 06, 55, 61) 
+
+5E
+Captured: A (F1, 82, DA, A9) 
+
+8E
+Captured: D (3E, E5, A4, 7F) 
+
+7E
+Captured: D (44, 27, DB, B8) 
+
+FE
+4E
+BE
+Captured: D (43, 3D, 9F, E1) 
+
+Captured: D (43, 7E, FA, C7) 
+
+Captured: D (43, 88, CD, 06) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+3E
+3E
+4D
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (42, 6D, 09, 26) 
+
+Captured: C (3D, BC, B2, 33) 
+
+CA
+Captured: E (25, 22, E6, E1) 
+
+5E
+E
+Captured: A (F1, 82, DA, A9) 
+
+Captured: D (44, 1E, 98, C2) 
+
+4E
+Captured: D (32, 34, 42, 44) 
+
+FE
+8D
+Captured: D (3C, E9, 27, F2) 
+
+Captured: C (43, 80, 2C, EF) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+3E
+FE
+3E
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (3E, EC, 37, E5) 
+
+Captured: D (42, 6D, 09, 26) 
+
+CE
+4D
+5E
+Captured: D (25, 22, E6, E1) 
+
+Captured: C (3D, BC, B2, 33) 
+
+Captured: A (F1, 82, DA, A9) 
+
+BE
+Captured: D (43, 43, 55, 55) 
+
+FE
+Captured: D (43, 36, 0F, 7A) 
+
+BE
+8E
+Captured: D (3B, 13, E5, CD) 
+
+Captured: D (3E, 83, 34, 89) 
+
+5E
+BE
+Captured: A (F1, 82, DA, A9) 
+
+Captured: D (42, 74, 45, 73) 
+
+4E
+Captured: D (3E, C8, 32, C4) 
+
+ED
+Captured: A (18, 19, 47, 46) 
+
+BE
+3E
+3E
+Captured: D (47, 97, A5, 75) 
+
+Captured: D (43, 18, 09, 52) 
+
+Captured: D (41, 06, D1, 96) 
+
+D5
+Captured: A (0E, 6B, 6E, 0B) 
+
+5E
+Captured: A (F1, 82, DA, A9) 
+
+BE
+Captured: D (42, B9, 65, 9E) 
+
+7E
+7E
+Captured: D (44, 27, DB, B8) 
+
+Captured: D (43, D5, DB, 4D) 
+
+8E
+Captured: D (3E, 83, 34, 89) 
+
+5E
+Captured: A (F1, 82, DA, A9) 
+
+3E
+3E
+3E
+Captured: D (43, 18, 09, 52) 
+
+Captured: D (41, 06, D1, 96) 
+
+Captured: D (41, 06, D1, 96) 
+
+BE
+Captured: D (47, 97, A5, 75) 
+
+5E
+Captured: A (F1, 82, DA, A9) 
+
+7E
+3E
+Captured: D (44, 27, DB, B8) 
+
+Captured: D (36, EF, 99, 40) 
+
+AE
+Captured: A (99, 8D, B5, A1) 
+
+CE
+Captured: D (42, BF, D6, 2B) 
+
+FE
+Captured: D (42, BA, 77, 8F) 
+
+8E
+Captured: D (3E, 83, 34, 89) 
+
+4E
+Captured: D (36, 5B, 7A, 17) 
+
+FA
+FA
+Captured: E (25, EB, FF, 31) 
+
+Captured: E (25, EB, FF, 31) 
+
+BE
+CE
+BE
+Captured: D (42, 74, 45, 73) 
+
+Captured: D (25, 22, E6, E1) 
+
+Captured: D (47, 97, A5, 75) 
+
+3E
+Captured: D (24, B0, 59, CD) 
+
+FE
+Captured: D (0E, FD, 8F, 7C) 
+
+4D
+BE
+3E
+Captured: C (3D, BC, B2, 33) 
+
+Captured: D (42, B9, 65, 9E) 
+
+Captured: D (43, 19, B1, EB) 
+
+4E
+Captured: D (41, 07, 6A, 2C) 
+
+8E
+D
+Captured: D (3E, 83, 34, 89) 
+
+Captured: C (3E, AB, B8, 2D) 
+
+EE
+Captured: A (62, 4F, 1F, 32) 
+
+BE
+Captured: D (42, 6A, FD, D5) 
+
+4E
+Captured: D (3E, C8, 32, C4) 
+
+FE
+Captured: D (0E, FD, 8F, 7C) 
+
+9E
+Captured: A (B1, 81, BC, 8C) 
+
+3E
+Captured: D (43, 19, B1, EB) 
+
+E
+Captured: D (43, 1F, A0, FC) 
+
+3D
+Captured: C (43, 87, 21, E5) 
+
+FE
+E
+Captured: D (42, BA, 77, 8F) 
+
+Captured: D (44, 1E, 98, C2) 
+
+BE
+Captured: D (3B, 13, E5, CD) 
+
+FE
+Captured: D (43, 2A, FF, 96) 
+
+E
+Captured: D (43, 36, B0, C5) 
+
+3D
+Captured: C (43, 87, 21, E5) 
+
+8E
+3E
+Captured: D (3E, 83, 34, 89) 
+
+Captured: D (42, 6D, 09, 26) 
+
+FE
+Captured: D (43, 2A, FF, 96) 
+
+BE
+Captured: D (47, 2E, D5, BC) 
+
+FE
+E
+Captured: D (3E, EC, 37, E5) 
+
+Captured: D (47, 17, F8, A8) 
+
+FE
+4E
+Captured: D (43, 3D, 9F, E1) 
+
+Captured: D (43, 7E, FA, C7) 
+
+8E
+3E
+Captured: D (3E, 83, 34, 89) 
+
+Captured: D (43, 27, 91, F5) 
+
+CE
+8E
+CE
+Captured: D (25, 22, E6, E1) 
+
+Captured: D (3F, 0C, 6C, 5F) 
+
+Captured: D (3C, E3, 76, A9) 
+
+FE
+Captured: D (33, 12, DF, FE) 
+
+CE
+Captured: D (42, BF, D6, 2B) 
+
+7E
+FE
+Captured: D (3F, 2A, 53, 46) 
+
+Captured: D (3F, 28, 9F, 88) 
+
+D
+FE
+Captured: C (3E, AB, B8, 2D) 
+
+Captured: D (44, 25, 27, 46) 
+
+8E
+Captured: D (3E, EE, 4C, 9C) 
+
+E
+A
+Captured: D (43, 6F, 90, BC) 
+
+Captured: E (47, 4A, A8, A5) 
+
+CE
+Captured: D (3E, EC, 0E, DC) 
+
+4D
+Captured: C (43, 88, 1A, D1) 
+
+4E
+Captured: D (3E, B9, 02, 85) 
+
+EE
+8E
+Captured: A (62, 4F, 1F, 32) 
+
+Captured: D (3F, 0C, 6C, 5F) 
+
+FE
+FE
+Captured: D (33, 12, DF, FE) 
+
+Captured: D (3F, 28, 9F, 88) 
+
+4E
+Captured: D (3E, C8, 32, C4) 
+
+CE
+Captured: D (3C, E3, 76, A9) 
+
+7E
+Captured: D (43, 00, D3, 90) 
+
+4D
+Captured: C (3D, BC, B2, 33) 
+
+FE
+Captured: D (3C, E9, 27, F2) 
+
+3D
+Captured: C (43, 3A, 09, 70) 
+
+FE
+E
+FE
+Captured: D (43, 3A, C7, BE) 
+
+Captured: D (44, 1E, 98, C2) 
+
+Captured: D (43, 3A, C7, BE) 
+
+FE
+Captured: D (43, 3A, C7, BE) 
+
+FE
+E
+Captured: D (33, 12, DF, FE) 
+
+Captured: D (31, D0, 38, D9) 
+
+7E
+Captured: D (43, 00, D3, 90) 
+
+CE
+4E
+Captured: D (3E, EC, 0E, DC) 
+
+Captured: D (43, 88, 1A, D1) 
+
+3E
+4D
+Captured: D (43, 19, B1, EB) 
+
+Captured: C (3D, BC, B2, 33) 
+
+FE
+Captured: D (3E, EC, 37, E5) 
+
+BE
+3E
+Captured: D (43, 80, BD, 7E) 
+
+Captured: D (42, 6D, 09, 26) 
+
+CE
+Captured: D (42, BF, D6, 2B) 
+
+E
+FE
+Captured: D (31, D0, 38, D9) 
+
+Captured: D (43, 2A, FF, 96) 
+
+A
+Captured: E (43, 88, F8, 33) 
+
+BE
+Captured: D (42, 74, 45, 73) 
+
+FE
+Captured: D (3C, E9, 27, F2) 
+
+3E
+FE
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (43, 20, D7, B4) 
+
+BE
+Captured: D (43, 1C, A5, FA) 
+
+BE
+3E
+3E
+Captured: D (43, 1C, A5, FA) 
+
+Captured: D (24, B0, 59, CD) 
+
+Captured: D (24, B0, 59, CD) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+7E
+3E
+Captured: D (44, 27, DB, B8) 
+
+Captured: D (43, 3A, 09, 70) 
+
+CE
+Captured: D (42, BA, A6, 5E) 
+
+FE
+B1
+Captured: D (3B, 83, 37, 8F) 
+
+Captured: A (47, 2E, D5, BC) 
+
+FE
+Captured: D (44, 25, 27, 46) 
+
+3E
+3E
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (42, 80, 71, B3) 
+
+CE
+Captured: D (3C, E3, 76, A9) 
+
+3D
+Captured: C (43, 87, 21, E5) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+3E
+5E
+FE
+BE
+Captured: D (39, BC, C9, 4C) 
+
+Captured: A (59, 56, E2, ED) 
+
+Captured: D (3E, EC, 37, E5) 
+
+Captured: D (39, 38, 35, 34) 
+
+7E
+FE
+Captured: D (3E, 84, 3B, 81) 
+
+Captured: D (43, 2A, FF, 96) 
+
+7E
+Captured: D (44, 27, DB, B8) 
+
+3E
+FE
+Captured: D (43, 3A, 09, 70) 
+
+Captured: D (3B, 83, 37, 8F) 
+
+3E
+Captured: D (42, 6D, 09, 26) 
+
+FE
+Captured: D (43, 6B, 7F, 57) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+BE
+3E
+Captured: D (3E, 82, DD, 61) 
+
+Captured: D (43, 19, B1, EB) 
+
+41
+3E
+Captured: A (43, 2C, B2, DD) 
+
+Captured: D (39, BC, C9, 4C) 
+
+BE
+3E
+Captured: D (42, 74, 45, 73) 
+
+Captured: D (36, EF, 99, 40) 
+
+BE
+Captured: D (43, 43, 55, 55) 
+
+FE
+Captured: D (3B, 83, 37, 8F) 
+
+5
+E
+Captured: B (42, 83, 68, A9) 
+
+Captured: D (43, 10, 88, DB) 
+
+D6
+3E
+3E
+Captured: A (E6, 33, 36, E3) 
+
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (97, AB, 49, 75) 
+
+BE
+Captured: D (39, 38, 35, 34) 
+
+3E
+4D
+4D
+FE
+Captured: D (39, BC, C9, 4C) 
+
+Captured: C (3D, BC, B2, 33) 
+
+Captured: C (3D, BC, B2, 33) 
+
+Captured: D (43, 6B, 7F, 57) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+FE
+Captured: D (3E, EC, 37, E5) 
+
+3E
+7E
+Captured: D (36, EF, 99, 40) 
+
+Captured: D (44, 27, DB, B8) 
+
+E
+4E
+Captured: D (43, A0, 98, 7B) 
+
+Captured: D (3D, B4, FA, 73) 
+
+E
+Captured: D (47, 91, A8, 7E) 
+
+FD
+Captured: C (43, 51, BF, AD) 
+
+CE
+Captured: D (3C, E3, 76, A9) 
+
+5
+7E
+Captured: B (42, 83, 68, A9) 
+
+Captured: D (44, 04, B3, F3) 
+
+3E
+CD
+Captured: D (39, BC, C9, 4C) 
+
+Captured: C (47, 4A, 5E, 53) 
+
+3E
+7E
+4E
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (42, C9, CB, 40) 
+
+Captured: D (3E, C8, 32, C4) 
+
+CE
+Captured: D (42, BA, A6, 5E) 
+
+BE
+FE
+85
+E
+Captured: D (42, 74, 45, 73) 
+
+Captured: D (3E, EC, 37, E5) 
+
+Captured: B (43, 80, 2C, EF) 
+
+Captured: D (43, A0, 98, 7B) 
+
+FD
+7E
+Captured: C (43, 51, BF, AD) 
+
+Captured: D (44, 2B, 43, 2C) 
+
+7E
+Captured: D (44, 27, DB, B8) 
+
+BE
+Captured: D (32, 06, 55, 61) 
+
+3E
+BE
+3E
+Captured: D (39, BC, C9, 4C) 
+
+Captured: D (3B, 13, E5, CD) 
+
+Captured: D (34, C3, D9, 2E) 
+
+E
+BE
+9E
+Captured: D (43, 88, F8, 33) 
+
+Captured: D (39, 38, 35, 34) 
+
+Captured: A (B1, 81, BC, 8C) 
+
+1
+3E
+Captured: A (43, 61, D8, FA) 
+
+Captured: D (42, 6D, 09, 26) 
+
+E
+Captured: D (32, A5, 18, 8F) 
+
+E
+Captured: D (47, 91, A8, 7E) 
+
+FE
+FD
+FE
+Captured: D (43, 20, D7, B4) 
+
+Captured: C (43, 51, BF, AD) 
+
+Captured: D (33, 12, DF, FE) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+3E
+3E
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (24, B0, 59, CD) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+CA
+CD
+Captured: E (42, 71, 2E, 1D) 
+
+Captured: C (31, 5E, 96, F9) 
+
+EE
+Captured: A (62, 4F, 1F, 32) 
+
+8D
+Captured: C (3C, E1, E4, 39) 
+
+3E
+4E
+E
+4E
+FD
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (3D, B4, FA, 73) 
+
+Captured: D (43, 36, B0, C5) 
+
+Captured: D (3E, 7B, EA, AF) 
+
+Captured: C (43, 51, BF, AD) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+8E
+Captured: D (3E, F4, 0C, C6) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+7E
+3E
+Captured: D (44, 04, B3, F3) 
+
+Captured: D (39, BC, C9, 4C) 
+
+BE
+7A
+Captured: D (42, 74, 45, 73) 
+
+Captured: E (31, C4, FB, 0E) 
+
+CE
+FE
+BE
+Captured: D (3E, 7D, CE, 8D) 
+
+Captured: D (33, 12, DF, FE) 
+
+Captured: D (43, 54, FD, EA) 
+
+FE
+4E
+Captured: D (43, E6, 17, B2) 
+
+Captured: D (3E, B9, 02, 85) 
+
+FD
+E
+CD
+2E
+Captured: C (43, 51, BF, AD) 
+
+Captured: D (43, 36, B0, C5) 
+
+Captured: C (31, 5E, 96, F9) 
+
+Captured: A (22, 41, E9, 8A) 
+
+3E
+FE
+E
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (43, 20, D7, B4) 
+
+Captured: D (43, 61, 00, 22) 
+
+BE
+7E
+Captured: D (47, 2E, D5, BC) 
+
+Captured: D (3E, 84, 3B, 81) 
+
+4E
+7E
+Captured: D (36, 5B, 7A, 17) 
+
+Captured: D (47, 27, 2B, 4B) 
+
+8E
+3E
+FE
+Captured: D (3F, 0C, 6C, 5F) 
+
+Captured: D (43, 13, D9, 89) 
+
+Captured: D (0E, FD, 8F, 7C) 
+
+4E
+Captured: D (43, 88, 1A, D1) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+4A
+Captured: E (0E, A0, EA, 44) 
+
+FE
+Captured: D (3F, 28, 9F, 88) 
+
+4E
+Captured: D (3E, B9, 02, 85) 
+
+7E
+Captured: D (44, 04, B3, F3) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+FD
+Captured: C (43, 51, BF, AD) 
+
+7E
+FE
+Captured: D (44, 27, DB, B8) 
+
+Captured: D (43, E6, 17, B2) 
+
+4D
+CA
+7E
+Captured: C (3D, BC, B2, 33) 
+
+Captured: E (42, 71, 2E, 1D) 
+
+Captured: D (42, E1, EB, 48) 
+
+A
+Captured: E (43, 61, D8, FA) 
+
+CD
+Captured: C (31, 5E, 96, F9) 
+
+E
+3E
+Captured: D (47, 91, A8, 7E) 
+
+Captured: D (43, 3A, 09, 70) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+BD
+FD
+Captured: C (43, 0B, 4D, 05) 
+
+Captured: C (43, 51, BF, AD) 
+
+BE
+Captured: D (43, 43, 55, 55) 
+
+CD
+FE
+Captured: C (42, 2E, 76, 1A) 
+
+Captured: D (43, E6, 17, B2) 
+
+3E
+Captured: D (42, 6D, 09, 26) 
+
+CE
+Captured: D (42, BF, D6, 2B) 
+
+7E
+Captured: D (47, 27, 2B, 4B) 
+
+4E
+Captured: D (3E, C8, 32, C4) 
+
+FE
+Captured: D (44, 25, 27, 46) 
+
+FD
+Captured: C (43, 51, BF, AD) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+BE
+E
+Captured: D (43, 54, FD, EA) 
+
+Captured: D (32, A5, 18, 8F) 
+
+7E
+CE
+B5
+2E
+Captured: D (42, DC, 3B, A5) 
+
+Captured: D (3E, 7D, CE, 8D) 
+
+Captured: B (42, 7C, 65, 5B) 
+
+Captured: A (22, 41, E9, 8A) 
+
+E
+CD
+Captured: D (43, 61, 00, 22) 
+
+Captured: C (42, 2E, 76, 1A) 
+
+4E
+Captured: D (43, 2C, B2, DD) 
+
+E
+Captured: D (47, 91, A8, 7E) 
+
+CA
+A
+FE
+Captured: E (42, 71, 2E, 1D) 
+
+Captured: E (43, 61, D8, FA) 
+
+Captured: D (44, 25, 27, 46) 
+
+A
+Captured: E (43, 61, D8, FA) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+7E
+7E
+CA
+Captured: D (42, DC, 3B, A5) 
+
+Captured: D (47, 98, C3, 1C) 
+
+Captured: E (81, C6, CE, 89) 
+
+BE
+FE
+Captured: D (42, 6A, FD, D5) 
+
+Captured: D (25, EB, FF, 31) 
+
+2E
+4E
+FE
+Captured: A (22, 41, E9, 8A) 
+
+Captured: D (3E, C8, 32, C4) 
+
+Captured: D (33, 12, DF, FE) 
+
+4A
+Captured: E (3E, DE, 9A, 7A) 
+
+8E
+3E
+Captured: D (3F, 0C, 6C, 5F) 
+
+Captured: D (39, BC, C9, 4C) 
+
+B1
+Captured: A (42, 7C, 65, 5B) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+CE
+4E
+Captured: D (3E, 7D, CE, 8D) 
+
+Captured: D (3E, B9, 02, 85) 
+
+E
+Captured: D (47, 4A, A8, A5) 
+
+E
+Captured: D (43, 41, 00, 02) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+4E
+Captured: D (3E, B9, 02, 85) 
+
+FE
+3E
+4E
+Captured: D (44, 25, 27, 46) 
+
+Captured: D (43, 27, 91, F5) 
+
+Captured: D (43, 2C, B2, DD) 
+
+4D
+FE
+Captured: C (43, 29, 92, F8) 
+
+Captured: D (43, 2A, FF, 96) 
+
+CA
+3E
+B1
+Captured: E (42, 71, 2E, 1D) 
+
+Captured: D (39, BC, C9, 4C) 
+
+Captured: A (42, 7C, 65, 5B) 
+
+7E
+CD
+FA
+Captured: D (44, 2B, 43, 2C) 
+
+Captured: C (3B, 50, FE, 95) 
+
+Captured: E (39, 02, 37, 0C) 
+
+2E
+C1
+3E
+Captured: A (22, 41, E9, 8A) 
+
+Captured: A (23, 93, 56, E6) 
+
+Captured: D (41, 06, D1, 96) 
+
+E
+Captured: D (47, 91, A8, 7E) 
+
+4E
+BE
+Captured: D (43, 88, 1A, D1) 
+
+Captured: D (39, 38, 35, 34) 
+
+D
+6E
+Captured: C (45, D0, B8, 2D) 
+
+Captured: A (B0, F5, AB, EE) 
+
+8E
+Captured: D (41, 3F, 34, 4A) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+3E
+CE
+7E
+Captured: D (24, B0, 59, CD) 
+
+Captured: D (3E, EC, 0E, DC) 
+
+Captured: D (42, DC, 3B, A5) 
+
+3E
+CA
+Captured: D (41, 06, D1, 96) 
+
+Captured: E (42, 71, 2E, 1D) 
+
+4E
+FA
+Captured: D (3E, B9, 02, 85) 
+
+Captured: E (39, 02, 37, 0C) 
+
+8D
+8D
+C5
+C5
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: C (3E, F4, 0C, C6) 
+
+Captured: B (31, 5E, 96, F9) 
+
+Captured: B (31, 5E, 96, F9) 
+
+C5
+FE
+Captured: B (31, 5E, 96, F9) 
+
+Captured: D (41, 2A, B7, DC) 
+
+5E
+Captured: A (F1, 82, DA, A9) 
+
+3E
+Captured: D (24, B0, 59, CD) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+C5
+7E
+Captured: B (31, 5E, 96, F9) 
+
+Captured: D (42, DC, 3B, A5) 
+
+3E
+Captured: D (41, 06, D1, 96) 
+
+3E
+Captured: D (42, 6D, 09, 26) 
+
+CE
+2E
+Captured: D (43, 38, 46, 3D) 
+
+Captured: A (22, 41, E9, 8A) 
+
+FE
+Captured: D (43, 3A, C7, BE) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+8D
+Captured: C (3E, F4, 0C, C6) 
+
+FE
+3E
+Captured: D (43, 51, BF, AD) 
+
+Captured: D (24, B0, 59, CD) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+4E
+Captured: D (41, 06, 7A, 3D) 
+
+41
+4A
+Captured: A (25, E9, A2, 6E) 
+
+Captured: E (3E, DE, 9A, 7A) 
+
+3E
+FE
+Captured: D (42, 80, 71, B3) 
+
+Captured: D (43, 6B, 7F, 57) 
+
+C5
+CD
+Captured: B (31, 5E, 96, F9) 
+
+Captured: C (3B, 50, FE, 95) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+FE
+Captured: D (0E, FD, 8F, 7C) 
+
+C5
+Captured: B (31, 5E, 96, F9) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+7E
+FE
+4A
+Captured: D (42, C9, CB, 40) 
+
+Captured: D (44, 25, 27, 46) 
+
+Captured: E (3E, DE, 9A, 7A) 
+
+8A
+BE
+9E
+Captured: E (3E, AB, FC, 69) 
+
+Captured: D (39, 38, 35, 34) 
+
+Captured: A (B1, 81, BC, 8C) 
+
+7E
+FE
+Captured: D (42, DC, 3B, A5) 
+
+Captured: D (43, 51, BF, AD) 
+
+FE
+BE
+Captured: D (39, 02, 37, 0C) 
+
+Captured: D (43, 54, FD, EA) 
+
+CE
+Captured: D (42, 21, 9E, FD) 
+
+CA
+Captured: E (3E, 80, 86, 38) 
+
+BD
+Captured: C (43, 0B, 4D, 05) 
+
+7E
+3E
+CE
+Captured: D (42, C9, CB, 40) 
+
+Captured: D (43, 18, 09, 52) 
+
+Captured: D (42, BF, D6, 2B) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+3E
+Captured: D (47, 97, A5, 75) 
+
+Captured: D (24, B0, 59, CD) 
+
+BE
+FE
+Captured: D (43, 88, CD, 06) 
+
+Captured: D (3B, 83, 37, 8F) 
+
+2D
+Captured: A (1E, 75, 41, 2A) 
+
+2E
+Captured: A (22, 41, E9, 8A) 
+
+CE
+Captured: D (3E, 7D, CE, 8D) 
+
+CE
+FE
+Captured: D (42, 2E, 76, 1A) 
+
+Captured: D (43, 51, BF, AD) 
+
+EE
+Captured: A (18, 19, 47, 46) 
+
+FE
+3E
+Captured: D (42, BA, 77, 8F) 
+
+Captured: D (42, 80, 71, B3) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+BE
+Captured: D (43, 88, CD, 06) 
+
+CA
+Captured: E (31, 5E, 96, F9) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+E
+CD
+4D
+8E
+7E
+Captured: D (42, 83, 68, A9) 
+
+Captured: C (47, 4A, 5E, 53) 
+
+Captured: C (3D, BC, B2, 33) 
+
+Captured: D (3E, F4, 0C, C6) 
+
+Captured: D (44, 04, B3, F3) 
+
+CE
+3E
+Captured: D (31, 5E, 96, F9) 
+
+Captured: D (43, 18, 09, 52) 
+
+FE
+Captured: D (44, 25, 27, 46) 
+
+7E
+3E
+Captured: D (31, C4, FB, 0E) 
+
+Captured: D (43, 3A, 09, 70) 
+
+BE
+3E
+FE
+CE
+Captured: D (26, 61, DD, 9A) 
+
+Captured: D (3E, F8, 89, 4F) 
+
+Captured: D (39, 02, 37, 0C) 
+
+Captured: D (31, 5E, 96, F9) 
+
+BE
+Captured: D (3B, 13, E5, CD) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+BE
+Captured: D (39, 38, 35, 34) 
+
+CE
+Captured: D (3C, E3, 76, A9) 
+
+FE
+CE
+3E
+Captured: D (43, 51, BF, AD) 
+
+Captured: D (31, 5E, 96, F9) 
+
+Captured: D (39, BC, C9, 4C) 
+
+8E
+Captured: D (43, 80, 2C, EF) 
+
+BE
+Captured: D (3B, 13, E5, CD) 
+
+CE
+3E
+3E
+Captured: D (31, 5E, 96, F9) 
+
+Captured: D (39, BC, C9, 4C) 
+
+Captured: D (3E, F8, 89, 4F) 
+
+4E
+Captured: D (3E, DE, 9A, 7A) 
+
+CE
+Captured: D (42, 2E, 76, 1A) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+BE
+Captured: D (43, 0B, 4D, 05) 
+
+8E
+Captured: D (3E, EE, 4C, 9C) 
+
+3E
+Captured: D (39, BC, C9, 4C) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+E
+Captured: D (41, 3D, C8, B4) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+4E
+7E
+Captured: D (3E, DE, 9A, 7A) 
+
+Captured: D (42, DC, 3B, A5) 
+
+CE
+Captured: D (42, 71, 2E, 1D) 
+
+FE
+Captured: D (44, 25, 27, 46) 
+
+CE
+Captured: D (81, C6, CE, 89) 
+
+4E
+BE
+Captured: D (42, 79, E2, D9) 
+
+Captured: D (43, 0B, 4D, 05) 
+
+D
+FE
+Captured: C (3B, 84, 18, A7) 
+
+Captured: D (43, 51, BF, AD) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+CE
+Captured: D (3E, 81, BE, 01) 
+
+3E
+7E
+Captured: D (43, D4, E1, 76) 
+
+Captured: D (42, DC, 3B, A5) 
+
+4E
+Captured: D (3E, DE, 9A, 7A) 
+
+3E
+Captured: D (42, 81, 11, D2) 
+
+4E
+Captured: D (43, 88, 1A, D1) 
+
+2E
+Captured: A (1E, 75, 41, 2A) 
+
+4E
+45
+Captured: D (42, 79, E2, D9) 
+
+Captured: B (3E, 7B, EA, AF) 
+
+CE
+FE
+Captured: D (3E, 81, BE, 01) 
+
+Captured: D (44, 25, 27, 46) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+4E
+Captured: D (3E, B9, 02, 85) 
+
+D
+Captured: C (45, D3, F0, 66) 
+
+4D
+Captured: C (3D, BC, B2, 33) 
+
+FE
+Captured: D (3B, 83, 37, 8F) 
+
+BE
+FE
+Captured: D (39, 38, 35, 34) 
+
+Captured: D (43, 20, D7, B4) 
+
+2E
+Captured: A (1E, 75, 41, 2A) 
+
+1
+Captured: A (3B, 84, 18, A7) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+8E
+3E
+7E
+Captured: D (3E, EE, 4C, 9C) 
+
+Captured: D (97, AB, 49, 75) 
+
+Captured: D (42, C9, CB, 40) 
+
+E
+Captured: D (43, 36, B0, C5) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+3E
+Captured: D (43, D4, E1, 76) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+E
+Captured: D (43, 41, 00, 02) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+3E
+Captured: D (43, 18, 09, 52) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+BE
+CE
+3E
+Captured: D (43, 0B, 4D, 05) 
+
+Captured: D (3E, 80, 86, 38) 
+
+Captured: D (43, D4, E1, 76) 
+
+EE
+Captured: A (62, 4F, 1F, 32) 
+
+45
+Captured: B (25, E9, A2, 6E) 
+
+BE
+CE
+Captured: D (43, 43, 55, 55) 
+
+Captured: D (42, 71, 2E, 1D) 
+
+FE
+Captured: D (43, 20, D7, B4) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+CA
+CE
+Captured: E (3E, 80, 86, 38) 
+
+Captured: D (3E, 81, BE, 01) 
+
+E
+Captured: D (44, 1E, 98, C2) 
+
+CE
+Captured: D (31, 5E, 96, F9) 
+
+CD
+E
+Captured: C (3B, 50, FE, 95) 
+
+Captured: D (47, 4A, A8, A5) 
+
+3E
+4E
+Captured: D (42, 6D, 09, 26) 
+
+Captured: D (3E, B9, 02, 85) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+3E
+Captured: D (43, D4, E1, 76) 
+
+7E
+Captured: D (47, 98, C3, 1C) 
+
+CA
+7E
+4E
+Captured: E (3E, 80, 86, 38) 
+
+Captured: D (44, 04, B3, F3) 
+
+Captured: D (3E, B9, 02, 85) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+CE
+Captured: D (42, 7C, 65, 5B) 
+
+Captured: D (42, 2E, 76, 1A) 
+
+BE
+Captured: D (43, 0B, 4D, 05) 
+
+CE
+3E
+Captured: D (43, 38, 46, 3D) 
+
+Captured: D (42, 6D, 09, 26) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+E
+Captured: D (43, 36, B0, C5) 
+
+8E
+FE
+E
+Captured: D (3E, F4, 0C, C6) 
+
+Captured: D (43, 51, BF, AD) 
+
+Captured: D (43, A0, 98, 7B) 
+
+BE
+E
+Captured: D (39, 38, 35, 34) 
+
+Captured: D (47, 4A, A8, A5) 
+
+4E
+8E
+Captured: D (3E, B9, 02, 85) 
+
+Captured: D (41, 3F, 34, 4A) 
+
+8E
+2E
+Captured: D (41, 3F, 34, 4A) 
+
+Captured: A (1E, 75, 41, 2A) 
+
+7E
+Captured: D (31, C4, FB, 0E) 
+
+3E
+Captured: D (42, 6D, 09, 26) 
+
+E
+Captured: D (43, A0, 98, 7B) 
+
+4E
+Captured: D (0E, A0, EA, 44) 
+
+3E
+Captured: D (24, B0, 59, CD) 
+
+2E
+8E
+Captured: A (22, 41, E9, 8A) 
+
+Captured: D (41, 3F, 34, 4A) 
+
+BE
+Captured: D (42, 7C, 65, 5B) 
+
+4E
+4E
+Captured: D (3E, B9, 02, 85) 
+
+Captured: D (3E, B9, 02, 85) 
+
+BE
+Captured: D (43, 0B, 4D, 05) 
+
+FE
+BE
+Captured: D (43, 51, BF, AD) 
+
+Captured: D (39, 38, 35, 34) 
+
+E
+Captured: D (43, 88, F8, 33) 
+
+2E
+Captured: A (22, 41, E9, 8A) 
+
+8E
+Captured: D (41, 3F, 34, 4A) 
+
+CE
+7A
+CE
+E
+Captured: D (23, 93, 56, E6) 
+
+Captured: E (43, 0A, BB, F2) 
+
+Captured: D (3E, EC, 0E, DC) 
+
+Captured: D (42, 83, 68, A9) 
+
+3E
+Captured: D (43, 3A, 09, 70) 
+
+4E
+Captured: D (3E, B9, 02, 85) 
+
+FE
+CE
+Captured: D (43, 51, BF, AD) 
+
+Captured: D (31, 5E, 96, F9) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+BE
+Captured: D (39, 38, 35, 34) 
+
+CE
+Captured: D (3E, EC, 0E, DC) 
+
+8E
+BE
+Captured: D (3C, E1, E4, 39) 
+
+Captured: D (43, 0B, 4D, 05) 
+
+FE
+Captured: D (41, 2A, B7, DC) 
+
+7E
+Captured: D (43, 0A, BB, F2) 
+
+3D
+Captured: C (34, EE, F1, 2B) 
+
+FE
+Captured: D (3B, 83, 37, 8F) 
+
+4D
+Captured: C (3D, BC, B2, 33) 
+
+BE
+Captured: D (42, B9, 65, 9E) 
+
+FE
+Captured: D (3C, E9, 27, F2) 
+
+CE
+FE
+Captured: D (3E, 81, BE, 01) 
+
+Captured: D (43, 51, BF, AD) 
+
+BE
+8E
+FE
+Captured: D (43, 0B, 4D, 05) 
+
+Captured: D (3F, 0C, 6C, 5F) 
+
+Captured: D (3B, 83, 37, 8F) 
+
+BE
+Captured: D (39, 38, 35, 34) 
+
+CE
+Captured: D (42, 71, 2E, 1D) 
+
+7E
+Captured: D (43, 0A, BB, F2) 
+
+E
+Captured: D (45, D3, F0, 66) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+3E
+Captured: D (39, 38, 35, 34) 
+
+Captured: D (43, D4, E1, 76) 
+
+3E
+4E
+Captured: D (43, 18, 09, 52) 
+
+Captured: D (43, 88, 1A, D1) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+Captured: D (43, 0B, 4D, 05) 
+
+E
+CE
+Captured: D (45, D3, F0, 66) 
+
+Captured: D (3C, E3, 76, A9) 
+
+3E
+Captured: D (43, 27, 91, F5) 
+
+3E
+8E
+Captured: D (43, 18, 09, 52) 
+
+Captured: D (43, 80, 2C, EF) 
+
+7E
+Captured: D (43, 0A, BB, F2) 
+
+7E
+Captured: D (42, C9, CB, 40) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+Captured: D (43, 0B, 4D, 05) 
+
+8E
+Captured: D (3F, 0C, 6C, 5F) 
+
+3E
+Captured: D (43, 27, 91, F5) 
+
+3E
+Captured: D (43, 87, 21, E5) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+E
+7E
+Captured: D (43, 6F, 90, BC) 
+
+Captured: D (44, 04, B3, F3) 
+
+E
+Captured: D (45, D3, F0, 66) 
+
+3E
+Captured: D (43, 87, 21, E5) 
+
+FE
+Captured: D (43, 51, BF, AD) 
+
+BE
+7D
+Captured: D (39, 38, 35, 34) 
+
+Captured: C (42, E1, EB, 48) 
+
+E
+Captured: D (45, D3, F0, 66) 
+
+3E
+Captured: D (43, 22, A1, C0) 
+
+CE
+FE
+Captured: D (3E, 7D, CE, 8D) 
+
+Captured: D (43, 51, BF, AD) 
+
+3E
+Captured: D (43, 87, 21, E5) 
+
+7E
+Captured: D (42, DC, 3B, A5) 
+
+CE
+Captured: D (43, 38, 46, 3D) 
+
+E
+Captured: D (42, 83, 68, A9) 
+
+E
+Captured: D (45, D3, F0, 66) 
+
+4D
+7E
+Captured: C (3D, BC, B2, 33) 
+
+Captured: D (42, DC, 3B, A5) 
+
+AE
+E
+E
+E
+E
+Captured: C (66, E0, 15, 93) 
+
+Captured: D (45, D3, F0, 66) 
+
+Captured: D (45, D3, F0, 66) 
+
+Captured: D (45, D3, F0, 66) 
+
+Captured: D (45, D3, F0, 66) 
+

@@ -7,7 +7,7 @@
 #define CSN 10
 #define MAX_BUFFERED_PACKETS 20
 
-iClickerEmulator clicker(CSN, IRQ_PIN);
+iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN));
 RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
 
 void setup()
@@ -30,9 +30,9 @@ void loop()
   Serial.println(".");
 
 }
+
+
 */
-
-
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
