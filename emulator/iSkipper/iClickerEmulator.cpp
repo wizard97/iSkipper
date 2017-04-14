@@ -147,7 +147,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     // zero out last nibble
     toSend.id[ICLICKER_ID_LEN-1] &= 0xF0;
     // add dumb redundant answer nibble
-    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & (answerOffsets[ans] + 1);
+    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & (getAnswerOffset(ans) + 1);
 
     toSend.answer = encodeAns(id, ans);
 
