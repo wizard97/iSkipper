@@ -1,4 +1,4 @@
-/*
+
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -24,15 +24,16 @@ void loop()
 
   uint8_t id[4];
   iClickerEmulator::randomId(id);
+  //clicker.floodAttack(100, 10);
   clicker.submitAnswer( id, ANSWER_A, false, 100);
 
-  delay(1000);
+  //delay(1000);
   Serial.println(".");
 
 }
 
 
-*/
+/*
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -82,4 +83,4 @@ void recvPacketHandler(iClickerPacket_t *recvd)
 {
  bool ret = recvBuf.add(*recvd);
 }
-
+*/
