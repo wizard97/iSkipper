@@ -222,11 +222,12 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
         iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
         decodeId(pack->id, recvd.packet.answerPacket.id);
-        recvd.packet.answerPacket.answer = decodeAns(recvd.packet.answerPacket.id, pack->answer);
+        recvd.packet.answerPacket.answer = (uint8_t)decodeAns(recvd.packet.answerPacket.id, pack->answer);
 
         //double check answer nibble matches answer, use this like checksum
-        if ((pack->id[ICLICKER_ID_LEN-1] - 1) & 0x0F != recvd.packet.answerPacket.answer)
+        if (((pack->id[ICLICKER_ID_LEN-1] - 1) & 0x0F) != getAnswerOffset((iClickerAnswer_t)recvd.packet.answerPacket.answer)) {
             return; //ignore
+        }
 
     } else if (numBytes == PAYLOAD_LENGTH_RECV && _self->_radio.getChannelType() == CHANNEL_RECV) {
         //recvd from base station
