@@ -151,7 +151,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     // zero out last nibble
     toSend.id[ICLICKER_ID_LEN-1] &= 0xF0;
     // add dumb redundant answer nibble
-    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & answerOffsets[ans];
+    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & (answerOffsets[ans] + 1);
 
     toSend.answer = encodeAns(id, ans);
 
@@ -227,6 +227,10 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
         recvd.type = PACKET_ANSWER;
         decodeId(pack->id, recvd.packet.answerPacket.id);
         recvd.packet.answerPacket.answer = decodeAns(recvd.packet.answerPacket.id, pack->answer);
+
+        //double check answer nibble matches answer, use this like checksum
+        if ((pack->id[ICLICKER_ID_LEN-1] - 1) & 0x0F != recvd.packet.answerPacket.answer)
+            return; //ignore
 
     } else if (numBytes == PAYLOAD_LENGTH_RECV && _self->_radio.getChannelType() == CHANNEL_RECV) {
         //recvd from base station
