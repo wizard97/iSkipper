@@ -24,7 +24,7 @@ typedef enum iClickerAnswer
 
 // Encoded answer choice is sent as follows:
 /*
-x = sum_bytes(encoded_id[4])%256
+x = (1 + sum_bytes(encoded_id[4]))%256
 
 A = x
 B = x + 4
@@ -35,8 +35,8 @@ E = x + 9
 P = x + 1
 */
 
-// The encoded answer choice is the value sum(encoded_id) + answerOffsets[iClickerAnswer_t]
-const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0, 4, 12, 13, 9, 1 };
+// The encoded answer choice is the value: 1 + sum(encoded_id) + answerOffsets[iClickerAnswer_t]
+const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0x0, 0x4, 0xC, 0xD, 0x9, 0x1 };
 
 const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
     {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
@@ -122,6 +122,7 @@ protected:
     void (*_recvCallback)(iClickerPacket_t *);
 
     void configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr = DEFAULT_SEND_SYNC_ADDR);
+    static uint8_t getAnswerOffset(iClickerAnswer_t ans);
 };
 
 #endif

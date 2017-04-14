@@ -29,16 +29,12 @@ uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     uint8_t x = 1;
     uint8_t encoded_id[ICLICKER_ID_LEN];
 
-    if (ans >= NUM_ANSWER_CHOICES)
-        return 0;
-
     encodeId(id, encoded_id);
 
     for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
         x += encoded_id[i];
 
-
-    return x + answerOffsets[ans];
+    return x + getAnswerOffset(ans);
 }
 
 
@@ -278,4 +274,12 @@ uint16_t iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uin
     }
 
     return total;
+}
+
+uint8_t iClickerEmulator::getAnswerOffset(iClickerAnswer_t ans)
+{
+    if (ans >= NUM_ANSWER_CHOICES || ans < ANSWER_A)
+        return 0;
+
+    return answerOffsets[ans];
 }
