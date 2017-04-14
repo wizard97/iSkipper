@@ -147,6 +147,12 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     iClickerAnswerPacket_t toSend;
 
     encodeId(id, toSend.id); //encode the id for transmission
+
+    // zero out last nibble
+    toSend.id[ICLICKER_ID_LEN-1] &= 0xF0;
+    // add dumb redundant answer nibble
+    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & answerOffsets[ans];
+
     toSend.answer = encodeAns(id, ans);
 
     //send packet, we can cast toSend to array since all uint8_t bytes
@@ -219,8 +225,6 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
         //recvd from another iclicker
         iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
-        //Serial.println(pack->id[3] & 0x0F, HEX);
-        Serial.println(pack->id[3], HEX);
         decodeId(pack->id, recvd.packet.answerPacket.id);
         recvd.packet.answerPacket.answer = decodeAns(recvd.packet.answerPacket.id, pack->answer);
 
