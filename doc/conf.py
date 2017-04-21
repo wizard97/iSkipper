@@ -92,7 +92,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'bootswatch_theme': 'darkly'
+    'bootswatch_theme': 'yeti'
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
