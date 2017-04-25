@@ -94,6 +94,9 @@ public:
     static iClickerAnswer_t randomAnswer();
     //concert answer to char
     static char answerChar(iClickerAnswer_t ans);
+    // convert char to ans
+    static iClickerAnswer_t charAnswer(char ans);
+
 
     static iClickerAnswer_t decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded);
     static uint8_t encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);

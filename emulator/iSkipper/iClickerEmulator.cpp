@@ -136,6 +136,33 @@ char iClickerEmulator::answerChar(iClickerAnswer_t ans)
 }
 
 
+iClickerAnswer_t iClickerEmulator::charAnswer(char ans)
+{
+    switch(ans)
+    {
+        case 'a': case 'A':
+            return ANSWER_A;
+
+        case 'b': case 'B':
+            return ANSWER_B;
+
+        case 'c': case 'C':
+            return ANSWER_C;
+
+        case 'd': case 'D':
+            return ANSWER_D;
+
+        case 'e': case 'E':
+            return ANSWER_E;
+
+        case 'p': case 'P':
+            return ANSWER_PING;
+
+    }
+    return ANSWER_A;
+}
+
+
 bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout)
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
