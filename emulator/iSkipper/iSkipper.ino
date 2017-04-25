@@ -1,4 +1,4 @@
-
+/*
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -32,8 +32,8 @@ void loop()
 
 }
 
+*/
 
-/*
 #include "iClickerEmulator.h"
 #include <RingBufCPP.h>
 #include <string.h>
@@ -83,4 +83,4 @@ void recvPacketHandler(iClickerPacket_t *recvd)
 {
  bool ret = recvBuf.add(*recvd);
 }
-*/
+
