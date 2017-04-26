@@ -185,7 +185,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     if (withAck)
     {
         uint32_t start = millis();
-        configureRadio(CHANNEL_RECV, id);
+        configureRadio(CHANNEL_RECV, toSend.id);
 
         bool recvd = false;
         while(millis() - start < timeout && !recvd) {
