@@ -7,7 +7,7 @@
 #define ICLICKER_ID_LEN 4
 
 #define SEND_SYNC_ADDR_LEN 3
-#define RECV_SYNC_ADDR_LEN (ICLICKER_ID_LEN - 1)
+#define RECV_SYNC_ADDR_LEN 2
 
 
 typedef enum iClickerAnswer
