@@ -1,8 +1,18 @@
+#ifndef ICLICKER_CHANNELS_H
+#define ICLICKER_CHANNELS_H
+
+
+typedef struct iClickerChannel
+{
+    uint8_t send[3];
+    uint8_t recv[3];
+} iClickerChannel_t;
+
+
 
 namespace iClickerChannels
 {
     // MSB to LSB RegFrf
-
 
     const iClickerChannel_t AA =
     {
@@ -117,4 +127,4 @@ namespace iClickerChannels
 
 
 }
-
+#endif

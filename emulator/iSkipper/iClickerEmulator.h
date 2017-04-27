@@ -9,6 +9,7 @@
 #define SEND_SYNC_ADDR_LEN 3
 #define RECV_SYNC_ADDR_LEN 2
 
+#define DEFAULT_ACK_TIMEOUT 1000
 
 typedef enum iClickerAnswer
 {
@@ -105,7 +106,7 @@ public:
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum);
     bool begin(iClickerChannel_t chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
-            bool withAck=false, uint32_t timeout=100);
+            bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT);
 
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();

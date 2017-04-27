@@ -32,10 +32,10 @@ void loop()
 {
   char tmp[50];
   iClickerPacket_t r;
-  
+
   static iClickerAnswerPacket_t old = {{0, 0,0, 0}, ANSWER_A};
   static uint32_t old_t = 0;
-  
+
   //see if there is a pending packet, check if its an answer packet
   //see if different than pre packet
   while (recvBuf.pull(&r) && r.type == PACKET_ANSWER && (memcmp(&r.packet.answerPacket, &old, sizeof(old)) || millis() - old_t > THRESHOLD)) {
@@ -109,10 +109,11 @@ void corrupt_ans(iClickerAnswer_t a)
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     char answer = iClickerEmulator::answerChar(a);
-    bool ret = clicker.submitAnswer(recvd[i].id, a, true, 10);
-    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n", 
+    bool ret = clicker.submitAnswer(recvd[i].id, a); // no ack
+    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
     ret ? "Successfully submitted" : "Failed to submit",answer, recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
+    delay(100);
   }
 }
 
@@ -138,4 +139,3 @@ void printCap()
 
   Serial.println("********END DUMP********");
 }
-
