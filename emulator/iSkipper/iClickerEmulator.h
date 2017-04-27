@@ -9,7 +9,7 @@
 #define SEND_SYNC_ADDR_LEN 3
 #define RECV_SYNC_ADDR_LEN 2
 
-#define DEFAULT_ACK_TIMEOUT 1000
+#define DEFAULT_ACK_TIMEOUT 1500
 
 typedef enum iClickerAnswer
 {
@@ -114,7 +114,7 @@ public:
     void dumpRegisters() { _radio.readAllRegs(); }
 
     //return number of ping responses (wait= how many ms for wait for a single ping response)
-    uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = 50);
+    uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
 
 
     //ATTACKS
