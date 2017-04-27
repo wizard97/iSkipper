@@ -1,0 +1,121 @@
+7F
+7F
+17
+20
+97
+45
+8
+Successfully submitted A for ID: (3C, DD, 73, 92)
+D
+17
+4D
+81
+88
+4
+30
+Successfully submitted A for ID: (2B, E1, 0F, C5)
+24
+18
+3F
+18
+9C
+4A
+F6
+Successfully submitted A for ID: (42, 80, 71, B3)
+6B
+85
+18
+B5
+E1
+64
+E0
+Successfully submitted B for ID: (3C, DD, 73, 92)
+CE
+13
+AE
+6F
+28
+83
+FF
+Successfully submitted B for ID: (2B, E1, 0F, C5)
+79
+4E
+3F
+B3
+BF
+7E
+96
+Successfully submitted B for ID: (42, 80, 71, B3)
+8
+E0
+E8
+43
+99
+E0
+65
+Successfully submitted C for ID: (3C, DD, 73, 92)
+8
+E0
+E8
+43
+99
+E0
+65
+Failed to submit C for ID: (2B, E1, 0F, C5)
+
+A6
+18
+8E
+65
+B3
+39
+2B
+Successfully submitted C for ID: (42, 80, 71, B3)
+E7
+91
+30
+46
+45
+96
+EC
+Successfully submitted D for ID: (3C, DD, 73, 92)
+69
+87
+8F
+AB
+EC
+31
+A7
+Successfully submitted D for ID: (2B, E1, 0F, C5)
+32
+23
+95
+5B
+BA
+D0
+6D
+Successfully submitted D for ID: (42, 80, 71, B3)
+EA
+0
+70
+1D
+87
+8
+CE
+Successfully submitted E for ID: (3C, DD, 73, 92)
+92
+9A
+C8
+26
+E4
+64
+B7
+Successfully submitted E for ID: (2B, E1, 0F, C5)
+7F
+C8
+32
+CF
+84
+DB
+EF
+Successfully submitted E for ID: (42, 80, 71, B3)
