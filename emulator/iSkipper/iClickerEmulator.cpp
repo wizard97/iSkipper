@@ -204,6 +204,17 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     return true;
 }
 
+void iClickerEmulator::sendAck(const uint8_t id[ICLICKER_ID_LEN] id){
+
+  uint8_t encoded_id[ICLICKER_ID_LEN];
+  encodeId(id, encoded_id); //encode the id for transmission
+  configureRadio(CHANNEL_RECV, encoded_id)
+  uint8_t random_ack[PAYLOAD_LENGTH_RECV];
+  for(size_t x=0; x < PAYLOAD_LENGTH_RECV; x++){
+      random_ack[x] = random(0, 256);
+  }
+  _radio.send(&random_ack, PAYLOAD_LENGTH_RECV);
+}
 
 void iClickerEmulator::setChannel(iClickerChannel_t chan)
 {

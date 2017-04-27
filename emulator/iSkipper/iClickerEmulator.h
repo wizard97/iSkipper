@@ -110,6 +110,7 @@ public:
 
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
+    void sendAck(const uint8_t id[ICLICKER_ID_LEN] id);
     void setChannel(iClickerChannel_t chan);
     void dumpRegisters() { _radio.readAllRegs(); }
 
