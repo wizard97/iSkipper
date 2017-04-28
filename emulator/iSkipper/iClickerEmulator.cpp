@@ -24,7 +24,7 @@ bool iClickerEmulator::begin(iClickerChannel_t chan)
 }
 
 
-uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans)
+uint8_t iClickerEmulator::encodeAns(const uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans)
 {
     uint8_t x = 1;
     uint8_t encoded_id[ICLICKER_ID_LEN];
@@ -38,7 +38,7 @@ uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
 }
 
 
-iClickerAnswer_t iClickerEmulator::decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded)
+iClickerAnswer_t iClickerEmulator::decodeAns(const uint8_t id[ICLICKER_ID_LEN], uint8_t encoded)
 {
     uint8_t x = 1;
 
@@ -60,7 +60,7 @@ iClickerAnswer_t iClickerEmulator::decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_
 }
 
 
-void iClickerEmulator::encodeId(uint8_t *id, uint8_t *ret)
+void iClickerEmulator::encodeId(const uint8_t *id, uint8_t *ret)
 {
     //bits 4-0
     ret[0] = ((id[0] >> 5) & 0x4) | ((id[0]<<3) & 0xf8) | (id[1] >> 7);
@@ -70,7 +70,7 @@ void iClickerEmulator::encodeId(uint8_t *id, uint8_t *ret)
 }
 
 
-void iClickerEmulator::decodeId(uint8_t *id, uint8_t *ret)
+void iClickerEmulator::decodeId(const uint8_t *id, uint8_t *ret)
 {
     ret[0] = (id[0] >> 3) | ((id[2] & 0x1) << 5) | ((id[1] & 0x1) << 6) | ((id[0] & 0x4) << 5);
     ret[1] = ((id[0] & 0x1) << 7) | (id[1] >> 1) | (id[2] >> 7);
@@ -79,7 +79,7 @@ void iClickerEmulator::decodeId(uint8_t *id, uint8_t *ret)
 }
 
 
-bool iClickerEmulator::validId(uint8_t *id)
+bool iClickerEmulator::validId(const uint8_t *id)
 {
     return (id[0]^id[1]^id[2]) == id[3];
 }
@@ -163,7 +163,7 @@ iClickerAnswer_t iClickerEmulator::charAnswer(char ans)
 }
 
 
-bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout)
+bool iClickerEmulator::submitAnswer(const uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout)
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
@@ -204,15 +204,21 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     return true;
 }
 
-void iClickerEmulator::sendAck(const uint8_t id[ICLICKER_ID_LEN] id){
+void iClickerEmulator::sendAck(const uint8_t id[ICLICKER_ID_LEN])
+{
 
   uint8_t encoded_id[ICLICKER_ID_LEN];
   encodeId(id, encoded_id); //encode the id for transmission
-  configureRadio(CHANNEL_RECV, encoded_id)
+  configureRadio(CHANNEL_RECV, encoded_id);
+/*
   uint8_t random_ack[PAYLOAD_LENGTH_RECV];
   for(size_t x=0; x < PAYLOAD_LENGTH_RECV; x++){
       random_ack[x] = random(0, 256);
   }
+  */
+  uint8_t random_ack[PAYLOAD_LENGTH_RECV] =
+            {0x24, 0x18, 0x3F, 0x18, 0x9C, 0x4A, 0xF6};
+
   _radio.send(&random_ack, PAYLOAD_LENGTH_RECV);
 }
 
@@ -302,7 +308,7 @@ bool iClickerEmulator::floodAttack(uint32_t num, uint32_t interval)
 }
 
 
-uint16_t iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uint16_t wait)
+uint16_t iClickerEmulator::ping(const uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uint16_t wait)
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 

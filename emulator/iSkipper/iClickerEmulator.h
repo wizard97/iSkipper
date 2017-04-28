@@ -84,11 +84,11 @@ public:
     static iClickerEmulator *_self; //Sucks I have to do this, but must be able to be called through isr
     /***** STATIC METHODS *****/
     //encodes iclicker id for transmission
-    static void encodeId(uint8_t *id, uint8_t *ret);
+    static void encodeId(const uint8_t *id, uint8_t *ret);
     // decodes a transmitted id
-    static void decodeId(uint8_t *id, uint8_t *ret);
+    static void decodeId(const uint8_t *id, uint8_t *ret);
     //checks to make sure valid iclicker id
-    static bool validId(uint8_t *id);
+    static bool validId(const uint8_t *id);
     //generate random iClicker id
     static void randomId(uint8_t *ret);
     //generate random answer
@@ -99,23 +99,23 @@ public:
     static iClickerAnswer_t charAnswer(char ans);
 
 
-    static iClickerAnswer_t decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded);
-    static uint8_t encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);
+    static iClickerAnswer_t decodeAns(const uint8_t id[ICLICKER_ID_LEN], uint8_t encoded);
+    static uint8_t encodeAns(const uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);
 
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum);
     bool begin(iClickerChannel_t chan);
-    bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
+    bool submitAnswer(const uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT);
 
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
-    void sendAck(const uint8_t id[ICLICKER_ID_LEN] id);
+    void sendAck(const uint8_t id[ICLICKER_ID_LEN]);
     void setChannel(iClickerChannel_t chan);
     void dumpRegisters() { _radio.readAllRegs(); }
 
     //return number of ping responses (wait= how many ms for wait for a single ping response)
-    uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
+    uint16_t ping(const uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
 
 
     //ATTACKS
