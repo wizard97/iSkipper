@@ -23,6 +23,7 @@ typedef enum iClickerAnswer
     NUM_ANSWER_CHOICES,
 } iClickerAnswer_t;
 
+
 // Encoded answer choice is sent as follows:
 /*
 x = (1 + sum_bytes(encoded_id[4]))%256
@@ -111,10 +112,12 @@ public:
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
     void setChannel(iClickerChannel_t chan);
+    iClickerChannel_t getChannel();
     void dumpRegisters() { _radio.readAllRegs(); }
 
     //return number of ping responses (wait= how many ms for wait for a single ping response)
     uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
+    iClickerChannelMask_t scan(uint16_t passes = 1);
 
 
     //ATTACKS

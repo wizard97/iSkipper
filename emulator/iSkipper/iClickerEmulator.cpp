@@ -212,6 +212,13 @@ void iClickerEmulator::setChannel(iClickerChannel_t chan)
 }
 
 
+iClickerChannel_t iClickerEmulator::getChannel()
+{
+    return _radio.getChannel();
+
+}
+
+
 void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr)
 {
     // set the correct sync addr and len
@@ -306,6 +313,30 @@ uint16_t iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uin
 
     return total;
 }
+
+iClickerChannelMask_t iClickerEmulator::scan()
+{
+    iClickerChannelMask_t ret = 0x0;
+    iClickerChannel_t old = getChannel(); //so we can restore channel
+
+    uint8_t id[ICLICKER_ID_LEN];
+
+    randomId(id); //use random id
+
+    for (uint16_t j=0; j < NUM_ICLICKER_CHANNELS; j++)
+    {
+        // get the correct channel
+        const iClickerChannel_t c = iClickerChannels::channels[j];
+        setChannel(c);
+        if (ping(id, 1))
+            ret |= c.mask;
+    }
+
+    setChannel(old);
+
+    return ret;
+}
+
 
 uint8_t iClickerEmulator::getAnswerOffset(iClickerAnswer_t ans)
 {
