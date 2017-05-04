@@ -63,20 +63,24 @@ void loop()
         break;
 
       case 'a': case 'b': case 'c': case 'd': case 'e':
-        clicker.stopPromiscuous();
         corrupt_ans(iClickerEmulator::charAnswer(c));
-        clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
       case 'f':
         ans_randoms();
-        clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
        case 'u':
          uniform_ans();
-         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
          break;
+
+       case 's':
+        clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+        break;
+
+       case 't':
+        clicker.stopPromiscous();
+        break;
 
       case 'p':
         printCap();
