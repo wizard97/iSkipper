@@ -70,6 +70,7 @@ void loop()
 
        case 'u':
          uniform_ans();
+         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
          break;
 
       case 'p':
@@ -135,7 +136,7 @@ void uniform_ans()
     iClickerAnswer_t answer = clicker.randomAnswer();
     bool ret = clicker.submitAnswer(recvd[i].id, answer); // no ack
     snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)\n",
-    ret ? "Successfully submitted" : "Failed to submit",answer, recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
+    ret ? "Successfully submitted" : "Failed to submit", iClickerEmulator::answerChar(answer), recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
     delay(5);
   }
