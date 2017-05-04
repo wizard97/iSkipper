@@ -194,8 +194,8 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
         //eventually should parse response
         recvd &= (_radio.PAYLOADLEN == PAYLOAD_LENGTH_RECV);
 
-        for (uint i=0; i < PAYLOAD_LENGTH_RECV; i++)
-            Serial.println(_radio.DATA[i], HEX);
+        //for (uint i=0; i < PAYLOAD_LENGTH_RECV; i++)
+        //    Serial.println(_radio.DATA[i], HEX);
 
         configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
         return recvd;

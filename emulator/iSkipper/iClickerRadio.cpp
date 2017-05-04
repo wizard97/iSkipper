@@ -115,6 +115,12 @@ void iClickerRadio::setChannel(iClickerChannel_t chan)
 }
 
 
+iClickerChannel_t iClickerRadio::getChannel()
+{
+    return _chan;
+}
+
+
 void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
 {
     // dont change it if allready correct

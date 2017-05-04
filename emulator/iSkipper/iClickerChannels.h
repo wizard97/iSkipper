@@ -6,7 +6,7 @@
 
 #define NUM_ICLICKER_CHANNELS (sizeof(iClickerChannels::channels)/sizeof(iClickerChannel_t))
 
-typedef uin16_t iClickerChannelMask_t;
+typedef uint16_t iClickerChannelMask_t;
 
 typedef struct iClickerChannel
 {

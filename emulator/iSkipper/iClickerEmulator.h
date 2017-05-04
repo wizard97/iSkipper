@@ -117,7 +117,7 @@ public:
 
     //return number of ping responses (wait= how many ms for wait for a single ping response)
     uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
-    iClickerChannelMask_t scan(uint16_t passes = 1);
+    iClickerChannelMask_t scan();
 
 
     //ATTACKS

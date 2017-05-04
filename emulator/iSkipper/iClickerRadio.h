@@ -32,6 +32,7 @@ public:
 
     // set the frequency (in Hz)
     void setChannel(iClickerChannel_t chan);
+    iClickerChannel_t getChannel();
     void setChannelType(iClickerChannelType_t chanType);
     iClickerChannelType_t getChannelType();
     void setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t));
