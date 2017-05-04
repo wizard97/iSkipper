@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
 def ids():
-    with open('ids.txt', 'r') as stream:
+    with open('ids2.txt', 'r') as stream:
         for line in stream.readlines():
             foo = line.strip()
             if(foo != ''):
