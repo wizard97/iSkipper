@@ -359,6 +359,13 @@ int16_t RFM69::readRSSI(bool forceTrigger) {
   return rssi;
 }
 
+
+void RFM69::setDataMode(uint8_t mode)
+{
+    writeReg(REG_DATAMODUL, ((mode & 0x3) << 5) | (readReg(REG_DATAMODUL) & 0x3F ));
+}
+
+
 uint8_t RFM69::readReg(uint8_t addr)
 {
   select();
