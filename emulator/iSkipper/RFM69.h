@@ -90,7 +90,7 @@ public:
 
     virtual bool initialize(uint8_t freqBand);
     bool canSend();
-    virtual void send(const void* buffer, uint8_t bufferSize);
+    virtual void send(const void* buffer, uint8_t bufferSize, bool waitClear = true);
     virtual bool receiveDone();
     uint32_t getFrequency();
     void setPayloadLength(uint8_t len, bool variable);

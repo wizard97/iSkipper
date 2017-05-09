@@ -107,7 +107,7 @@ public:
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum);
     bool begin(iClickerChannel_t chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
-            bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT);
+            bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
 
     void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
     void stopPromiscuous();
@@ -122,6 +122,7 @@ public:
 
     //ATTACKS
     bool floodAttack(uint32_t num, uint32_t interval);
+    void ddos(uint32_t ms);
 
 
 protected:

