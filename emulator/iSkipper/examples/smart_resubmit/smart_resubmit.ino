@@ -49,7 +49,7 @@ void loop()
     switch (c)
     {
       case 'r': case 'R':
-        Serial.println("Emptying saved responses");
+        Serial.println("******** EMPTIED SAVED RESPONSES ********");
         num_recvd = 0;
         break;
 
@@ -66,10 +66,12 @@ void loop()
          break;
 
        case 's':
+        Serial.println("******** STARTED PROMISCUOUS ********");
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
        case 't':
+        Serial.println("******** STOPPED PROMISCUOUS ********");
         clicker.stopPromiscuous();
         break;
 
@@ -89,6 +91,8 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
   iClickerPacket_t r;
   uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
 
+  Serial.println("******** BEGIN ANSWER RESUBMIT ********");
+
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
 
   while (!shouldExit())
@@ -99,7 +103,7 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
           handleCapture(ap);
 
           //should we resubmit?
-          if (random(0, 100) <= percent) {
+          if (random(0, 100) < percent) {
               bool ret = clicker.submitAnswer(ap.id, a); // no ack
               printSubmission(ret, ap.id, a);
               // go back to promiscous mode
@@ -116,6 +120,8 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
   snprintf(tmp, sizeof(tmp), "Resubmitted:\nA: %u\nB: %u\nC: %u\nD: %u\nE: %u\nP: %u\n",
            res[ANSWER_A], res[ANSWER_B], res[ANSWER_C], res[ANSWER_D], res[ANSWER_E], res[ANSWER_PING] );
   Serial.println(tmp);
+
+  Serial.println("******** END ANSWER RESUBMIT ********");
 }
 
 
@@ -125,6 +131,7 @@ void uniform_ans()
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
     uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
 
+    Serial.println("******** BEGIN UNIFORM RESUBMIT ********");
     while (!shouldExit())
     {
         if (recvBuf.pull(&r) && r.type == PACKET_ANSWER)
@@ -144,6 +151,7 @@ void uniform_ans()
       snprintf(tmp, sizeof(tmp), "Resubmitted:\nA: %u\nB: %u\nC: %u\nD: %u\nE: %u\nP: %u\n",
                res[ANSWER_A], res[ANSWER_B], res[ANSWER_C], res[ANSWER_D], res[ANSWER_E], res[ANSWER_PING] );
       Serial.println(tmp);
+      Serial.println("******** END UNIFORM RESUBMIT ********");
 
 }
 
