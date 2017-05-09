@@ -13,7 +13,6 @@
 #define RAND_LOW 35
 #define RAND_HIGH 75
 
-#define DDOS_LEN 5000
 iClickerAnswerPacket_t recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
@@ -171,10 +170,13 @@ void ans_randoms(int num)
 }
 
 
-void ddos(uint32_t ms)
+void ddos()
 {
     Serial.println("******** BEGIN DDOS ********");
-    clicker.ddos(ms);
+
+    while (!shouldExit())
+        clicker.ddos(1000);
+
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
     Serial.println("******** END DDOS ********");
 }
