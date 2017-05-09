@@ -67,7 +67,7 @@ void loop()
          break;
 
        case 'o':
-          ddos(DDOS_LEN);
+          ddos();
           break;
 
        case 's':
