@@ -76,10 +76,12 @@ void loop()
 
        case 's':
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+        Serial.println("Starting capture");
         break;
 
        case 't':
         clicker.stopPromiscuous();
+        Serial.println("Stopped capture");
         break;
 
       case 'p':
