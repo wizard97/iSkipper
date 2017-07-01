@@ -1,6 +1,7 @@
 # iSkipper
+<img src="https://github.com/wizard97/iSkipper/blob/master/pics/IMG_20170425_002113.jpg?raw=true" alt="iClicker" width="250" height="250">
 Reverse engineering the overly priced iClicker2 and creating an open source evil version, the iSkipper
-![Alt text](/pics/IMG_20170425_002113?raw=true "The iClicker2")
+
 
 ## Warning
 If you use this for nefarious purposes, it's your fault if your iSkipper gets you in trouble.
