@@ -8,17 +8,17 @@
 #define MAX_BUFFERED_PACKETS 20
 
 iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
+RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
 
 void setup()
 {
     Serial.begin(115200);
     clicker.begin(iClickerChannels::AA);
-    clicker.dumpRegisters();
     // enter promiscouse mode on sending channel
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
     delay(1000);
-    Serial.println("after promiscous");
-    clicker.dumpRegisters();
+    Serial.println("Started promiscous");
+    //clicker.dumpRegisters();
 }
 
 
