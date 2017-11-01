@@ -3,8 +3,8 @@
 
 iClickerEmulator *iClickerEmulator::_self;
 
-iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum)
-: _radio(_cspin, _irqpin, false, _irqnum)
+iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum, bool isRFM69HW)
+: _radio(_cspin, _irqpin, isRFM69HW, _irqnum)
 {
     _recvCallback = NULL;
     _self = this; //this sucks

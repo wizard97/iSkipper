@@ -104,7 +104,7 @@ public:
     static uint8_t encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);
 
     /***** NON-STATIC METHODS *****/
-    iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum);
+    iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum, bool isRFM69HW=false);
     bool begin(iClickerChannel_t chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
