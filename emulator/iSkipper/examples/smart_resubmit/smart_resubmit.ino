@@ -3,6 +3,7 @@
 #include <RingBufCPP.h>
 #include <string.h>
 
+#define IS_RFM69HW false //make true if using w version
 #define IRQ_PIN 6
 #define CSN 10
 #define MAX_BUFFERED_PACKETS 100
@@ -17,7 +18,7 @@ iClickerAnswerPacket_t recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
 
-iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN));
+iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
 RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
 
 
