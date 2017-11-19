@@ -65,7 +65,7 @@ Basically all that needs to be done is decoding the 7 byte ACK sent from the bas
 then the iSkipper can emulate every part of the real iClicker.
 
 
-## How we new this was possible when we started
+## How we knew this was possible when we started
 Given that your iClicker id can be decoded by the base station, any sort of hashing
 done before the remote transmits your ID must be reversible, and hence vulnerable.
 
