@@ -30,7 +30,7 @@ void setup()
   // enter promiscouse mode on sending channel
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
   delay(1000);
-  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\ns: Start Capture\nt: Stop Capture\nf: Random id answers\nu: Uniform submit\no: DDOS 5 secs\np: Print");
+  Serial.println("Ready!\nr: Reset Capture\na-e: Resubmit\ns: Start Capture\nf: Random id answers\nu: Uniform submit\no: DDOS\np: Print capture\nx: STOP Current program\n");
 }
 
 
@@ -76,7 +76,7 @@ void loop()
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
         break;
 
-       case 't':
+       case 'x':
         Serial.println("******** STOPPED PROMISCUOUS ********");
         clicker.stopPromiscuous();
         break;
@@ -263,3 +263,4 @@ void updateRef(iClickerAnswerPacket_t p)
   }
 
 }
+
