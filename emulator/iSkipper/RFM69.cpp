@@ -385,7 +385,9 @@ void RFM69::writeReg(uint8_t addr, uint8_t value)
 
 // select the RFM69 transceiver (save SPI settings, set CS low)
 void RFM69::select() {
-  noInterrupts();
+  if (!_inISR) //If you don't have this stupid adafruit feather freezes
+    noInterrupts();
+
 #if defined (SPCR) && defined (SPSR)
   // save current SPI settings
   _SPCR = SPCR;

@@ -3,9 +3,12 @@
 #include <RingBufCPP.h>
 #include <string.h>
 
+/* UPDATE THESE FOR YOUR PARTICULAR BOARD */
 #define IS_RFM69HW false //make true if using w version
-#define IRQ_PIN 6
-#define CSN 10
+#define IRQ_PIN 6 // This is 3 on adafruit feather
+#define CSN 10 // This is 8 on adafruit feather
+/* END THINGS YOU MUST UPDATE */
+
 #define MAX_BUFFERED_PACKETS 100
 
 #define THRESHOLD 1000
@@ -263,4 +266,3 @@ void updateRef(iClickerAnswerPacket_t p)
   }
 
 }
-
