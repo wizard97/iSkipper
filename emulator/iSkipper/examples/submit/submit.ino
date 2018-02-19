@@ -31,6 +31,5 @@ void loop()
   clicker.submitAnswer( id, ans, false, 100);
 
   //delay(1000);
-  Serial.println(".");
 
 }
