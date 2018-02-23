@@ -231,10 +231,17 @@ void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t 
 
 
 // go into recv mode
-void iClickerEmulator::startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *))
+void iClickerEmulator::startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *), uint8_t *id)
 {
     _recvCallback = cb;
-    _radio.setChannelType(chanType);
+    //_radio.setChannelType(chanType);
+    if (id) {
+      uint8_t encoded[ICLICKER_ID_LEN];
+      encodeId(id, encoded);
+      configureRadio(chanType, encoded);
+    } else {
+      configureRadio(chanType);
+    }
     _radio.enablePromiscuous(); //should call isr recv callback
 }
 

@@ -109,7 +109,7 @@ public:
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
 
-    void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *));
+    void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *), uint8_t *id=NULL);
     void stopPromiscuous();
     void setChannel(iClickerChannel_t chan);
     iClickerChannel_t getChannel();
