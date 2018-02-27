@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 """
-./analyze.py ../../data/acks/*.txt
+./analyze.py --bin ../../data/acks/*.txt
 """
 import argparse
 
@@ -48,12 +48,16 @@ def main():
     parser.add_argument(
         'ackfiles', nargs='+',
         help='List of files where each file contains acks from 1 ID')
+    parser.add_argument('-b', '--bin', help='print binary of each ack', action='store_true')
     args = parser.parse_args()
     acks = {}
     for ackfile in args.ackfiles:
         header, ack = parse_ack_file(ackfile)
         acks[header] = ack
         print('Const check: %s: %s' % (idhex(header), ackhex(const_check(ack))))
+        if args.bin:
+            for foo in ack:
+                print("{0:#0{1}b}".format(foo, 7*8 + 2))
 
 
 if __name__ == '__main__':
