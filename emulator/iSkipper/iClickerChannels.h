@@ -3,6 +3,9 @@
 
 #include <Arduino.h>
 
+// What sort of moron though it would be a good idea to make a macro that gets included everywhere be named AC ?!?!?!
+// WTF samd21g18a.h
+#undef AC
 
 #define NUM_ICLICKER_CHANNELS (sizeof(iClickerChannels::channels)/sizeof(iClickerChannel_t))
 

@@ -3,8 +3,13 @@
 #include <RingBufCPP.h>
 #include <string.h>
 
-#define IRQ_PIN 6
-#define CSN 10
+/* UPDATE THESE FOR YOUR PARTICULAR BOARD */
+#define IS_RFM69HW false //make true if using w version
+#define IRQ_PIN 6 // This is 3 on adafruit feather
+#define CSN 10 // This is 8 on adafruit feather
+/* END THINGS YOU MUST UPDATE */
+
+
 #define MAX_BUFFERED_PACKETS 50
 
 #define THRESHOLD 1000
@@ -16,7 +21,7 @@ iClickerAnswerPacket_t recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
 
-iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN));
+iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
 RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
 
 void setup()
@@ -27,7 +32,7 @@ void setup()
   // enter promiscouse mode on sending channel
   clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
   delay(1000);
-  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\nf: Random id answers\nu: Uniform submit\np: Print");
+  Serial.println("Ready!\nr: Reset Capture\na-e: Submit\ns: Start Capture\nt: Stop Capture\nf: Random id answers\nu: Uniform submit\np: Print");
 }
 
 
@@ -76,10 +81,12 @@ void loop()
 
        case 's':
         clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+        Serial.println("Starting capture");
         break;
 
        case 't':
-        clicker.stopPromiscous();
+        clicker.stopPromiscuous();
+        Serial.println("Stopped capture");
         break;
 
       case 'p':
@@ -132,7 +139,7 @@ void corrupt_ans(iClickerAnswer_t a)
     Serial.println(tmp);
     delay(5);
   }
-  
+
   snprintf(tmp, sizeof(tmp), "SUBMITTED A TOTAL OF %lu\n", num_recvd);
   Serial.println(tmp);
 }
@@ -153,7 +160,7 @@ void uniform_ans()
 
   snprintf(tmp, sizeof(tmp), "SUBMITTED A TOTAL OF %lu\n", num_recvd);
   Serial.println(tmp);
-  
+
 }
 
 

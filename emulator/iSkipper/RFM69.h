@@ -90,7 +90,7 @@ public:
 
     virtual bool initialize(uint8_t freqBand);
     bool canSend();
-    virtual void send(const void* buffer, uint8_t bufferSize);
+    virtual void send(const void* buffer, uint8_t bufferSize, bool waitClear = true);
     virtual bool receiveDone();
     uint32_t getFrequency();
     void setPayloadLength(uint8_t len, bool variable);
@@ -106,7 +106,7 @@ public:
     void sleep();
     uint8_t readTemperature(uint8_t calFactor=0); // get CMOS temperature (8bit)
     void rcCalibration(); // calibrate the internal RC oscillator for use in wide temperature variations - see datasheet section [4.3.5. RC Timer Accuracy]
-
+    void setDataMode(uint8_t mode);
     // allow hacking registers by making these public
     uint8_t readReg(uint8_t addr);
     void writeReg(uint8_t addr, uint8_t val);
