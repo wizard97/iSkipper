@@ -12,6 +12,7 @@ def target_prefix(addr):
     return 'W\t' + addr + '\t0x'
 
 target_regs = ['0x07', '0x08', '0x09']
+fstep = 61.0
 
 def extract_freqs(spi_dump_file):
     table = subprocess.check_output([decoder_tool, spi_dump_file]).decode('utf-8')
@@ -36,8 +37,17 @@ def main():
         'datacsv', help='SPI output CSV file from Saleae software')
     args = parser.parse_args()
     send, receive = extract_freqs(args.datacsv)
+
+    sval=[int(x, 16) for x in send]
+    rval=[int(x, 16) for x in receive]
+    sval.reverse()
+    rval.reverse()
+    sendfreq = sum([v << 8*i for i,v in enumerate(sval)])*fstep
+    recvfreq = sum([v << 8*i for i,v in enumerate(rval)])*fstep
+
     print(send)
     print(receive)
+    print("Send (KHz): %f, Recv (KHz):%f" % (sendfreq/1000, recvfreq/1000))
 
 if __name__ == '__main__':
     main()
