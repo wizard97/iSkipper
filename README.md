@@ -75,3 +75,7 @@ done before the remote transmits your ID must be reversible, and hence vulnerabl
 * HEX dumps and disassembly
 * Software Defined Radio captures
 * Lots of playing around looking for patterns
+
+## Projects Based On iSkipper
+* [iSkipper-Software](https://github.com/charlescao460/iSkipper-Software)
+* [iSkipper-In-One-Package](https://github.com/charlescao460/iSkipper-In-One-Package)
