@@ -14,68 +14,74 @@ iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69H
 volatile bool inited = false;
 volatile int count = 0;
 iClickerResponsePacket_t mask;
-
-uint8_t id[ICLICKER_ID_LEN];
+volatile int16_t rssi=0;
+uint8_t id[ICLICKER_ID_LEN] = {};
 
 void setup()
 {
-    while(!Serial);
-    Serial.begin(115200);
-    clicker.begin(iClickerChannels::AA);
-    // enter promiscouse mode on sending channel
-    //clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
-    delay(1000);
+  while (!Serial);
+  Serial.begin(115200);
+  clicker.begin(iClickerChannels::AA);
+  // enter promiscouse mode on sending channel
+  //clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+  delay(1000);
 
-    iClickerEmulator::randomId(id);
-    Serial.print("Using ID: ");
-    printID(id);
-    Serial.println();
-
-
-    clicker.submitAnswer( id, ANSWER_A, false, 100);
-    clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
-    clicker.stopPromiscuous();
+  //iClickerEmulator::randomId(id);
+  Serial.print("Using ID: ");
+  printID(id);
+  Serial.println();
+  //clicker.dumpRegisters();
 
 }
 
 
 void loop()
 {
-  clicker.submitAnswer( id, ANSWER_A, false, 100);
-  clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
-  delay(500); //wait for response
+  bool acked = clicker.submitAnswer( id, ANSWER_A, false, 10, false);
+  //Serial.println(acked);
+  clicker.startPromiscuous(CHANNEL_RECV, recvPacketHandler, NULL);
+  delay(200); //wait for response
   clicker.stopPromiscuous();
 
   // print mask
-  Serial.print("Count: ");
-  Serial.print(count);
-  Serial.print(", ");
+  //Serial.print("Count: ");
+  //Serial.print(count);
+  //Serial.print(": ");
+  //Serial.print(rssi);
+  //Serial.print(' ');
   if (inited) {
-    for (int i=0; i < 7; i++)
+    for (int i = 0; i < 7; i++) {
       Serial.print(mask.unknown[i], HEX);
       Serial.print(" ");
+    }
+    Serial.println();
   }
-  Serial.println();
+ 
+  inited = false;
 
 }
 
 
 void recvPacketHandler(iClickerPacket_t *recvd)
 {
-    if (recvd->type == PACKET_RESPONSE) {
-      count++;
-      iClickerResponsePacket_t resp = recvd->packet.respPacket;
-
-      if (inited) { //xnor it
-        for (int i=0; i < 7; i++) {
-          mask.unknown[i] = ~(resp.unknown[i]^mask.unknown[i]);
-        }
-      } else {
-        //memcpy(mask.);
-        mask = resp;
-        inited = true;
+  if (recvd->type == PACKET_RESPONSE) {
+    rssi = RFM69::RSSI;
+    count++;
+    iClickerResponsePacket_t resp = recvd->packet.respPacket;
+    inited = true;
+    mask = resp;
+    /*
+    if (inited) { //xnor it
+      for (int i = 0; i < 7; i++) {
+        mask.unknown[i] = ~(resp.unknown[i] ^ mask.unknown[i]);
       }
+    } else {
+      //memcpy(mask.);
+      mask = resp;
+      inited = true;
     }
+    */
+  }
 }
 
 void printID(uint8_t *id)

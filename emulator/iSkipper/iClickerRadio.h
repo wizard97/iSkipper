@@ -31,8 +31,8 @@ public:
     virtual bool initialize(uint8_t freqBand = RF69_915MHZ) override;
 
     // set the frequency (in Hz)
-    void setChannel(iClickerChannel_t chan);
-    iClickerChannel_t getChannel();
+    void setChannel(iClickerChannel chan);
+    iClickerChannel getChannel();
     void setChannelType(iClickerChannelType_t chanType);
     iClickerChannelType_t getChannelType();
     void setRecvCallback(void (*recvCallback)(uint8_t *, uint8_t));
@@ -42,7 +42,7 @@ public:
 protected:
     virtual void recvCallback(uint8_t *data, uint8_t numBytes) override; //interrupt callback
 
-    iClickerChannel_t _chan; //which channel AA?
+    iClickerChannel _chan; //which channel AA?
     iClickerChannelType_t _chanType; //send or recv channel?
 
     //recv callback (buf*, numBytes)

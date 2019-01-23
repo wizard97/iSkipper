@@ -11,7 +11,7 @@ iClickerEmulator::iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irq
     _radio.setRecvCallback(&isrRecvCallback);
 }
 
-bool iClickerEmulator::begin(iClickerChannel_t chan)
+bool iClickerEmulator::begin(iClickerChannel chan)
 {
     //seed rand
     randomSeed(analogRead(0) + analogRead(1) + analogRead(2));
@@ -24,39 +24,38 @@ bool iClickerEmulator::begin(iClickerChannel_t chan)
 }
 
 
-uint8_t iClickerEmulator::encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans)
+
+uint8_t iClickerEmulator::computeChecksum(uint8_t *msg, uint16_t len)
 {
-    uint8_t x = 1;
-    uint8_t encoded_id[ICLICKER_ID_LEN];
+    uint8_t ret = 0;
+    for (uint16_t i=0; i < len; i++) {
+      ret += msg[i];
+    }
 
-    encodeId(id, encoded_id);
-
-    for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
-        x += encoded_id[i];
-
-    return x + getAnswerOffset(ans);
+    return ret;
 }
 
 
-iClickerAnswer_t iClickerEmulator::decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded)
+iClickerAnswer iClickerEmulator::decodeAns(uint8_t encoded)
 {
-    uint8_t x = 1;
-
-    uint8_t encoded_id[ICLICKER_ID_LEN];
-    encodeId(id, encoded_id);
-
-    for (uint8_t i=0; i < ICLICKER_ID_LEN; i++)
-        x += encoded_id[i];
-
-    encoded -= x;
+    encoded &= 0x0f;
 
     for (uint8_t i=0; i < NUM_ANSWER_CHOICES; i++)
     {
         if (answerOffsets[i] == encoded)
-            return (iClickerAnswer_t)i;
+            return (iClickerAnswer)i;
     }
 
     return ANSWER_A;
+}
+
+
+uint8_t iClickerEmulator::getAnswerOffset(iClickerAnswer ans)
+{
+    if (ans >= NUM_ANSWER_CHOICES || ans < ANSWER_A)
+        return 0;
+
+    return answerOffsets[ans];
 }
 
 
@@ -94,21 +93,21 @@ void iClickerEmulator::randomId(uint8_t *ret)
 }
 
 
-iClickerAnswer_t iClickerEmulator::randomAnswer()
+iClickerAnswer iClickerEmulator::randomAnswer()
 {
-    const uint8_t ans[] = {
-        (uint8_t)ANSWER_A,
-        (uint8_t)ANSWER_B,
-        (uint8_t)ANSWER_C,
-        (uint8_t)ANSWER_D,
-        (uint8_t)ANSWER_E
+    const iClickerAnswer ans[] = {
+        ANSWER_A,
+        ANSWER_B,
+        ANSWER_C,
+        ANSWER_D,
+        ANSWER_E
     };
 
-    return (iClickerAnswer_t)ans[random(sizeof(ans))];
+    return ans[random(sizeof(ans))];
 }
 
 
-char iClickerEmulator::answerChar(iClickerAnswer_t ans)
+char iClickerEmulator::answerChar(iClickerAnswer ans)
 {
     switch(ans)
     {
@@ -136,7 +135,7 @@ char iClickerEmulator::answerChar(iClickerAnswer_t ans)
 }
 
 
-iClickerAnswer_t iClickerEmulator::charAnswer(char ans)
+iClickerAnswer iClickerEmulator::charAnswer(char ans)
 {
     switch(ans)
     {
@@ -163,29 +162,26 @@ iClickerAnswer_t iClickerEmulator::charAnswer(char ans)
 }
 
 
-bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans, bool withAck, uint32_t timeout, bool waitClear )
+bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer ans, bool withAck, uint32_t timeout, bool waitClear )
 {
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
-    iClickerAnswerPacket_t toSend;
-
-    encodeId(id, toSend.id); //encode the id for transmission
-
+    uint8_t toSend[PAYLOAD_LENGTH_SEND];
     // zero out last nibble
-    toSend.id[ICLICKER_ID_LEN-1] &= 0xF0;
+    toSend[3] &= 0xF0;
     // add dumb redundant answer nibble
-    toSend.id[ICLICKER_ID_LEN-1] |= 0x0F & (getAnswerOffset(ans) + 1);
+    toSend[3] |= 0x0F & getAnswerOffset(ans);
+    // Compute checksum
+    toSend[4] = computeChecksum(toSend, PAYLOAD_LENGTH_SEND-1);
 
-    toSend.answer = encodeAns(id, ans);
 
-    //send packet, we can cast toSend to array since all uint8_t bytes
-    _radio.send(&toSend, PAYLOAD_LENGTH_SEND, waitClear);
+    _radio.send(toSend, PAYLOAD_LENGTH_SEND, waitClear);
 
     // need to determine packet format!
     if (withAck)
     {
         uint32_t start = millis();
-        configureRadio(CHANNEL_RECV, toSend.id);
+        configureRadio(CHANNEL_RECV, toSend);
 
         bool recvd = false;
         while(millis() - start < timeout && !recvd) {
@@ -193,9 +189,6 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
         }
         //eventually should parse response
         recvd &= (_radio.PAYLOADLEN == PAYLOAD_LENGTH_RECV);
-
-        //for (uint i=0; i < PAYLOAD_LENGTH_RECV; i++)
-        //    Serial.println(_radio.DATA[i], HEX);
 
         configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
         return recvd;
@@ -205,21 +198,21 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_
 }
 
 
-void iClickerEmulator::setChannel(iClickerChannel_t chan)
+void iClickerEmulator::setChannel(iClickerChannel chan)
 {
     _radio.setChannel(chan);
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 }
 
 
-iClickerChannel_t iClickerEmulator::getChannel()
+iClickerChannel iClickerEmulator::getChannel()
 {
     return _radio.getChannel();
 
 }
 
 
-void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr)
+void iClickerEmulator::configureRadio(iClickerChannelType type, const uint8_t *syncaddr)
 {
     // set the correct sync addr and len
     _radio.setSyncAddr(syncaddr, type == CHANNEL_SEND ? SEND_SYNC_ADDR_LEN : RECV_SYNC_ADDR_LEN);
@@ -231,7 +224,7 @@ void iClickerEmulator::configureRadio(iClickerChannelType_t type, const uint8_t 
 
 
 // go into recv mode
-void iClickerEmulator::startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *))
+void iClickerEmulator::startPromiscuous(iClickerChannelType chanType, void (*cb)(iClickerPacket *))
 {
     _recvCallback = cb;
     _radio.setChannelType(chanType);
@@ -252,18 +245,19 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
     if (!_self->_recvCallback) //make sure not null
         return;
 
-    iClickerPacket_t recvd;
+    iClickerPacket recvd;
     //process packet
     if (numBytes == PAYLOAD_LENGTH_SEND && _self->_radio.getChannelType() == CHANNEL_SEND) {
         //recvd from another iclicker
-        iClickerAnswerPacket_t *pack = (iClickerAnswerPacket_t *)buf;
         recvd.type = PACKET_ANSWER;
-        decodeId(pack->id, recvd.packet.answerPacket.id);
-        recvd.packet.answerPacket.answer = (uint8_t)decodeAns(recvd.packet.answerPacket.id, pack->answer);
+        // Decode the ID
+        decodeId(buf, recvd.packet.answerPacket.id);
+        recvd.packet.answerPacket.answer = decodeAns(buf[3] & 0xf);
 
-        //double check answer nibble matches answer, use this like checksum
-        if (((pack->id[ICLICKER_ID_LEN-1] - 1) & 0x0F) != getAnswerOffset((iClickerAnswer_t)recvd.packet.answerPacket.answer)) {
-            return; //ignore
+        // Double check the checksum
+        if (computeChecksum(buf, PAYLOAD_LENGTH_SEND - 1) != buf[PAYLOAD_LENGTH_SEND-1]) {
+            // invalid
+            return;
         }
 
     } else if (numBytes == PAYLOAD_LENGTH_RECV && _self->_radio.getChannelType() == CHANNEL_RECV) {
@@ -280,7 +274,7 @@ void iClickerEmulator::isrRecvCallback(uint8_t *buf, uint8_t numBytes)
 bool iClickerEmulator::floodAttack(uint32_t num, uint32_t interval)
 {
     uint8_t id[ICLICKER_ID_LEN];
-    iClickerAnswer_t ans;
+    iClickerAnswer ans;
     // put radio into correct mode
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
@@ -334,7 +328,7 @@ uint16_t iClickerEmulator::ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries, uin
 iClickerChannelMask_t iClickerEmulator::scan()
 {
     iClickerChannelMask_t ret = 0x0;
-    iClickerChannel_t old = getChannel(); //so we can restore channel
+    iClickerChannel old = getChannel(); //so we can restore channel
 
     uint8_t id[ICLICKER_ID_LEN];
 
@@ -343,7 +337,7 @@ iClickerChannelMask_t iClickerEmulator::scan()
     for (uint16_t j=0; j < NUM_ICLICKER_CHANNELS; j++)
     {
         // get the correct channel
-        const iClickerChannel_t c = iClickerChannels::channels[j];
+        const iClickerChannel c = iClickerChannels::channels[j];
         setChannel(c);
         if (ping(id, 1))
             ret |= c.mask;
@@ -352,13 +346,4 @@ iClickerChannelMask_t iClickerEmulator::scan()
     setChannel(old);
 
     return ret;
-}
-
-
-uint8_t iClickerEmulator::getAnswerOffset(iClickerAnswer_t ans)
-{
-    if (ans >= NUM_ANSWER_CHOICES || ans < ANSWER_A)
-        return 0;
-
-    return answerOffsets[ans];
 }

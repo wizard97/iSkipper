@@ -107,7 +107,7 @@ bool iClickerRadio::initialize(uint8_t freqBand)
 
 
 
-void iClickerRadio::setChannel(iClickerChannel_t chan)
+void iClickerRadio::setChannel(iClickerChannel chan)
 {
     _chan = chan;
     setChannelType(CHANNEL_SEND);
@@ -115,7 +115,7 @@ void iClickerRadio::setChannel(iClickerChannel_t chan)
 }
 
 
-iClickerChannel_t iClickerRadio::getChannel()
+iClickerChannel iClickerRadio::getChannel()
 {
     return _chan;
 }
