@@ -5,8 +5,8 @@
 
 /* UPDATE THESE FOR YOUR PARTICULAR BOARD */
 #define IS_RFM69HW false //make true if using w version
-#define IRQ_PIN 6 // This is 3 on adafruit feather
-#define CSN 10 // This is 8 on adafruit feather
+#define IRQ_PIN 3 // This is 3 on adafruit feather
+#define CSN 8 // This is 8 on adafruit feather
 /* END THINGS YOU MUST UPDATE */
 
 
@@ -17,12 +17,12 @@
 
 #define RAND_LOW 35
 #define RAND_HIGH 75
-iClickerAnswerPacket_t recvd[MAX_RECVD];
+iClickerAnswerPacket recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
 
 iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
-RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
+RingBufCPP<iClickerPacket, MAX_BUFFERED_PACKETS> recvBuf;
 
 void setup()
 {
@@ -39,16 +39,16 @@ void setup()
 void loop()
 {
   char tmp[100];
-  iClickerPacket_t r;
+  iClickerPacket r;
 
-  static iClickerAnswerPacket_t old = {{0, 0,0, 0}, ANSWER_A};
+  static iClickerAnswerPacket old = {{0, 0,0, 0}, ANSWER_A};
   static uint32_t old_t = 0;
 
   //see if there is a pending packet, check if its an answer packet
   //see if different than pre packet
   while (recvBuf.pull(&r) && r.type == PACKET_ANSWER && (memcmp(&r.packet.answerPacket, &old, sizeof(old)) || millis() - old_t > THRESHOLD)) {
     uint8_t *id = r.packet.answerPacket.id;
-    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)r.packet.answerPacket.answer);
+    char answer = iClickerEmulator::answerChar(r.packet.answerPacket.answer);
     old = r.packet.answerPacket;
     old_t = millis();
     updateRef(r.packet.answerPacket);
@@ -100,13 +100,13 @@ void loop()
 }
 
 
-void recvPacketHandler(iClickerPacket_t *recvd)
+void recvPacketHandler(iClickerPacket *recvd)
 {
   bool ret = recvBuf.add(*recvd);
 }
 
 
-void updateRef(iClickerAnswerPacket_t p)
+void updateRef(iClickerAnswerPacket p)
 {
   uint32_t i = 0;
   for (i = 0; i < num_recvd; i++)
@@ -127,7 +127,7 @@ void updateRef(iClickerAnswerPacket_t p)
 }
 
 
-void corrupt_ans(iClickerAnswer_t a)
+void corrupt_ans(iClickerAnswer a)
 {
   char tmp[100];
   for (uint32_t i = 0; i < num_recvd; i++)
@@ -150,7 +150,7 @@ void uniform_ans()
   char tmp[100];
   for (uint32_t i = 0; i < num_recvd; i++)
   {
-    iClickerAnswer_t answer = clicker.randomAnswer();
+    iClickerAnswer answer = clicker.randomAnswer();
     bool ret = clicker.submitAnswer(recvd[i].id, answer); // no ack
     snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)",
     ret ? "Successfully submitted" : "Failed to submit", iClickerEmulator::answerChar(answer), recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
@@ -181,7 +181,7 @@ void printCap()
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     res[recvd[i].answer]++;
-    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)recvd[i].answer);
+    char answer = iClickerEmulator::answerChar(recvd[i].answer);
     snprintf(tmp, sizeof(tmp), "Captured[%lu]: %c (%02X, %02X, %02X, %02X)", i, answer,
              recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);

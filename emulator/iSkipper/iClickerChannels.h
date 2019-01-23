@@ -7,16 +7,16 @@
 // WTF samd21g18a.h
 #undef AC
 
-#define NUM_ICLICKER_CHANNELS (sizeof(iClickerChannels::channels)/sizeof(iClickerChannel_t))
+#define NUM_ICLICKER_CHANNELS (sizeof(iClickerChannels::channels)/sizeof(iClickerChannel))
 
 typedef uint16_t iClickerChannelMask_t;
 
-typedef struct iClickerChannel
+struct iClickerChannel
 {
     uint8_t send[3];
     uint8_t recv[3];
     iClickerChannelMask_t mask;
-} iClickerChannel_t;
+};
 
 
 
@@ -24,7 +24,7 @@ namespace iClickerChannels
 {
     // MSB to LSB RegFrf
 
-    const iClickerChannel_t AA =
+    const iClickerChannel AA =
     {
         { 0xE5, 0x40, 0x00 }, //send
         { 0xE1, 0xE0, 0x00 }, //recv
@@ -32,7 +32,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t AB =
+    const iClickerChannel AB =
     {
         { 0xE4, 0x40, 0x00 }, //send
         { 0xE2, 0x20, 0x00 }, //recv
@@ -40,7 +40,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t AC =
+    const iClickerChannel AC =
     {
         { 0xE4, 0x80, 0x00 }, //send
         { 0xE2, 0x80, 0x00 }, //recv
@@ -48,7 +48,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t AD =
+    const iClickerChannel AD =
     {
         { 0xE4, 0xC0, 0x00 }, //send
         { 0xE2, 0xE0, 0x00 }, //recv
@@ -56,7 +56,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t BA =
+    const iClickerChannel BA =
     {
         { 0xE5, 0x00, 0x00 }, //send
         { 0xE3, 0x20, 0x00 }, //recv
@@ -64,7 +64,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t BB =
+    const iClickerChannel BB =
     {
         { 0xE5, 0xC0, 0x00 }, //send
         { 0xE3, 0x80, 0x00 }, //recv
@@ -72,7 +72,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t BC =
+    const iClickerChannel BC =
     {
         { 0xE6, 0x00, 0x00 }, //send
         { 0xE3, 0xE0, 0x00 }, //recv
@@ -80,7 +80,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t BD =
+    const iClickerChannel BD =
     {
         { 0xE6, 0x40, 0x00 }, //send
         { 0xE4, 0x20, 0x00 }, //recv
@@ -88,7 +88,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t CA =
+    const iClickerChannel CA =
     {
         { 0xE6, 0x80, 0x00 }, //send
         { 0xE4, 0x80, 0x00 }, //recv
@@ -96,7 +96,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t CB =
+    const iClickerChannel CB =
     {
         { 0xE6, 0xC0, 0x00 }, //send
         { 0xE4, 0xE0, 0x00 }, //recv
@@ -104,7 +104,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t CC =
+    const iClickerChannel CC =
     {
         { 0xE2, 0xC0, 0x00 }, //send
         { 0xE5, 0x20, 0x00 }, //recv
@@ -112,7 +112,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t CD =
+    const iClickerChannel CD =
     {
         { 0xE3, 0x00, 0x00 }, //send
         { 0xE5, 0x80, 0x00 }, //recv
@@ -120,7 +120,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t DA =
+    const iClickerChannel DA =
     {
         { 0xE2, 0x60, 0x00 }, //send
         { 0xE5, 0xC0, 0x00 }, //recv
@@ -128,7 +128,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t DB =
+    const iClickerChannel DB =
     {
         { 0xE3, 0x40, 0x00 }, //send
         { 0xE6, 0x20, 0x00 }, //recv
@@ -136,7 +136,7 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t DC =
+    const iClickerChannel DC =
     {
         { 0xE3, 0xC0, 0x00 }, //send
         { 0xE6, 0x80, 0x00 }, //recv
@@ -144,14 +144,14 @@ namespace iClickerChannels
     };
 
 
-    const iClickerChannel_t DD =
+    const iClickerChannel DD =
     {
         { 0xE3, 0x80, 0x00 }, //send
         { 0xE6, 0xC0, 0x00 }, //recv
         0x8000, //mask
     };
 
-    const iClickerChannel_t channels[] =
+    const iClickerChannel channels[] =
         {AA, AB, AC, AD, BA, BB, BC, BD, CA, CB, CC, CD, DA, DB, DC, DD};
 
 

@@ -11,7 +11,7 @@
 
 #define DEFAULT_ACK_TIMEOUT 1500
 
-typedef enum iClickerAnswer
+enum iClickerAnswer : uint8_t
 {
     ANSWER_A = 0,
     ANSWER_B,
@@ -21,7 +21,7 @@ typedef enum iClickerAnswer
     ANSWER_PING,
 
     NUM_ANSWER_CHOICES,
-} iClickerAnswer_t;
+};
 
 
 // Encoded answer choice is sent as follows:
@@ -38,45 +38,48 @@ P = x + 1
 */
 
 // The encoded answer choice is the value: 1 + sum(encoded_id) + answerOffsets[iClickerAnswer_t]
-const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0x0, 0x4, 0xC, 0xD, 0x9, 0x1 };
+//const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = { 0x0, 0x4, 0xC, 0xD, 0x9, 0x1 };
+
+// Mapping from iClickerAnswer to offset
+const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = {0x1, 0x5, 0xd, 0xe, 0xa, 0x2};
 
 const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
     {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
 
 
 // 5 bytes
-typedef struct iClickerAnswerPacket
+struct iClickerAnswerPacket
 {
     uint8_t id[ICLICKER_ID_LEN];
-    uint8_t answer;
-} iClickerAnswerPacket_t;
+    iClickerAnswer answer;
+};
 
 
-typedef struct iClickerResponsePacket
+struct iClickerResponsePacket
 {
     uint8_t unknown[7]; //dont know whats in it yet, but 7 bytes
-} iClickerResponsePacket_t;
+};
 
 
-typedef union iClickerPacketUnion
+union iClickerPacketUnion
 {
-    iClickerAnswerPacket_t answerPacket; //if an answer packet
-    iClickerResponsePacket_t respPacket; //if base station response
-} iClickerPacketUnion_t;
+    iClickerAnswerPacket answerPacket; //if an answer packet
+    iClickerResponsePacket respPacket; //if base station response
+};
 
 
-typedef enum iClickerPacketType
+typedef enum iClickerPacketType : uint8_t
 {
     PACKET_ANSWER = 0,
     PACKET_RESPONSE,
-} iClickerPacketType_t;
+};
 
-typedef struct iClickerPacket
+struct iClickerPacket
 {
-    iClickerPacketType_t type;
-    iClickerPacketUnion_t packet;
+    iClickerPacketType type;
+    iClickerPacketUnion packet;
 
-} iClickerPacket_t;
+};
 
 class iClickerEmulator
 {
@@ -93,32 +96,29 @@ public:
     //generate random iClicker id
     static void randomId(uint8_t *ret);
     //generate random answer
-    static iClickerAnswer_t randomAnswer();
+    static iClickerAnswer randomAnswer();
     //concert answer to char
-    static char answerChar(iClickerAnswer_t ans);
+    static char answerChar(iClickerAnswer ans);
     // convert char to ans
-    static iClickerAnswer_t charAnswer(char ans);
-
-
-    static iClickerAnswer_t decodeAns(uint8_t id[ICLICKER_ID_LEN], uint8_t encoded);
-    static uint8_t encodeAns(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans);
+    static iClickerAnswer charAnswer(char ans);
+    // Map encoded answer choice nibble to an answer
+    static iClickerAnswer decodeAns(uint8_t encoded);
 
     /***** NON-STATIC METHODS *****/
     iClickerEmulator(uint8_t _cspin, uint8_t _irqpin, uint8_t _irqnum, bool isRFM69HW=false);
-    bool begin(iClickerChannel_t chan);
-    bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans,
+    bool begin(iClickerChannel chan);
+    bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
 
-    void startPromiscuous(iClickerChannelType_t chanType, void (*cb)(iClickerPacket_t *), uint8_t *id=NULL);
+    void startPromiscuous(iClickerChannelType chanType, void (*cb)(iClickerPacket *));
     void stopPromiscuous();
-    void setChannel(iClickerChannel_t chan);
-    iClickerChannel_t getChannel();
+    void setChannel(iClickerChannel chan);
+    iClickerChannel getChannel();
     void dumpRegisters() { _radio.readAllRegs(); }
 
     //return number of ping responses (wait= how many ms for wait for a single ping response)
     uint16_t ping(uint8_t id[ICLICKER_ID_LEN], uint16_t tries = 1, uint16_t wait = DEFAULT_ACK_TIMEOUT);
     iClickerChannelMask_t scan();
-
 
     //ATTACKS
     bool floodAttack(uint32_t num, uint32_t interval);
@@ -127,10 +127,11 @@ public:
 
 protected:
     iClickerRadio _radio;
-    void (*_recvCallback)(iClickerPacket_t *);
+    void (*_recvCallback)(iClickerPacket *);
 
-    void configureRadio(iClickerChannelType_t type, const uint8_t *syncaddr = DEFAULT_SEND_SYNC_ADDR);
-    static uint8_t getAnswerOffset(iClickerAnswer_t ans);
+    void configureRadio(iClickerChannelType type, const uint8_t *syncaddr = DEFAULT_SEND_SYNC_ADDR);
+    static uint8_t getAnswerOffset(iClickerAnswer ans);
+    static uint8_t computeChecksum(uint8_t *msg, uint16_t len);
 };
 
 #endif

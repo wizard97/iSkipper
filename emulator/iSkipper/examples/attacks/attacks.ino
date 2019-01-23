@@ -4,9 +4,9 @@
 #include <string.h>
 
 /* UPDATE THESE FOR YOUR PARTICULAR BOARD */
-#define IS_RFM69HW false //make true if using w version
-#define IRQ_PIN 6 // This is 3 on adafruit feather
-#define CSN 10 // This is 8 on adafruit feather
+#define IS_RFM69HW true //make true if using w version
+#define IRQ_PIN 3 // This is 3 on adafruit feather
+#define CSN 8 // This is 8 on adafruit feather
 /* END THINGS YOU MUST UPDATE */
 
 #define MAX_BUFFERED_PACKETS 100
@@ -17,12 +17,12 @@
 #define RAND_LOW 35
 #define RAND_HIGH 75
 
-iClickerAnswerPacket_t recvd[MAX_RECVD];
+iClickerAnswerPacket recvd[MAX_RECVD];
 uint32_t num_recvd = 0;
 
 
 iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
-RingBufCPP<iClickerPacket_t, MAX_BUFFERED_PACKETS> recvBuf;
+RingBufCPP<iClickerPacket, MAX_BUFFERED_PACKETS> recvBuf;
 
 
 void setup()
@@ -39,7 +39,7 @@ void setup()
 
 void loop()
 {
-  iClickerPacket_t r;
+  iClickerPacket r;
 
   //see if there is a pending packet, check if its an answer packet
   //see if different than pre packet
@@ -95,9 +95,9 @@ void loop()
 }
 
 
-void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
+void resubmit_ans(iClickerAnswer a, uint8_t percent)
 {
-  iClickerPacket_t r;
+  iClickerPacket r;
   uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
 
   Serial.println("******** BEGIN ANSWER RESUBMIT ********");
@@ -107,7 +107,7 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
   {
       if (recvBuf.pull(&r) && r.type == PACKET_ANSWER)
       {
-          iClickerAnswerPacket_t ap = r.packet.answerPacket;
+          iClickerAnswerPacket ap = r.packet.answerPacket;
           handleCapture(ap);
 
           //should we resubmit?
@@ -134,7 +134,7 @@ void resubmit_ans(iClickerAnswer_t a, uint8_t percent)
 
 void uniform_ans()
 {
-    iClickerPacket_t r;
+    iClickerPacket r;
     Serial.println("******** BEGIN UNIFORM RESUBMIT ********");
     clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
     uint16_t res[NUM_ANSWER_CHOICES] = { 0 };
@@ -143,9 +143,9 @@ void uniform_ans()
     {
         if (recvBuf.pull(&r) && r.type == PACKET_ANSWER)
         {
-            iClickerAnswerPacket_t ap = r.packet.answerPacket;
+            iClickerAnswerPacket ap = r.packet.answerPacket;
             handleCapture(ap);
-            iClickerAnswer_t answer = clicker.randomAnswer();
+            iClickerAnswer answer = clicker.randomAnswer();
             bool ret = clicker.submitAnswer(ap.id, answer);
             printSubmission(ret, ap.id, answer);
             clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
@@ -194,7 +194,7 @@ void printCap()
   for (uint32_t i = 0; i < num_recvd; i++)
   {
     res[recvd[i].answer]++;
-    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)recvd[i].answer);
+    char answer = iClickerEmulator::answerChar(recvd[i].answer);
     snprintf(tmp, sizeof(tmp), "Captured[%lu]: %c (%02X, %02X, %02X, %02X)", i, answer,
              recvd[i].id[0], recvd[i].id[1], recvd[i].id[2], recvd[i].id[3]);
     Serial.println(tmp);
@@ -211,7 +211,7 @@ void printCap()
 
 
 // hlpers
-void printSubmission(bool suc, uint8_t id[ICLICKER_ID_LEN], iClickerAnswer_t ans)
+void printSubmission(bool suc, uint8_t id[ICLICKER_ID_LEN], iClickerAnswer ans)
 {
     char tmp[100];
     snprintf(tmp, sizeof(tmp), "%s %c for ID: (%02X, %02X, %02X, %02X)",
@@ -230,24 +230,24 @@ bool shouldExit()
     return false;
 }
 
-void handleCapture(iClickerAnswerPacket_t answerPacket)
+void handleCapture(iClickerAnswerPacket answerPacket)
 {
     char tmp[100];
     uint8_t *id = answerPacket.id;
-    char answer = iClickerEmulator::answerChar((iClickerAnswer_t)answerPacket.answer);
+    char answer = iClickerEmulator::answerChar(answerPacket.answer);
     updateRef(answerPacket);
     snprintf(tmp, sizeof(tmp), "Captured [%lu]: %c (%02X, %02X, %02X, %02X)", num_recvd, answer, id[0], id[1], id[2], id[3]);
     Serial.println(tmp);
 }
 
 
-void recvPacketHandler(iClickerPacket_t *recvd)
+void recvPacketHandler(iClickerPacket *recvd)
 {
   recvBuf.add(*recvd);
 }
 
 
-void updateRef(iClickerAnswerPacket_t p)
+void updateRef(iClickerAnswerPacket p)
 {
   uint32_t i = 0;
   for (i = 0; i < num_recvd; i++)

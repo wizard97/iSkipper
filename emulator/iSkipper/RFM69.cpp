@@ -292,7 +292,6 @@ void RFM69::interruptHandler() {
 
     unselect();
     setMode(RF69_MODE_RX);
-    RSSI = readRSSI();
     recvCallback((uint8_t *)DATA, (uint8_t)PAYLOADLEN);
   }
   RSSI = readRSSI();

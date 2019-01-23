@@ -52,7 +52,7 @@ bool iClickerRadio::initialize(uint8_t freqBand)
         /* 0x25 */ { REG_DIOMAPPING1, RF_DIOMAPPING1_DIO0_01 }, // DIO0 is the only IRQ we're using
         /* 0x26 */ { REG_DIOMAPPING2, RF_DIOMAPPING2_CLKOUT_OFF }, // DIO5 ClkOut disable for power saving
         /* 0x28 */ { REG_IRQFLAGS2, RF_IRQFLAGS2_FIFOOVERRUN }, // writing to this bit ensures that the FIFO & status flags are reset
-        /* 0x29 */ { REG_RSSITHRESH, 125 }, // must be set to dBm = (-Sensitivity / 2), default is 0xE4 = 228 so -114dBm
+        /* 0x29 */ { REG_RSSITHRESH, 220 }, // must be set to dBm = (-Sensitivity / 2), default is 0xE4 = 228 so -114dBm
         ///* 0x2D */ { REG_PREAMBLELSB, RF_PREAMBLESIZE_LSB_VALUE } // default 3 preamble bytes 0xAAAAAA
         /* 0x2E */ { REG_SYNCCONFIG, RF_SYNC_ON | RF_SYNC_FIFOFILL_AUTO | RF_SYNC_SIZE_3 | RF_SYNC_TOL_0 },
         /* 0x2F */ { REG_SYNCVALUE1, RF_SYNC_BYTE1_VALUE_IC },
@@ -107,7 +107,7 @@ bool iClickerRadio::initialize(uint8_t freqBand)
 
 
 
-void iClickerRadio::setChannel(iClickerChannel_t chan)
+void iClickerRadio::setChannel(iClickerChannel chan)
 {
     _chan = chan;
     setChannelType(CHANNEL_SEND);
@@ -115,7 +115,7 @@ void iClickerRadio::setChannel(iClickerChannel_t chan)
 }
 
 
-iClickerChannel_t iClickerRadio::getChannel()
+iClickerChannel iClickerRadio::getChannel()
 {
     return _chan;
 }
