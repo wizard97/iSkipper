@@ -197,6 +197,27 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer 
     return true;
 }
 
+void iClickerEmulator::acknowledgeAnswer(iClickerAnswerPacket* packet, bool accept) {
+    uint8_t ack_payload[ACK_SIZE];
+    encodeId(packet->id, ack_payload);
+
+    ack_payload[2] = ~ack_payload[2];
+    if (accept) {
+        ack_payload[3] = (ack_payload[3] & 0xF0) | 0x2;
+        ack_payload[4] = 0x22;
+    } else {
+        ack_payload[3] = (ack_payload[3] & 0xF0) | 0x6;
+        ack_payload[4] = 0x66;
+    }
+
+    _radio.setChannelType(CHANNEL_RECV);
+
+    _radio.setSyncAddr(ACK_SYNC_ADDR, ACK_HEADER_SIZE);
+    _radio.setPayloadLength(ACK_SIZE, false);
+
+    _radio.send(ack_payload, ACK_SIZE, false);
+}
+
 
 void iClickerEmulator::setChannel(iClickerChannel chan)
 {

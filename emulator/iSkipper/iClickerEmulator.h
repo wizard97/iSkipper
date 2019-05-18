@@ -9,6 +9,9 @@
 #define SEND_SYNC_ADDR_LEN 3
 #define RECV_SYNC_ADDR_LEN 2
 
+#define ACK_HEADER_SIZE 3
+#define ACK_SIZE 5
+
 #define DEFAULT_ACK_TIMEOUT 1500
 
 enum iClickerAnswer : uint8_t
@@ -45,6 +48,8 @@ const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = {0x1, 0x5, 0xd, 0xe, 0xa, 0x2}
 
 const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
     {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
+
+const uint8_t ACK_SYNC_ADDR[ACK_HEADER_SIZE] = {0x55, 0x55, 0x55};
 
 
 // 5 bytes
@@ -109,6 +114,7 @@ public:
     bool begin(iClickerChannel chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
+    void acknowledgeAnswer(iClickerAnswerPacket* packet, bool accept=true);
 
     void startPromiscuous(iClickerChannelType chanType, void (*cb)(iClickerPacket *));
     void stopPromiscuous();

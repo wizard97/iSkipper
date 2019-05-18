@@ -10,6 +10,7 @@
 
 
 #define MAX_BUFFERED_PACKETS 20
+#define SEND_ACKS false
 
 iClickerEmulator clicker(CSN, IRQ_PIN, digitalPinToInterrupt(IRQ_PIN), IS_RFM69HW);
 RingBufCPP<iClickerPacket, MAX_BUFFERED_PACKETS> recvBuf;
@@ -29,23 +30,34 @@ void setup()
 void loop()
 {
   char tmp[50];
-  iClickerPacket r;
+  iClickerPacket r;  
 
   //see if there is a pending packet, check if its an answer packet
 
-  while (recvBuf.pull(&r)) {
+  while (recvBuf.pull(&r) && r.type == PACKET_ANSWER) {
     uint8_t *id = r.packet.answerPacket.id;
     char answer = iClickerEmulator::answerChar(r.packet.answerPacket.answer);
     snprintf(tmp, sizeof(tmp), "Captured: %c (%02X, %02X, %02X, %02X) \n", answer, id[0], id[1], id[2], id[3]);
     Serial.println(tmp);
   }
 
-  delay(100);
+  // restore the frequency back to AA and go back 
+  // to promiscous mode if we sent an ACK packet
+  if (SEND_ACKS) {
+    clicker.setChannel(iClickerChannels::AA);
+    clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
+  }
 
+  delay(100);
 }
 
 
 void recvPacketHandler(iClickerPacket *recvd)
 {
+    if (SEND_ACKS && recvd->type == PACKET_ANSWER) {
+      Serial.println("Sending ACK");
+      clicker.acknowledgeAnswer(&recvd->packet.answerPacket);
+    }
+
     recvBuf.add(*recvd);
 }
