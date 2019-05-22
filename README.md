@@ -1,7 +1,10 @@
 # iSkipper
 <img src="https://github.com/wizard97/iSkipper/blob/master/pics/IMG_20170425_002113.jpg?raw=true" alt="iClicker" width="300" height="400">
 <img src="https://github.com/wizard97/iSkipper/blob/master/pics/96_8MS_AA_a.png" alt="iClicker" width="455" height="263">
-Reverse engineering the overly priced iClicker2 and creating an open source evil version, the iSkipper
+Reverse engineering the overly priced iClicker2 and creating an open source evil version, the iSkipper.
+
+## Report
+For full details, see the [report](https://github.com/wizard97/iSkipper/releases/download/v1.0.0/iskipper.pdf).
 
 
 ## Warning
