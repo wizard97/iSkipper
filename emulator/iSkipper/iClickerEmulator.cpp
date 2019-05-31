@@ -167,13 +167,14 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer 
     configureRadio(CHANNEL_SEND, DEFAULT_SEND_SYNC_ADDR);
 
     uint8_t toSend[PAYLOAD_LENGTH_SEND];
+    // Encode the ID
+    encodeId(id, toSend);
     // zero out last nibble
     toSend[3] &= 0xF0;
     // add dumb redundant answer nibble
     toSend[3] |= 0x0F & getAnswerOffset(ans);
     // Compute checksum
     toSend[4] = computeChecksum(toSend, PAYLOAD_LENGTH_SEND-1);
-
 
     _radio.send(toSend, PAYLOAD_LENGTH_SEND, waitClear);
 
