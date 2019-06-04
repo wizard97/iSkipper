@@ -46,27 +46,32 @@ MIT, but please submit a pull request with your own programs
 
 ## Current Project Progress
 The entire iClicker protocol is proprietary, so it had to be reverse engineered.
-There is still reverse engineering needing to be done, especially for the base station.
-After a whole semester of work, this is what the latest iSkipper can and can not do.
+There is still reverse engineering needing to be done, especially for numerical and alphabetical questions.
+After decoding ACK, this is what the latest iSkipper can and can not do.
 Note, there might not be Arduino examples written yet for some of these, but the API supports it. They should
 be trivial to make.
 
 | Functionality                        | Status           
-| ------------------------------------ |:-------------:|
-| Generate valid fake IDs              | Working       |
-| Submit answers to a base stations    | Working       |
-| Work across all channels             | Working       |
-| Emulate a normal remote              | Working       |
-| Capture other peoples answers and ID | Working       |
-| DDOS the basestation                 | Somewhat      |
-| Capture ACK's send from base station | Working       |
-| Decode ACK from base station         | NO            |
-| Emulate a base station               | Somewhat      |
-| Work in large lectures  (>400)       | Working       |
+| ------------------------------------ |:----------------------:|
+| Generate valid fake IDs              | Working                |
+| Submit answers to a base stations    | Working                |
+| Work across all channels             | Working                |
+| Emulate an iClicker 1 or iClicker+   | Working                |
+| Emulate an iClciker 2 remote         | TODO                   |
+| Capture multiple choice answer and ID| Working                |
+| DDOS the basestation                 | Somewhat               |
+| Capture ACK's send from base station | Working                |
+| Decode ACK from base station         | Working                |
+| Emulate a iClicker 1 base station    | Working                |
+| Emulate a iClicker 2 base station    | Somewhat               |
+| Work in large lectures  (>400)       | Working                |
+| Capture and send welcome message     | Waiting implementation |
+| Support numerical questions          | TODO                   |
+| Support alphabetical questions       | TODO                   |
 
-Basically all that needs to be done is decoding the 7 byte ACK sent from the basestation,
-then the iSkipper can emulate every part of the real iClicker.
 
+Basically all that needs to be done is decoding answer packets and ACK packets of numerical&alphabetical questions,
+then the iSkipper can emulate every part of the real iClicker 2.
 
 ## How we knew this was possible when we started
 Given that your iClicker id can be decoded by the base station, any sort of hashing
@@ -76,8 +81,34 @@ done before the remote transmits your ID must be reversible, and hence vulnerabl
 * OSINT (datasheets, papers, etc..)
 * Logic analyzers
 * HEX dumps and disassembly
+* Dynamic analysis
 * Software Defined Radio captures
 * Lots of playing around looking for patterns
+
+## Contributors & Universities
+### Cornell University
+* [@wizard97](https://github.com/wizard97)
+* [@orangeturtle739](https://github.com/orangeturtle739)
+
+    They are the founders of this cool project. They made everything become possible.
+    
+### Purdue University
+* [@ammaraskar](https://github.com/ammaraskar) 
+
+    The main contributor of decoding ACK and welcome message.
+    
+### University of Massachusetts, Amherst
+* [@charlescao460](https://github.com/charlescao460) 
+
+    Contributor of decoding ACK and testing, also the creator of [iSkipper-Software](https://github.com/charlescao460/iSkipper-Software).
+
+* [@Th3OnlyN00b](https://github.com/Th3OnlyN00b), [@porocyonak](https://github.com/porocyonak), [@aaronterentiev](https://github.com/aaronterentiev)
+
+    Supporters of iClicker base, which allow us to verify our findings.
+    
+* [@yicao928](https://github.com/yicao928) 
+
+    Contributor who made iSkipper avaliable on Android.
 
 ## Projects Based On iSkipper
 * [iSkipper-Software](https://github.com/charlescao460/iSkipper-Software)
