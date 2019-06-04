@@ -1,4 +1,7 @@
 # iSkipper
+
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/iSkipper-project)
+
 <img src="https://github.com/wizard97/iSkipper/blob/master/pics/IMG_20170425_002113.jpg?raw=true" alt="iClicker" width="300" height="400">
 <img src="https://github.com/wizard97/iSkipper/blob/master/pics/96_8MS_AA_a.png" alt="iClicker" width="455" height="263">
 Reverse engineering the overly priced iClicker2 and creating an open source evil version, the iSkipper.
@@ -91,22 +94,22 @@ done before the remote transmits your ID must be reversible, and hence vulnerabl
 * [@orangeturtle739](https://github.com/orangeturtle739)
 
     They are the founders of this cool project. They made everything become possible.
-    
+
 ### Purdue University
-* [@ammaraskar](https://github.com/ammaraskar) 
+* [@ammaraskar](https://github.com/ammaraskar)
 
     The main contributor of decoding ACK and welcome message.
-    
+
 ### University of Massachusetts, Amherst
-* [@charlescao460](https://github.com/charlescao460) 
+* [@charlescao460](https://github.com/charlescao460)
 
     Contributor of decoding ACK and testing, also the creator of [iSkipper-Software](https://github.com/charlescao460/iSkipper-Software).
 
 * [@Th3OnlyN00b](https://github.com/Th3OnlyN00b), [@porocyonak](https://github.com/porocyonak), [@aaronterentiev](https://github.com/aaronterentiev)
 
     Supporters of iClicker base, which allow us to verify our findings.
-    
-* [@yicao928](https://github.com/yicao928) 
+
+* [@yicao928](https://github.com/yicao928)
 
     Contributor who made iSkipper avaliable on Android.
 
