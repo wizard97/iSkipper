@@ -23,6 +23,44 @@ enum iClickerAnswer : uint8_t
     NUM_ANSWER_CHOICES,
 };
 
+struct QuestionMode 
+{
+    // magic bytes used in the welcome packet for this
+    // question mode
+    uint8_t welcome_bytes[2];
+};
+
+namespace QuestionModes {
+    const QuestionMode MULTIPLE_CHOICE = 
+    {
+        {0x92, 0x62}
+    };
+
+    const QuestionMode NUMERIC =
+    {
+        {0x93, 0x63}
+    };
+
+    const QuestionMode ALPHANUMERIC =
+    {
+        {0x9B, 0x6B}
+    };
+
+    const QuestionMode MULTIPLE_NUMERIC =
+    {
+        {0x94, 0x64}
+    };
+
+    const QuestionMode MULTIPLE_ALPHANUMERIC =
+    {
+        {0x9C, 0x6C}
+    };
+};
+
+#define WELCOME_RECV_SYNC_ADDR_LEN 6
+const uint8_t WELCOME_RECV_SYNC_ADDR[WELCOME_RECV_SYNC_ADDR_LEN] = 
+    {0x55, 0x55, 0x55, 0x36, 0x36, 0x36};
+
 
 // Encoded answer choice is sent as follows:
 /*
@@ -111,6 +149,8 @@ public:
     bool begin(iClickerChannel chan);
     bool submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer ans,
             bool withAck=false, uint32_t timeout=DEFAULT_ACK_TIMEOUT, bool waitClear = true);
+    void sendWelcomePacket(char* msg, QuestionMode mode=QuestionModes::MULTIPLE_CHOICE, 
+            uint16_t num_questions=0);
     void acknowledgeAnswer(iClickerAnswerPacket* packet, bool accept=true);
 
     void startPromiscuous(iClickerChannelType chanType, void (*cb)(iClickerPacket *));

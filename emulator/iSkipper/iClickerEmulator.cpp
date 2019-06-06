@@ -225,6 +225,62 @@ void iClickerEmulator::acknowledgeAnswer(iClickerAnswerPacket* packet, bool acce
     _radio.send(ack_payload, 5, false);
 }
 
+// Returns 0 on failure, otherwise converts the ascii character `c`
+// to the equivilent fucky-iClicker-text-encoding
+uint8_t asciiToiClickerEncoding(char c) {
+    if (c >= 'a' && c <= 'z') {
+        return (c - 'a') + 0x8B;
+    } else if (c >= 'A' && c <= 'Z') {
+        return (c - 'A') + 0x8B;
+    } else if (c >= '1' && c <= '9') {
+        return (c - '1') + 0x81;
+    }
+    switch (c) {
+        case '0': return 0x8A;
+        case '-': return 0xA5;
+        case '+': return 0xA6;
+        case '=': return 0xA7;
+        case '?': return 0xA8;
+        case '_': return 0xA9;
+        default: return 0;
+    }
+}
+
+void iClickerEmulator::sendWelcomePacket(char* msg, QuestionMode mode, uint16_t num_questions) {
+    uint8_t welcome_payload[WELCOME_PACKET_SIZE];
+    memset(welcome_payload, 0, WELCOME_PACKET_SIZE);
+
+    if (msg != NULL) {
+        size_t length = strlen(msg);
+        // Welcome message can't be longer than 8 chars
+        if (length > 8) {
+            length = 8;
+        }
+
+        for (size_t i = 0; i < length; i++) {
+            uint8_t mapped_character = asciiToiClickerEncoding(msg[i]);
+            welcome_payload[i] = mapped_character;
+        }
+    }
+
+    // set the magic bytes which tell what question mode to put iClicker2s in
+    welcome_payload[8] = mode.welcome_bytes[0];
+    welcome_payload[11] = mode.welcome_bytes[1];
+    // num_questions only matters in the MULTIPLE_* modes
+    uint8_t* num_question_bytes = (uint8_t*) &num_questions;
+    welcome_payload[9] = num_question_bytes[0];
+    welcome_payload[10] = num_question_bytes[1];
+    // compute the checksum
+    uint8_t checksum = 0;
+    for (int i = 0; i < WELCOME_PACKET_SIZE - 1; i++) {
+        checksum += welcome_payload[i];
+    }
+    welcome_payload[WELCOME_PACKET_SIZE - 1] = checksum;
+
+    configureRadio(CHANNEL_RECV_WELCOME, WELCOME_RECV_SYNC_ADDR);
+    _radio.send(welcome_payload, 16, true);
+}
+
 
 void iClickerEmulator::setChannel(iClickerChannel chan)
 {
@@ -242,8 +298,20 @@ iClickerChannel iClickerEmulator::getChannel()
 
 void iClickerEmulator::configureRadio(iClickerChannelType type, const uint8_t *syncaddr)
 {
+    int syncAddrLength = 0;
+    switch (type) {
+        case CHANNEL_SEND:
+            syncAddrLength = SEND_SYNC_ADDR_LEN;
+            break;
+        case CHANNEL_RECV:
+            syncAddrLength = RECV_SYNC_ADDR_LEN;
+            break;
+        case CHANNEL_RECV_WELCOME:
+            syncAddrLength = WELCOME_RECV_SYNC_ADDR_LEN;
+            break;
+    }
     // set the correct sync addr and len
-    _radio.setSyncAddr(syncaddr, type == CHANNEL_SEND ? SEND_SYNC_ADDR_LEN : RECV_SYNC_ADDR_LEN);
+    _radio.setSyncAddr(syncaddr, syncAddrLength);
 
     // put radio on the correct freq and packet size
     _radio.setChannelType(type);

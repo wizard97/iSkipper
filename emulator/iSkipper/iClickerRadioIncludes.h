@@ -19,11 +19,13 @@
 //packet length
 #define PAYLOAD_LENGTH_SEND               0x05
 #define PAYLOAD_LENGTH_RECV               0x05
+#define WELCOME_PACKET_SIZE               13
 
 typedef enum iClickerChannelType
 {
     CHANNEL_SEND = 0, //act as a clicker
     CHANNEL_RECV = 1, // act as base station
+    CHANNEL_RECV_WELCOME = 2 // act as base station sending a welcome message
 } iClickerChannelType_t;
 
 /*

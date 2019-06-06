@@ -61,7 +61,7 @@ bool iClickerRadio::initialize(uint8_t freqBand)
         /* 0x37 */ { REG_PACKETCONFIG1, RF_PACKET1_FORMAT_FIXED | RF_PACKET1_DCFREE_OFF | RF_PACKET1_CRC_OFF | RF_PACKET1_CRCAUTOCLEAR_ON | RF_PACKET1_ADRSFILTERING_OFF },
         /* 0x38 */ { REG_PAYLOADLENGTH, PAYLOAD_LENGTH_SEND }, // in variable length mode: the max frame size, not used in TX
         ///* 0x39 */ { REG_NODEADRS, nodeID }, // turned off because we're not using address filtering
-        /* 0x3C */ { REG_FIFOTHRESH, RF_FIFOTHRESH_TXSTART_FIFOTHRESH | RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC  }, // TX on FIFO not empty
+        /* 0x3C */ { REG_FIFOTHRESH, RF_FIFOTHRESH_TXSTART_FIFONOTEMPTY | RF_FIFOTHRESH_VALUE  }, // TX on FIFO not empty
         /* 0x3D */ { REG_PACKETCONFIG2, RF_PACKET2_RXRESTARTDELAY_1BIT | RF_PACKET2_AUTORXRESTART_OFF | RF_PACKET2_AES_OFF }, // RXRESTARTDELAY must match transmitter PA ramp-down time (bitrate dependent)
         //for BR-19200: /* 0x3D */ { REG_PACKETCONFIG2, RF_PACKET2_RXRESTARTDELAY_NONE | RF_PACKET2_AUTORXRESTART_ON | RF_PACKET2_AES_OFF }, // RXRESTARTDELAY must match transmitter PA ramp-down time (bitrate dependent)
         /* 0x6F */ { REG_TESTDAGC, RF_DAGC_IMPROVED_LOWBETA0 }, // run DAGC continuously in RX mode for Fading Margin Improvement, recommended default for AfcLowBetaOn=0
@@ -126,8 +126,20 @@ void iClickerRadio::setChannelType(iClickerChannelType_t chanType)
     // dont change it if allready correct
     if (_chanType != chanType) {
         _chanType = chanType;
-        setFrequency(_chanType == CHANNEL_SEND ? _chan.send : _chan.recv);
-        setPayloadLength(_chanType == CHANNEL_SEND ? PAYLOAD_LENGTH_SEND : PAYLOAD_LENGTH_RECV, false);
+        switch (chanType) {
+            case CHANNEL_SEND:
+                setFrequency(_chan.send);
+                setPayloadLength(PAYLOAD_LENGTH_SEND, false);
+                break;
+            case CHANNEL_RECV:
+                setFrequency(_chan.recv);
+                setPayloadLength(PAYLOAD_LENGTH_RECV, false);
+                break;
+            case CHANNEL_RECV_WELCOME:
+                setFrequency(_chan.recv);
+                setPayloadLength(WELCOME_PACKET_SIZE, false);
+                break;
+        }
     }
 }
 
