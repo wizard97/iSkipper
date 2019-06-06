@@ -209,8 +209,8 @@ void iClickerEmulator::acknowledgeAnswer(iClickerAnswerPacket* packet, bool acce
         // ack[0-2] = encodedId[0-2]
         // ack[3] = (encodedId[3] & 0xF0) | answer_nibble
         ack_payload[3] = (ack_payload[3] & 0xF0) | (0x0F & getAnswerOffset(packet->answer));
-
-        _radio.send(ack_payload, 4, false);
+        // accept packets are only 4 bytes long so we zero out the last byte
+        ack_payload[4] = 0;
     } else {
         // ack[0-1] = encodedId[0-1]
         // ack[2] = ~encodedId[2]
@@ -219,9 +219,9 @@ void iClickerEmulator::acknowledgeAnswer(iClickerAnswerPacket* packet, bool acce
         ack_payload[3] = (ack_payload[3] & 0xF0) | 0x6;
         // ack[4] = 0x66
         ack_payload[4] = 0x66;
-
-        _radio.send(ack_payload, 5, false);
     }
+
+    _radio.send(ack_payload, 5, false);
 }
 
 

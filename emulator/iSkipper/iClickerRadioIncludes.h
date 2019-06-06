@@ -18,7 +18,7 @@
 
 //packet length
 #define PAYLOAD_LENGTH_SEND               0x05
-#define PAYLOAD_LENGTH_RECV               0x07
+#define PAYLOAD_LENGTH_RECV               0x05
 
 typedef enum iClickerChannelType
 {

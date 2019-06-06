@@ -6,8 +6,7 @@
 #include "RFM69.h"
 
 // threshold for triggerins fifo transmit interrupt
-// (should be the [smallest packet size - 1])
-#define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x03
+#define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
 
 
 //RegSyncValue1-8 for sending is:
