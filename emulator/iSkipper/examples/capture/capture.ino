@@ -47,7 +47,6 @@ void loop()
 void recvPacketHandler(iClickerPacket *recvd)
 {
     if (SEND_ACKS && recvd->type == PACKET_ANSWER) {
-      Serial.println("Sending ACK");
       clicker.acknowledgeAnswer(&recvd->packet.answerPacket, true);
       // restore the frequency back to AA and go back to promiscous mode
       clicker.setChannel(iClickerChannels::AA);

@@ -46,7 +46,7 @@ const uint8_t answerOffsets[NUM_ANSWER_CHOICES] = {0x1, 0x5, 0xd, 0xe, 0xa, 0x2}
 const uint8_t DEFAULT_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] =
     {RF_SYNC_BYTE1_VALUE_IC, RF_SYNC_BYTE2_VALUE_IC , RF_SYNC_BYTE3_VALUE_IC };
 
-const uint8_t ACK_SEND_SYNC_ADDR[SEND_SYNC_ADDR_LEN] = {0x55, 0x55, 0x55};
+const uint8_t ACK_SEND_SYNC_ADDR[RECV_SYNC_ADDR_LEN] = {0x55, 0x55, 0x55};
 
 
 // 5 bytes
