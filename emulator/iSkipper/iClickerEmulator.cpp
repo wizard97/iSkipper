@@ -198,6 +198,33 @@ bool iClickerEmulator::submitAnswer(uint8_t id[ICLICKER_ID_LEN], iClickerAnswer 
     return true;
 }
 
+void iClickerEmulator::acknowledgeAnswer(iClickerAnswerPacket* packet, bool accept) {
+    // ACKs are either 4 (accept) or 5 (reject) bytes
+    uint8_t ack_payload[5];
+    encodeId(packet->id, ack_payload);
+
+    configureRadio(CHANNEL_RECV, ACK_SEND_SYNC_ADDR);
+
+    if (accept) {
+        // When accepting, we simply replay the encoded payload
+        // ack[0-2] = encodedId[0-2]
+        // ack[3] = (encodedId[3] & 0xF0) | answer_nibble
+        ack_payload[3] = (ack_payload[3] & 0xF0) | (0x0F & getAnswerOffset(packet->answer));
+        // accept packets are only 4 bytes long so we zero out the last byte
+        ack_payload[4] = 0;
+    } else {
+        // ack[0-1] = encodedId[0-1]
+        // ack[2] = ~encodedId[2]
+        ack_payload[2] = ~ack_payload[2];
+        // ack[3] = (encodedId[3] & 0xF0) | 0x6
+        ack_payload[3] = (ack_payload[3] & 0xF0) | 0x6;
+        // ack[4] = 0x66
+        ack_payload[4] = 0x66;
+    }
+
+    _radio.send(ack_payload, 5, false);
+}
+
 
 void iClickerEmulator::setChannel(iClickerChannel chan)
 {
