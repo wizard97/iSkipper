@@ -30,7 +30,12 @@ void setup()
 void loop()
 {
   char tmp[50];
-  iClickerPacket r;  
+  iClickerPacket r;
+
+  Serial.println("Sending welcome message");
+  clicker.sendWelcomePacket("_0+2-2=x_?", QuestionModes::MULTIPLE_NUMERIC, 5);
+  clicker.setChannel(iClickerChannels::AA);
+  clicker.startPromiscuous(CHANNEL_SEND, recvPacketHandler);
 
   //see if there is a pending packet, check if its an answer packet
   while (recvBuf.pull(&r) && r.type == PACKET_ANSWER) {

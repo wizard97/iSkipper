@@ -5,9 +5,6 @@
 #include "iClickerRadioIncludes.h"
 #include "RFM69.h"
 
-// threshold for triggerins fifo transmit interrupt
-#define RF_FIFOTHRESH_TXSTART_FIFOTHRESH_IC 0x04
-
 
 //RegSyncValue1-8 for sending is:
 // 0x85, 0x85, 0x85, 0, 0...
